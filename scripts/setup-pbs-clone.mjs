@@ -147,6 +147,7 @@ function applyBranding(html, dest) {
   branded = scrubNextData(branded, dest);
   branded = replaceHeaderLogo(branded);
   branded = injectFavicon(branded);
+  branded = injectImageSrcPatch(branded);
   branded = stripAnalytics(branded);
   branded = updateWebManifest(branded);
   return injectLightweightBrandingPatch(branded, getPageTitle(dest));
@@ -163,17 +164,28 @@ function decodeNextImageUrl(encodedUrl) {
   return `${PBS_ORIGIN}/${decoded}`;
 }
 
+function decodeAllNextImageUrls(html) {
+  return html.replace(
+    /\/_next\/image\?url=([^&"'\s]+)(?:&(?:amp;)?[^"'\s]*)?/g,
+    (_, encodedUrl) => decodeNextImageUrl(encodedUrl),
+  );
+}
+
+function injectImageSrcPatch(html) {
+  const patch = `<script data-sonke-image-patch>(function(){var busy=false;function decodeNextImage(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname!=="/_next/image")return u;var target=parsed.searchParams.get("url");return target?decodeURIComponent(target):u}catch(e){return u}}function fixImage(img){if(busy||!img)return;var nextSrc=img.getAttribute("src");if(nextSrc&&nextSrc.indexOf("/_next/image?")!==-1){busy=true;img.src=decodeNextImage(nextSrc);busy=false}var nextSet=img.getAttribute("srcset");if(nextSet&&nextSet.indexOf("/_next/image")!==-1){busy=true;img.srcset=nextSet.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=decodeNextImage(bits[0]);return bits.join(" ")}).join(", ");busy=false}}function fixAll(){document.querySelectorAll("img").forEach(fixImage)}new MutationObserver(function(records){if(busy)return;records.forEach(function(record){if(record.type==="attributes"&&record.target.tagName==="IMG")fixImage(record.target);record.addedNodes.forEach(function(node){if(node.tagName==="IMG")fixImage(node);else if(node.querySelectorAll)node.querySelectorAll("img").forEach(fixImage)})})}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["src","srcset"]});document.addEventListener("DOMContentLoaded",fixAll);window.addEventListener("load",function(){fixAll();setTimeout(fixAll,1000)})})();</script>`;
+  return html.replace("<head>", `<head>${patch}`);
+}
+
 function processHtml(html, dest) {
   return applyBranding(
     fixOrphanedScriptBeforeStyles(
       stripServiceWorkerLoader(
-        html
-          .replace(/\/_next\/image\?url=([^&"'\s]+)(?:&(?:amp;)?[^"'\s]*)?/g, (_, encodedUrl) =>
-            decodeNextImageUrl(encodedUrl),
-          )
-          .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
-          .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
-          .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+        decodeAllNextImageUrls(
+          html
+            .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
+            .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
+            .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+        ),
       ),
     ),
     dest,

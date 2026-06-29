@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
-const PBS_ASSET_PREFIXES = ["/_next/", "/puma/", "/sw.js"];
+const PBS_ASSET_PREFIXES = ["/_next/static/", "/puma/", "/sw.js"];
 
 function shouldProxyToPbs(pathname: string) {
   return PBS_ASSET_PREFIXES.some((prefix) =>
@@ -48,5 +48,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/_next/:path*", "/puma/:path*", "/sw.js"],
+  matcher: ["/_next/static/:path*", "/puma/:path*", "/sw.js"],
 };
