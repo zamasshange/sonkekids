@@ -153,19 +153,51 @@ function applyBranding(html, dest) {
   return injectLightweightBrandingPatch(branded, getPageTitle(dest));
 }
 
+function resolveNextImageUrlInHtml(query) {
+  const normalized = query.replace(/&amp;/g, "&");
+  const urlParam = normalized.match(/(?:^|&)url=([^&]+)/)?.[1];
+  if (urlParam) {
+    const direct = decodeURIComponent(urlParam);
+    if (
+      direct.startsWith("https://image.pbs.org/") ||
+      direct.startsWith("https://image.pbskids.org/")
+    ) {
+      return direct;
+    }
+  }
+
+  const htmlQuery = query.includes("&amp;")
+    ? query
+    : query.replace(/&(?=w=|q=)/g, "&amp;");
+  return `/api/pbs-image?${htmlQuery}`;
+}
+
 function proxyNextImageUrls(html) {
   return html
     .replace(/\/_next\/image\?([^"'\s<>]+)/g, (_, query) =>
-      `/api/pbs-image?${query.replace(/&amp;/g, "&")}`,
+      resolveNextImageUrlInHtml(query),
     )
     .replace(
       /https:\/\/pbskids\.org\/_next\/image\?([^"'\s<>]+)/g,
-      (_, query) => `/api/pbs-image?${query.replace(/&amp;/g, "&")}`,
+      (_, query) => resolveNextImageUrlInHtml(query),
     );
 }
 
+function ensureImgSrcFromSrcSet(html) {
+  return html.replace(
+    /<img\b((?:(?!\bsrc=)[^>])*)\bsrcSet="([^"]+)"([^>]*)>/gi,
+    (match, before, srcSet, after) => {
+      if (/\bsrc=/i.test(match)) {
+        return match;
+      }
+      const firstUrl = srcSet.split(",")[0].trim().split(/\s+/)[0];
+      return `<img${before}src="${firstUrl}" srcSet="${srcSet}"${after}>`;
+    },
+  );
+}
+
 function injectImageSrcPatch(html) {
-  const patch = `<script data-sonke-image-patch>(function(){function toProxy(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname!=="/_next/image")return u;return "/api/pbs-image"+parsed.search}catch(e){return u}}function rewrite(value){if(typeof value!=="string"||value.indexOf("/_next/image")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=toProxy(bits[0]);return bits.join(" ")}).join(", ");return toProxy(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{get:desc.get,set:function(v){desc.set.call(this,rewrite(v))},configurable:true,enumerable:desc.enumerable})}patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset");if(window.HTMLSourceElement){patchProto(HTMLSourceElement.prototype,"srcset")}var setAttribute=Element.prototype.setAttribute;Element.prototype.setAttribute=function(name,value){if((name==="src"||name==="srcset")&&typeof value==="string")value=rewrite(value);return setAttribute.call(this,name,value)};function fixAll(){document.querySelectorAll('img[src*="/_next/image"],img[srcset*="/_next/image"],source[srcset*="/_next/image"]').forEach(function(el){var src=el.getAttribute("src");if(src&&src.indexOf("/_next/image")!==-1)el.setAttribute("src",rewrite(src));var srcset=el.getAttribute("srcset");if(srcset&&srcset.indexOf("/_next/image")!==-1)el.setAttribute("srcset",rewrite(srcset))})}document.addEventListener("DOMContentLoaded",fixAll);window.addEventListener("load",function(){fixAll();setTimeout(fixAll,500);setTimeout(fixAll,2000)})})();</script>`;
+  const patch = `<script data-sonke-image-patch>(function(){function resolveUrl(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname==="/_next/image"||parsed.pathname==="/api/pbs-image"){var target=parsed.searchParams.get("url");if(target){var direct=decodeURIComponent(target);if(direct.indexOf("https://image.pbs.org/")===0||direct.indexOf("https://image.pbskids.org/")===0)return direct}if(parsed.pathname==="/_next/image")return"/api/pbs-image"+parsed.search}return u}catch(e){return u}}function rewrite(value){if(typeof value!=="string")return value;if(value.indexOf("/_next/image")===-1&&value.indexOf("/api/pbs-image")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=resolveUrl(bits[0]);return bits.join(" ")}).join(", ");return resolveUrl(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{get:desc.get,set:function(v){desc.set.call(this,rewrite(v))},configurable:true,enumerable:desc.enumerable})}patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset");if(window.HTMLSourceElement){patchProto(HTMLSourceElement.prototype,"srcset")}var setAttribute=Element.prototype.setAttribute;Element.prototype.setAttribute=function(name,value){if((name==="src"||name==="srcset")&&typeof value==="string")value=rewrite(value);return setAttribute.call(this,name,value)};function fixAll(){document.querySelectorAll("img").forEach(function(img){var srcset=img.getAttribute("srcset");if(srcset)img.setAttribute("srcset",rewrite(srcset));var src=img.getAttribute("src");if(src)img.setAttribute("src",rewrite(src));else if(srcset&&!img.getAttribute("src"))img.setAttribute("src",rewrite(srcset.split(",")[0].trim().split(/\\s+/)[0]))})}document.addEventListener("DOMContentLoaded",fixAll);window.addEventListener("load",function(){fixAll();setTimeout(fixAll,500);setTimeout(fixAll,2000)})})();</script>`;
   return html.replace("<head>", `<head>${patch}`);
 }
 
@@ -173,11 +205,13 @@ function processHtml(html, dest) {
   return applyBranding(
     fixOrphanedScriptBeforeStyles(
       stripServiceWorkerLoader(
-        proxyNextImageUrls(
-          html
-            .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
-            .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
-            .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+        ensureImgSrcFromSrcSet(
+          proxyNextImageUrls(
+            html
+              .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
+              .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
+              .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+          ),
         ),
       ),
     ),
