@@ -125,8 +125,8 @@ function stripAnalytics(html) {
     );
 }
 
-function injectLocalAssetsPatch(html) {
-  return html.replace("<head>", `<head>${buildLocalAssetsPatch()}`);
+function injectLocalAssetsPatch(html, manifest) {
+  return html.replace("<head>", `<head>${buildLocalAssetsPatch(manifest)}`);
 }
 
 function writeAssetManifestModule(manifest) {
@@ -260,7 +260,7 @@ async function main() {
   writeAssetManifestModule(manifest);
 
   for (const { dest, branded } of brandedPages) {
-    const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest));
+    const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);
     writeFileSync(join(pbsDir, dest), localized, "utf8");
     extractNextData(localized, dest, dataDir);
     console.log(`Wrote public/pbs/${dest} and public/pbs/data/${dest.replace(".html", ".json")}`);
