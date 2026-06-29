@@ -1,11 +1,20 @@
 import { mkdirSync, readFileSync, writeFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
+import {
+  collectRemoteImageUrls,
+  downloadAssets,
+  extractNextData,
+  localizeImageUrls,
+} from "./lib/pbs-assets.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const publicDir = join(root, "public");
 const pbsDir = join(publicDir, "pbs");
+const dataDir = join(publicDir, "pbs", "data");
+const assetsDir = join(publicDir, "pbs-assets");
+const manifestPath = join(assetsDir, "manifest.json");
 
 const pages = [
   { source: "pbs-home.html", dest: "index.html" },
@@ -13,7 +22,6 @@ const pages = [
   { source: "pbs-videos.html", dest: "videos.html" },
 ];
 
-const PBS_ORIGIN = "https://pbskids.org";
 const BRAND_KIDS = "Sonke Kids";
 const BRAND_GAMES = "Sonke Games";
 
@@ -100,7 +108,6 @@ function stripServiceWorkerLoader(html) {
 }
 
 function fixOrphanedScriptBeforeStyles(html) {
-  // loadSW stripping used to leave <script> open, trapping stylesheet links inside it.
   return html.replace(
     /<script>\s*(<link rel="stylesheet"[\s\S]*?<\/head>)/,
     "$1",
@@ -114,6 +121,11 @@ function stripAnalytics(html) {
       /<noscript><iframe src="\/\/www\.googletagmanager\.com[^"]*"[\s\S]*?<\/iframe><\/noscript>/g,
       "",
     );
+}
+
+function injectLocalAssetsPatch(html) {
+  const patch = `<script data-sonke-local-assets>(function(){var manifest;function load(){return manifest?Promise.resolve(manifest):fetch("/pbs-assets/manifest.json").then(function(r){return r.json()}).then(function(m){manifest=m;return m})}function decodeTarget(encoded){try{return decodeURIComponent(String(encoded).replace(/&amp;/g,"&"))}catch(e){return encoded}}function resolve(u){if(!u||typeof u!=="string")return u;try{var parsed=new URL(u,location.origin);if(parsed.pathname==="/_next/image"||parsed.pathname==="/api/pbs-image"){var target=parsed.searchParams.get("url");if(target)u=decodeTarget(target)}}catch(e){}return manifest&&manifest[u]?manifest[u]:u}function rewrite(value){if(typeof value!=="string")return value;if(value.indexOf("/_next/image")===-1&&value.indexOf("/api/pbs-image")===-1&&value.indexOf("pbs.org")===-1&&value.indexOf("pbskids.org")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=resolve(bits[0]);return bits.join(" ")}).join(", ");return resolve(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{configurable:true,enumerable:desc.enumerable,get:desc.get,set:function(v){desc.set.call(this,rewrite(v))}})}load().then(function(){patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset")})})();</script>`;
+  return html.replace("<head>", `<head>${patch}`);
 }
 
 function injectLightweightBrandingPatch(html, pageTitle) {
@@ -142,47 +154,6 @@ function updateWebManifest(html) {
   );
 }
 
-function applyBranding(html, dest) {
-  let branded = applyTextReplacements(html, dest);
-  branded = scrubNextData(branded, dest);
-  branded = replaceHeaderLogo(branded);
-  branded = injectFavicon(branded);
-  branded = injectImageSrcPatch(branded);
-  branded = stripAnalytics(branded);
-  branded = updateWebManifest(branded);
-  return injectLightweightBrandingPatch(branded, getPageTitle(dest));
-}
-
-function resolveNextImageUrlInHtml(query) {
-  const normalized = query.replace(/&amp;/g, "&");
-  const urlParam = normalized.match(/(?:^|&)url=([^&]+)/)?.[1];
-  if (urlParam) {
-    const direct = decodeURIComponent(urlParam);
-    if (
-      direct.startsWith("https://image.pbs.org/") ||
-      direct.startsWith("https://image.pbskids.org/")
-    ) {
-      return direct;
-    }
-  }
-
-  const htmlQuery = query.includes("&amp;")
-    ? query
-    : query.replace(/&(?=w=|q=)/g, "&amp;");
-  return `/api/pbs-image?${htmlQuery}`;
-}
-
-function proxyNextImageUrls(html) {
-  return html
-    .replace(/\/_next\/image\?([^"'\s<>]+)/g, (_, query) =>
-      resolveNextImageUrlInHtml(query),
-    )
-    .replace(
-      /https:\/\/pbskids\.org\/_next\/image\?([^"'\s<>]+)/g,
-      (_, query) => resolveNextImageUrlInHtml(query),
-    );
-}
-
 function ensureImgSrcFromSrcSet(html) {
   return html.replace(
     /<img\b((?:(?!\bsrc=)[^>])*)\bsrcSet="([^"]+)"([^>]*)>/gi,
@@ -196,9 +167,18 @@ function ensureImgSrcFromSrcSet(html) {
   );
 }
 
-function injectImageSrcPatch(html) {
-  const patch = `<script data-sonke-image-patch>(function(){function resolveUrl(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname==="/_next/image"||parsed.pathname==="/api/pbs-image"){var target=parsed.searchParams.get("url");if(target){var direct=decodeURIComponent(target);if(direct.indexOf("https://image.pbs.org/")===0||direct.indexOf("https://image.pbskids.org/")===0)return direct}if(parsed.pathname==="/_next/image")return"/api/pbs-image"+parsed.search}return u}catch(e){return u}}function rewrite(value){if(typeof value!=="string")return value;if(value.indexOf("/_next/image")===-1&&value.indexOf("/api/pbs-image")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=resolveUrl(bits[0]);return bits.join(" ")}).join(", ");return resolveUrl(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{get:desc.get,set:function(v){desc.set.call(this,rewrite(v))},configurable:true,enumerable:desc.enumerable})}patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset");if(window.HTMLSourceElement){patchProto(HTMLSourceElement.prototype,"srcset")}var setAttribute=Element.prototype.setAttribute;Element.prototype.setAttribute=function(name,value){if((name==="src"||name==="srcset")&&typeof value==="string")value=rewrite(value);return setAttribute.call(this,name,value)};function fixAll(){document.querySelectorAll("img").forEach(function(img){var srcset=img.getAttribute("srcset");if(srcset)img.setAttribute("srcset",rewrite(srcset));var src=img.getAttribute("src");if(src)img.setAttribute("src",rewrite(src));else if(srcset&&!img.getAttribute("src"))img.setAttribute("src",rewrite(srcset.split(",")[0].trim().split(/\\s+/)[0]))})}document.addEventListener("DOMContentLoaded",fixAll);window.addEventListener("load",function(){fixAll();setTimeout(fixAll,500);setTimeout(fixAll,2000)})})();</script>`;
-  return html.replace("<head>", `<head>${patch}`);
+function applyBranding(html, dest) {
+  let branded = applyTextReplacements(html, dest);
+  branded = scrubNextData(branded, dest);
+  branded = replaceHeaderLogo(branded);
+  branded = injectFavicon(branded);
+  branded = stripAnalytics(branded);
+  branded = updateWebManifest(branded);
+  return injectLightweightBrandingPatch(branded, getPageTitle(dest));
+}
+
+function stripLegacyPatches(html) {
+  return html.replace(/<script data-sonke-image-patch>[\s\S]*?<\/script>/g, "");
 }
 
 function processHtml(html, dest) {
@@ -206,7 +186,7 @@ function processHtml(html, dest) {
     fixOrphanedScriptBeforeStyles(
       stripServiceWorkerLoader(
         ensureImgSrcFromSrcSet(
-          proxyNextImageUrls(
+          stripLegacyPatches(
             html
               .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
               .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
@@ -219,14 +199,44 @@ function processHtml(html, dest) {
   );
 }
 
-mkdirSync(pbsDir, { recursive: true });
+async function main() {
+  mkdirSync(pbsDir, { recursive: true });
+  mkdirSync(assetsDir, { recursive: true });
 
-for (const { source, dest } of pages) {
-  const sourcePath = join(publicDir, source);
-  const raw = readFileSync(sourcePath, "utf8");
-  const processed = processHtml(raw, dest);
-  writeFileSync(join(pbsDir, dest), processed, "utf8");
-  console.log(`Wrote public/pbs/${dest}`);
+  const brandedPages = [];
+  const allImageUrls = new Set();
+
+  for (const { source, dest } of pages) {
+    const sourcePath = join(publicDir, source);
+    const raw = readFileSync(sourcePath, "utf8");
+    const branded = processHtml(raw, dest);
+    for (const url of collectRemoteImageUrls(branded)) {
+      allImageUrls.add(url);
+    }
+    brandedPages.push({ dest, branded });
+  }
+
+  console.log(`Extracting ${allImageUrls.size} images to public/pbs-assets/ ...`);
+  const { manifest, downloaded, skipped, failed } = await downloadAssets({
+    publicDir,
+    urls: allImageUrls,
+    manifestPath,
+  });
+  console.log(
+    `Assets ready: ${downloaded} downloaded, ${skipped} cached, ${failed} failed.`,
+  );
+
+  for (const { dest, branded } of brandedPages) {
+    const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest));
+    writeFileSync(join(pbsDir, dest), localized, "utf8");
+    extractNextData(localized, dest, dataDir);
+    console.log(`Wrote public/pbs/${dest} and public/pbs/data/${dest.replace(".html", ".json")}`);
+  }
+
+  console.log("Sonke Kids pages ready with local assets.");
 }
 
-console.log("Sonke Kids pages ready.");
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

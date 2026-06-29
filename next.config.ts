@@ -9,17 +9,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: projectRoot,
   },
-  images: {
-    unoptimized: true,
-    path: "/_sonke-internal-image",
-  },
   async rewrites() {
     return {
       beforeFiles: [
-        {
-          source: "/_next/image",
-          destination: "/api/pbs-image",
-        },
         {
           source: "/_next/static/:path*",
           destination: `${PBS_ORIGIN}/_next/static/:path*`,
