@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     root: projectRoot,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "cms-assets.prod.pbskids.org", pathname: "/**" },
       { protocol: "https", hostname: "image.pbs.org", pathname: "/**" },
@@ -22,6 +23,10 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
+        {
+          source: "/_next/image",
+          destination: "/api/pbs-image",
+        },
         {
           source: "/_next/static/:path*",
           destination: `${PBS_ORIGIN}/_next/static/:path*`,
