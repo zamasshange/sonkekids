@@ -82,6 +82,18 @@ function injectFavicon(html) {
   return updated;
 }
 
+function stripServiceWorkerLoader(html) {
+  return html.replace(/<script>\s*const loadSW[\s\S]*?<\/script>/, "");
+}
+
+function fixOrphanedScriptBeforeStyles(html) {
+  // loadSW stripping used to leave <script> open, trapping stylesheet links inside it.
+  return html.replace(
+    /<script>\s*(<link rel="stylesheet"[\s\S]*?<\/head>)/,
+    "$1",
+  );
+}
+
 function stripHeavyClientAssets(html) {
   return (
     html
@@ -137,17 +149,17 @@ function decodeNextImageUrl(encodedUrl) {
 
 function processHtml(html, dest) {
   return applyBranding(
-    html
-      .replace(/\/_next\/image\?url=([^&"'\s]+)(?:&(?:amp;)?[^"'\s]*)?/g, (_, encodedUrl) =>
-        decodeNextImageUrl(encodedUrl),
-      )
-      .replace(
-        /const loadSW[\s\S]*?loadSW\([\s\S]*?\);[\s\S]*?<\/script>/,
-        "",
-      )
-      .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
-      .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
-      .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+    fixOrphanedScriptBeforeStyles(
+      stripServiceWorkerLoader(
+        html
+          .replace(/\/_next\/image\?url=([^&"'\s]+)(?:&(?:amp;)?[^"'\s]*)?/g, (_, encodedUrl) =>
+            decodeNextImageUrl(encodedUrl),
+          )
+          .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
+          .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
+          .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+      ),
+    ),
     dest,
   );
 }
