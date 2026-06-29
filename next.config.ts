@@ -9,16 +9,15 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  outputFileTracingExcludes: {
+    "*": ["./public/pbs-assets/**"],
+  },
   turbopack: {
     root: projectRoot,
   },
   async rewrites() {
     return {
       beforeFiles: [
-        {
-          source: "/_next/image",
-          destination: "/api/local-image",
-        },
         {
           source: "/_next/static/:path*",
           destination: `${PBS_ORIGIN}/_next/static/:path*`,

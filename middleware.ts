@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { resolveImageRequest } from "./lib/pbs-image-resolve";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
@@ -44,9 +45,16 @@ export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (pathname === "/_next/image") {
-    const rewriteUrl = new URL("/api/local-image", request.url);
-    rewriteUrl.search = request.nextUrl.search;
-    return NextResponse.rewrite(rewriteUrl);
+    const localPath = resolveImageRequest(
+      request.nextUrl.searchParams.get("url"),
+      {},
+    );
+
+    if (localPath) {
+      return NextResponse.rewrite(new URL(localPath, request.url));
+    }
+
+    return proxyToPbs(request);
   }
 
   if (!shouldProxyToPbs(pathname)) {

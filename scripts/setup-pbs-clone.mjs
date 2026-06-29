@@ -12,7 +12,6 @@ import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const publicDir = join(root, "public");
-const libDir = join(root, "lib");
 const pbsDir = join(publicDir, "pbs");
 const dataDir = join(publicDir, "pbs", "data");
 const assetsDir = join(publicDir, "pbs-assets");
@@ -127,15 +126,6 @@ function stripAnalytics(html) {
 
 function injectLocalAssetsPatch(html, manifest) {
   return html.replace("<head>", `<head>${buildLocalAssetsPatch(manifest)}`);
-}
-
-function writeAssetManifestModule(manifest) {
-  mkdirSync(libDir, { recursive: true });
-  writeFileSync(
-    join(libDir, "pbs-asset-manifest.ts"),
-    `export const PBS_ASSET_MANIFEST: Record<string, string> = ${JSON.stringify(manifest)};\n`,
-    "utf8",
-  );
 }
 
 function verifyDownloadedAssets(manifest, publicDir) {
@@ -257,7 +247,6 @@ async function main() {
   }
 
   verifyDownloadedAssets(manifest, publicDir);
-  writeAssetManifestModule(manifest);
 
   for (const { dest, branded } of brandedPages) {
     const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);

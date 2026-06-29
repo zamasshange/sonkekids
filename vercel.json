@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/_next/image",
-      "destination": "/api/local-image"
-    },
-    {
       "source": "/_next/static/:path*",
       "destination": "https://pbskids.org/_next/static/:path*"
     },
