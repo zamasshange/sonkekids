@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { PBS_ASSET_MANIFEST } from "./lib/pbs-asset-manifest";
-import { resolveImageRequest } from "./lib/pbs-image-resolve";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
@@ -43,22 +41,7 @@ async function proxyToPbs(request: NextRequest) {
 }
 
 export async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  if (pathname === "/_next/image") {
-    const localPath = resolveImageRequest(
-      request.nextUrl.searchParams.get("url"),
-      PBS_ASSET_MANIFEST,
-    );
-
-    if (localPath) {
-      return NextResponse.rewrite(new URL(localPath, request.url));
-    }
-
-    return proxyToPbs(request);
-  }
-
-  if (!shouldProxyToPbs(pathname)) {
+  if (!shouldProxyToPbs(request.nextUrl.pathname)) {
     return NextResponse.next();
   }
 
@@ -66,5 +49,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/_next/image", "/_next/static/:path*", "/puma/:path*", "/sw.js"],
+  matcher: ["/_next/static/:path*", "/puma/:path*", "/sw.js"],
 };

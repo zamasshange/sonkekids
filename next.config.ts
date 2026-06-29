@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
+          source: "/_next/image",
+          destination: "/api/local-image",
+        },
+        {
           source: "/_next/static/:path*",
           destination: `${PBS_ORIGIN}/_next/static/:path*`,
         },
