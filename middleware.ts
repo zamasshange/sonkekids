@@ -2,13 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
-const PBS_STATIC_PREFIXES = [
-  "/_next/static/css/",
-  "/_next/static/media/",
-];
+const PBS_ASSET_PREFIXES = ["/_next/", "/puma/", "/sw.js"];
 
 function shouldProxyToPbs(pathname: string) {
-  return PBS_STATIC_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+  return PBS_ASSET_PREFIXES.some((prefix) =>
+    prefix.endsWith("/") ? pathname.startsWith(prefix) : pathname === prefix,
+  );
 }
 
 async function proxyToPbs(request: NextRequest) {
@@ -49,5 +48,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/_next/static/css/:path*", "/_next/static/media/:path*"],
+  matcher: ["/_next/:path*", "/puma/:path*", "/sw.js"],
 };
