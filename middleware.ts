@@ -2,11 +2,15 @@ import { NextRequest, NextResponse } from "next/server";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
-export async function middleware(request: NextRequest) {
-  if (request.nextUrl.pathname !== "/_next/image") {
-    return NextResponse.next();
-  }
+const PBS_ASSET_PREFIXES = ["/_next/", "/puma/", "/sw.js"];
 
+function shouldProxyToPbs(pathname: string) {
+  return PBS_ASSET_PREFIXES.some((prefix) =>
+    prefix.endsWith("/") ? pathname.startsWith(prefix) : pathname === prefix,
+  );
+}
+
+async function proxyToPbs(request: NextRequest) {
   const target = new URL(
     `${request.nextUrl.pathname}${request.nextUrl.search}`,
     PBS_ORIGIN,
@@ -14,9 +18,13 @@ export async function middleware(request: NextRequest) {
 
   const upstream = await fetch(target, {
     headers: {
-      accept: request.headers.get("accept") ?? "image/*,*/*",
+      accept: request.headers.get("accept") ?? "*/*",
     },
   });
+
+  if (!upstream.ok) {
+    return NextResponse.next();
+  }
 
   const headers = new Headers();
   const contentType = upstream.headers.get("content-type");
@@ -31,6 +39,14 @@ export async function middleware(request: NextRequest) {
   });
 }
 
+export async function middleware(request: NextRequest) {
+  if (!shouldProxyToPbs(request.nextUrl.pathname)) {
+    return NextResponse.next();
+  }
+
+  return proxyToPbs(request);
+}
+
 export const config = {
-  matcher: "/_next/image",
+  matcher: ["/_next/:path*", "/puma/:path*", "/sw.js"],
 };

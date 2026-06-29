@@ -1,6 +1,9 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 export function GET() {
   const html = readFileSync(
     join(process.cwd(), "public", "pbs", "videos.html"),

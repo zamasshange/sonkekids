@@ -1,9 +1,12 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 
-function servePbsHtml(filename: string) {
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+export function GET() {
   const html = readFileSync(
-    join(process.cwd(), "public", "pbs", filename),
+    join(process.cwd(), "public", "pbs", "index.html"),
     "utf-8",
   );
 
@@ -13,8 +16,4 @@ function servePbsHtml(filename: string) {
       "Cache-Control": "no-store",
     },
   });
-}
-
-export function GET() {
-  return servePbsHtml("index.html");
 }
