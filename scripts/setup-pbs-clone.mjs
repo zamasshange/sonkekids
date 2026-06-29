@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "fs";
+import { mkdirSync, readFileSync, writeFileSync, existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import {
@@ -7,10 +7,12 @@ import {
   extractNextData,
   localizeImageUrls,
 } from "./lib/pbs-assets.mjs";
+import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const publicDir = join(root, "public");
+const libDir = join(root, "lib");
 const pbsDir = join(publicDir, "pbs");
 const dataDir = join(publicDir, "pbs", "data");
 const assetsDir = join(publicDir, "pbs-assets");
@@ -124,8 +126,32 @@ function stripAnalytics(html) {
 }
 
 function injectLocalAssetsPatch(html) {
-  const patch = `<script data-sonke-local-assets>(function(){var manifest;function load(){return manifest?Promise.resolve(manifest):fetch("/pbs-assets/manifest.json").then(function(r){return r.json()}).then(function(m){manifest=m;return m})}function decodeTarget(encoded){try{return decodeURIComponent(String(encoded).replace(/&amp;/g,"&"))}catch(e){return encoded}}function resolve(u){if(!u||typeof u!=="string")return u;try{var parsed=new URL(u,location.origin);if(parsed.pathname==="/_next/image"||parsed.pathname==="/api/pbs-image"){var target=parsed.searchParams.get("url");if(target)u=decodeTarget(target)}}catch(e){}return manifest&&manifest[u]?manifest[u]:u}function rewrite(value){if(typeof value!=="string")return value;if(value.indexOf("/_next/image")===-1&&value.indexOf("/api/pbs-image")===-1&&value.indexOf("pbs.org")===-1&&value.indexOf("pbskids.org")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=resolve(bits[0]);return bits.join(" ")}).join(", ");return resolve(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{configurable:true,enumerable:desc.enumerable,get:desc.get,set:function(v){desc.set.call(this,rewrite(v))}})}load().then(function(){patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset")})})();</script>`;
-  return html.replace("<head>", `<head>${patch}`);
+  return html.replace("<head>", `<head>${buildLocalAssetsPatch()}`);
+}
+
+function writeAssetManifestModule(manifest) {
+  mkdirSync(libDir, { recursive: true });
+  writeFileSync(
+    join(libDir, "pbs-asset-manifest.ts"),
+    `export const PBS_ASSET_MANIFEST: Record<string, string> = ${JSON.stringify(manifest)};\n`,
+    "utf8",
+  );
+}
+
+function verifyDownloadedAssets(manifest, publicDir) {
+  let missing = 0;
+  for (const localPath of new Set(Object.values(manifest))) {
+    const diskPath = join(publicDir, ...localPath.replace(/^\//, "").split("/"));
+    if (!existsSync(diskPath)) {
+      missing += 1;
+      if (missing <= 5) {
+        process.stderr.write(`  missing asset: ${localPath}\n`);
+      }
+    }
+  }
+  if (missing > 0) {
+    throw new Error(`${missing} local assets are missing. Re-run npm run setup-pbs.`);
+  }
 }
 
 function injectLightweightBrandingPatch(html, pageTitle) {
@@ -225,6 +251,13 @@ async function main() {
   console.log(
     `Assets ready: ${downloaded} downloaded, ${skipped} cached, ${failed} failed.`,
   );
+
+  if (failed > 0) {
+    throw new Error(`${failed} assets failed to download.`);
+  }
+
+  verifyDownloadedAssets(manifest, publicDir);
+  writeAssetManifestModule(manifest);
 
   for (const { dest, branded } of brandedPages) {
     const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest));
