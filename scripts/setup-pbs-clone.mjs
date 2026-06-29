@@ -153,26 +153,19 @@ function applyBranding(html, dest) {
   return injectLightweightBrandingPatch(branded, getPageTitle(dest));
 }
 
-function decodeNextImageUrl(encodedUrl) {
-  const decoded = decodeURIComponent(encodedUrl);
-  if (decoded.startsWith("http://") || decoded.startsWith("https://")) {
-    return decoded;
-  }
-  if (decoded.startsWith("/")) {
-    return `${PBS_ORIGIN}${decoded}`;
-  }
-  return `${PBS_ORIGIN}/${decoded}`;
-}
-
-function decodeAllNextImageUrls(html) {
-  return html.replace(
-    /\/_next\/image\?url=([^&"'\s]+)(?:&(?:amp;)?[^"'\s]*)?/g,
-    (_, encodedUrl) => decodeNextImageUrl(encodedUrl),
-  );
+function proxyNextImageUrls(html) {
+  return html
+    .replace(/\/_next\/image\?([^"'\s<>]+)/g, (_, query) =>
+      `/api/pbs-image?${query.replace(/&amp;/g, "&")}`,
+    )
+    .replace(
+      /https:\/\/pbskids\.org\/_next\/image\?([^"'\s<>]+)/g,
+      (_, query) => `/api/pbs-image?${query.replace(/&amp;/g, "&")}`,
+    );
 }
 
 function injectImageSrcPatch(html) {
-  const patch = `<script data-sonke-image-patch>(function(){function decodeNextImage(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname!=="/_next/image")return u;var target=parsed.searchParams.get("url");return target?decodeURIComponent(target):u}catch(e){return u}}function rewrite(value){if(typeof value!=="string"||value.indexOf("/_next/image")===-1)return value;if(value.indexOf(" ")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=decodeNextImage(bits[0]);return bits.join(" ")}).join(", ");return decodeNextImage(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{get:desc.get,set:function(v){desc.set.call(this,rewrite(v))},configurable:true,enumerable:desc.enumerable})}patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset");if(window.HTMLSourceElement){patchProto(HTMLSourceElement.prototype,"srcset")}var setAttribute=Element.prototype.setAttribute;Element.prototype.setAttribute=function(name,value){if((name==="src"||name==="srcset")&&typeof value==="string")value=rewrite(value);return setAttribute.call(this,name,value)}})();</script>`;
+  const patch = `<script data-sonke-image-patch>(function(){function toProxy(u){try{var parsed=new URL(u,location.origin);if(parsed.pathname!=="/_next/image")return u;return "/api/pbs-image"+parsed.search}catch(e){return u}}function rewrite(value){if(typeof value!=="string"||value.indexOf("/_next/image")===-1)return value;if(value.indexOf(",")!==-1)return value.split(",").map(function(part){var bits=part.trim().split(/\\s+/);bits[0]=toProxy(bits[0]);return bits.join(" ")}).join(", ");return toProxy(value)}function patchProto(proto,prop){var desc=Object.getOwnPropertyDescriptor(proto,prop);if(!desc||!desc.set)return;Object.defineProperty(proto,prop,{get:desc.get,set:function(v){desc.set.call(this,rewrite(v))},configurable:true,enumerable:desc.enumerable})}patchProto(HTMLImageElement.prototype,"src");patchProto(HTMLImageElement.prototype,"srcset");if(window.HTMLSourceElement){patchProto(HTMLSourceElement.prototype,"srcset")}var setAttribute=Element.prototype.setAttribute;Element.prototype.setAttribute=function(name,value){if((name==="src"||name==="srcset")&&typeof value==="string")value=rewrite(value);return setAttribute.call(this,name,value)};function fixAll(){document.querySelectorAll('img[src*="/_next/image"],img[srcset*="/_next/image"],source[srcset*="/_next/image"]').forEach(function(el){var src=el.getAttribute("src");if(src&&src.indexOf("/_next/image")!==-1)el.setAttribute("src",rewrite(src));var srcset=el.getAttribute("srcset");if(srcset&&srcset.indexOf("/_next/image")!==-1)el.setAttribute("srcset",rewrite(srcset))})}document.addEventListener("DOMContentLoaded",fixAll);window.addEventListener("load",function(){fixAll();setTimeout(fixAll,500);setTimeout(fixAll,2000)})})();</script>`;
   return html.replace("<head>", `<head>${patch}`);
 }
 
@@ -180,7 +173,7 @@ function processHtml(html, dest) {
   return applyBranding(
     fixOrphanedScriptBeforeStyles(
       stripServiceWorkerLoader(
-        decodeAllNextImageUrls(
+        proxyNextImageUrls(
           html
             .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
             .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')

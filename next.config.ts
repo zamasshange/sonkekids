@@ -11,14 +11,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: true,
-    remotePatterns: [
-      { protocol: "https", hostname: "cms-assets.prod.pbskids.org", pathname: "/**" },
-      { protocol: "https", hostname: "image.pbs.org", pathname: "/**" },
-      { protocol: "https", hostname: "image.pbskids.org", pathname: "/**" },
-      { protocol: "https", hostname: "*.pbskids.org", pathname: "/**" },
-      { protocol: "https", hostname: "*.pbs.org", pathname: "/**" },
-      { protocol: "https", hostname: "pbskids.org", pathname: "/**" },
-    ],
+    path: "/_sonke-internal-image",
   },
   async rewrites() {
     return {
