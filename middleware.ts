@@ -41,7 +41,15 @@ async function proxyToPbs(request: NextRequest) {
 }
 
 export async function middleware(request: NextRequest) {
-  if (!shouldProxyToPbs(request.nextUrl.pathname)) {
+  const { pathname } = request.nextUrl;
+
+  if (pathname === "/_next/image") {
+    const rewriteUrl = new URL("/api/local-image", request.url);
+    rewriteUrl.search = request.nextUrl.search;
+    return NextResponse.rewrite(rewriteUrl);
+  }
+
+  if (!shouldProxyToPbs(pathname)) {
     return NextResponse.next();
   }
 
@@ -49,5 +57,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/_next/static/:path*", "/puma/:path*", "/sw.js"],
+  matcher: ["/_next/image", "/_next/static/:path*", "/puma/:path*", "/sw.js"],
 };
