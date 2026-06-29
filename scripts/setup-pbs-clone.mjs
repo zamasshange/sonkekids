@@ -22,12 +22,6 @@ const SONKE_KIDS_LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="101"
 const LOGO_SVG_PATTERN =
   /<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg" width="101" height="101" fill="none" viewBox="0 0 101 101" role="img">[\s\S]*?<\/svg>/g;
 
-function getPageTitle(dest) {
-  if (dest === "games.html") return BRAND_GAMES;
-  if (dest === "videos.html") return `Videos | ${BRAND_KIDS}`;
-  return BRAND_KIDS;
-}
-
 function applyTextReplacements(html, dest) {
   let branded = html;
 
@@ -67,13 +61,6 @@ function applyTextReplacements(html, dest) {
   return branded;
 }
 
-function scrubNextData(html, dest) {
-  return html.replace(
-    /(<script id="__NEXT_DATA__" type="application\/json">)([\s\S]*?)(<\/script>)/,
-    (_, open, json, close) => `${open}${applyTextReplacements(json, dest)}${close}`,
-  );
-}
-
 function replaceHeaderLogo(html) {
   return html.replace(LOGO_SVG_PATTERN, SONKE_KIDS_LOGO_SVG);
 }
@@ -95,9 +82,17 @@ function injectFavicon(html) {
   return updated;
 }
 
-function injectBrandingGuard(html, pageTitle) {
-  const guard = `<script data-sonke-branding-guard>(function(){var title=${JSON.stringify(pageTitle)};var logo=${JSON.stringify(SONKE_KIDS_LOGO_SVG)};function fix(){document.title=title;document.querySelectorAll("title").forEach(function(node){node.textContent=title});document.querySelectorAll('[class*="copyright"]').forEach(function(node){if(/pbskids/i.test(node.textContent))node.textContent=node.textContent.replace(/pbskids\\.org/gi,"Sonke Kids")});var wrap=document.getElementById("logo-wrap");if(wrap){var svg=wrap.querySelector("svg");if(svg&&svg.querySelector(".letters-pbs"))svg.outerHTML=logo}if(!document.querySelector('link[data-sonke-favicon="true"]')){var icon=document.createElement("link");icon.rel="icon";icon.href="/sonke-favicon.svg";icon.type="image/svg+xml";icon.setAttribute("data-sonke-favicon","true");document.head.appendChild(icon)}}fix();setInterval(fix,700);new MutationObserver(fix).observe(document.documentElement,{childList:true,subtree:true,characterData:true})})();</script>`;
-  return html.replace("</body>", `${guard}</body>`);
+function stripHeavyClientAssets(html) {
+  return (
+    html
+      // Drop PBS React bundles — SSR HTML already renders the page; hydration caused CPU loops.
+      .replace(/<script\b[^>]*\bsrc="\/_next\/static\/chunks\/[^"]+"[^>]*>\s*<\/script>/g, "")
+      .replace(/<script\b[^>]*\bsrc="\/_next\/static\/[^"]+\/_buildManifest\.js"[^>]*>\s*<\/script>/g, "")
+      .replace(/<script\b[^>]*\bsrc="\/_next\/static\/[^"]+\/_ssgManifest\.js"[^>]*>\s*<\/script>/g, "")
+      .replace(/<script id="__NEXT_DATA__"[\s\S]*?<\/script>/g, "")
+      .replace(/<link rel="preconnect" href="\/\/www\.googletagmanager\.com"[^>]*>/g, "")
+      .replace(/<noscript><iframe src="\/\/www\.googletagmanager\.com[^"]*"[\s\S]*?<\/iframe><\/noscript>/g, "")
+  );
 }
 
 function updateWebManifest(html) {
@@ -123,10 +118,9 @@ function updateWebManifest(html) {
 
 function applyBranding(html, dest) {
   let branded = applyTextReplacements(html, dest);
-  branded = scrubNextData(branded, dest);
   branded = replaceHeaderLogo(branded);
   branded = injectFavicon(branded);
-  branded = injectBrandingGuard(branded, getPageTitle(dest));
+  branded = stripHeavyClientAssets(branded);
   return updateWebManifest(branded);
 }
 
@@ -149,7 +143,7 @@ function processHtml(html, dest) {
       )
       .replace(
         /const loadSW[\s\S]*?loadSW\([\s\S]*?\);[\s\S]*?<\/script>/,
-        "<script>/* service worker disabled for local clone */</script>",
+        "",
       )
       .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
       .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
