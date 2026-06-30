@@ -27,6 +27,9 @@ export default function GamesBrowsePage() {
             <p className="sonke-game-badge">All Games</p>
             <h2 className="sonke-game-title">{catalog.totalGames} Games to Play</h2>
             <p className="sonke-game-tagline">Browse every Sonke Kids game by category and jump into play.</p>
+            <Link href="/games/search" className="sonke-btn sonke-btn-play">
+              Search Games
+            </Link>
           </div>
         </div>
       </div>

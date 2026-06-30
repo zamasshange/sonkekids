@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { GamePageView } from "@/components/game/GamePageView";
-import { getAllGameIds, getGameById } from "@/lib/games/catalog";
+import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
 
 type PageProps = {
@@ -9,17 +9,32 @@ type PageProps = {
 };
 
 export async function generateStaticParams() {
+  const { getAllGameIds } = await import("@/lib/games/catalog");
   return getAllGameIds().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const game = getGameById(slug);
-  if (!game) return { title: "Game | Sonke Kids" };
+  const data = await getGamePageData(slug);
+  if (!data) return { title: "Game | Sonke Kids" };
 
+  const { seo, heroImage } = data;
   return {
-    title: `${game.title} | Sonke Kids Games`,
-    description: `Play ${game.title}, a ${game.category} activity on Sonke Kids.`,
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    openGraph: {
+      title: seo.ogTitle,
+      description: seo.ogDescription,
+      images: heroImage ? [{ url: heroImage }] : undefined,
+      type: "website",
+    },
+    twitter: {
+      card: heroImage ? "summary_large_image" : "summary",
+      title: seo.ogTitle,
+      description: seo.ogDescription,
+      images: heroImage ? [heroImage] : undefined,
+    },
   };
 }
 

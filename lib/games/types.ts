@@ -20,6 +20,8 @@ export type SonkeCatalog = {
   games: SonkeGame[];
 };
 
+export type LayoutTemplate = "A" | "B" | "C" | "D";
+
 export type GameTypeDefinition = {
   id: string;
   purpose: string;
@@ -38,12 +40,62 @@ export type WikipediaData = {
   pageUrl: string;
 };
 
+export type QuizQuestion = {
+  question: string;
+  options: string[];
+  answerIndex: number;
+};
+
+export type RelatedContentItem = {
+  type: "story" | "video" | "activity" | "quiz" | "article" | "collection" | "music";
+  title: string;
+  href: string;
+  description?: string;
+};
+
 export type AiGameContent = {
   tagline: string;
   description: string;
+  introduction: string;
   howToPlay: string[];
+  tips: string[];
   funFact: string;
+  funFacts: string[];
   learningGoals: string[];
+  learningBenefits: string[];
+  skillsDeveloped: string[];
+  quizQuestions: QuizQuestion[];
+  activityIdeas: string[];
+  adventureText: string;
+};
+
+export type GameMeta = {
+  difficulty: "Easy" | "Medium" | "Hard";
+  ageMin: number;
+  ageMax: number;
+  playTimeMinutes: number;
+  readingTimeMinutes: number;
+  tags: string[];
+  keywords: string[];
+  badgeName: string;
+};
+
+export type GameImages = {
+  banner: string | null;
+  thumbnail: string | null;
+  icon: string;
+  background: string;
+  categoryImage: string | null;
+  gallery: string[];
+};
+
+export type SeoMetadata = {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogTitle: string;
+  ogDescription: string;
+  ogImage: string | null;
 };
 
 export type SerializableGameType = {
@@ -57,10 +109,16 @@ export type SerializableGameType = {
 export type GamePageData = {
   game: SonkeGame;
   gameType: SerializableGameType;
+  layout: LayoutTemplate;
+  meta: GameMeta;
+  images: GameImages;
   wikipedia: WikipediaData | null;
   ai: AiGameContent;
   heroImage: string | null;
   relatedGames: SonkeGame[];
+  suggestedGames: SonkeGame[];
+  relatedContent: RelatedContentItem[];
+  seo: SeoMetadata;
   enrichedAt: string;
 };
 
@@ -68,4 +126,14 @@ export type PbsSlugMapping = {
   pbsSlug: string;
   sonkeId: string;
   title: string;
+};
+
+export type SearchResult = {
+  id: string;
+  title: string;
+  category: string;
+  type: "game" | "fact" | "activity" | "quiz";
+  href: string;
+  snippet: string;
+  tags: string[];
 };
