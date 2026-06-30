@@ -26,3 +26,11 @@ export function resolveSonkeGameId(slug: string): string | null {
 export function getPbsToSonkeMap(): Record<string, string> {
   return Object.fromEntries(PBS_TO_SONKE.entries());
 }
+
+/** All slugs that should resolve to a playable game page. */
+export function getAllPlayableSlugs(): string[] {
+  const slugs = new Set<string>();
+  for (const game of catalog.games) slugs.add(game.id);
+  for (const item of slugMappings) slugs.add(item.pbsSlug);
+  return [...slugs];
+}

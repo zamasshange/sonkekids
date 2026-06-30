@@ -3,11 +3,13 @@ import type { Metadata } from "next";
 import { GamePageView } from "@/components/game/GamePageView";
 import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
-import { resolveSonkeGameId, getDefaultGameId } from "@/lib/games/resolve-slug";
+import { resolveSonkeGameId, getDefaultGameId, getAllPlayableSlugs } from "@/lib/games/resolve-slug";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export const dynamicParams = true;
 
 const TOPIC_SLUGS = new Set([
   "story-games",
@@ -25,8 +27,7 @@ function resolveGameId(slug: string): string | null {
 }
 
 export async function generateStaticParams() {
-  const { getAllGameIds } = await import("@/lib/games/catalog");
-  return getAllGameIds().map((slug) => ({ slug }));
+  return getAllPlayableSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

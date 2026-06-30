@@ -1,19 +1,15 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import { getPbsGamesHtml } from "@/lib/pbs-html-cache";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export function GET() {
-  const html = readFileSync(
-    join(process.cwd(), "public", "pbs", "games.html"),
-    "utf-8",
-  );
+  const html = getPbsGamesHtml();
 
   return new Response(html, {
     headers: {
       "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "no-store",
+      "Cache-Control": "public, max-age=60, stale-while-revalidate=300",
     },
   });
 }

@@ -1,12 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/_next/static/:path*",
-      "destination": "https://pbskids.org/_next/static/:path*"
+      "source": "/pbs-proxy/:path*",
+      "destination": "https://pbskids.org/:path*"
     },
     {
-      "source": "/_next/static/chunks/:path*",
-      "destination": "https://pbskids.org/_next/static/chunks/:path*"
+      "source": "/_next/static/css/:path*",
+      "destination": "https://pbskids.org/_next/static/css/:path*"
+    },
+    {
+      "source": "/_next/static/media/:path*",
+      "destination": "https://pbskids.org/_next/static/media/:path*"
     },
     {
       "source": "/puma/:path*",

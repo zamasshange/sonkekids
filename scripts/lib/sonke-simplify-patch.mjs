@@ -11,21 +11,24 @@ export function simplifyPbsHtml(html, slugMap, videoIds) {
   );
 
   // PBS play URLs → Sonke play pages (stay on site)
+  const fallbackId = Object.values(slugMap)[0] ?? "";
   updated = updated.replace(
     /href="\/games\/play\/([^/]+)\/[^"]*"/g,
     (_match, pbsSlug) => {
       const sonkeId = slugMap[pbsSlug];
-      return sonkeId ? `href="/games/${sonkeId}/play"` : 'href="/games/browse"';
+      return sonkeId
+        ? `href="/games/${sonkeId}/play"`
+        : `href="/games/${fallbackId}/play"`;
     },
   );
 
-  // Direct game links → play shell
+  // Direct game links → play shell (unknown PBS slugs → default game)
   updated = updated.replace(
     /href="\/games\/([^"/]+)"/g,
     (match, slug) => {
       if (slug === "browse" || slug === "search") return match;
-      const sonkeId = slugMap[slug] ?? slug;
-      return `href="/games/${sonkeId}/play"`;
+      const resolved = slugMap[slug] ?? fallbackId;
+      return `href="/games/${resolved}/play"`;
     },
   );
 

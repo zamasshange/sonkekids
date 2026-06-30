@@ -1,18 +1,17 @@
-import { readFileSync } from "fs";
-import { join } from "path";
+import { getPbsGamesHtml } from "@/lib/pbs-html-cache";
 
-const GAMES_HTML = join(process.cwd(), "public", "pbs", "games.html");
+const GAMES_HTML = () => getPbsGamesHtml();
 
 /** PBS games grid module context id — yellow summer pattern theme */
 export const PBS_GAMES_MODULE_ID = "e8fb4aca";
 
 export function getPbsStylesheetHrefs(): string[] {
-  const html = readFileSync(GAMES_HTML, "utf8");
+  const html = GAMES_HTML();
   return [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map((match) => match[1]);
 }
 
 export function getPbsFontPreloads(): { href: string; type: string }[] {
-  const html = readFileSync(GAMES_HTML, "utf8");
+  const html = GAMES_HTML();
   return [
     ...html.matchAll(
       /<link rel="preload" href="(\/_next\/static\/media\/[^"]+)" as="font" type="([^"]+)"[^>]*crossorigin/g,
@@ -21,7 +20,7 @@ export function getPbsFontPreloads(): { href: string; type: string }[] {
 }
 
 export function getPbsThemeStyles(): string {
-  const html = readFileSync(GAMES_HTML, "utf8");
+  const html = GAMES_HTML();
   const blocks = [
     ...html.matchAll(/<style[^>]*data-pbsk-theme-styles-source[^>]*>([\s\S]*?)<\/style>/g),
   ];

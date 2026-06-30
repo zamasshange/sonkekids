@@ -2,12 +2,14 @@ import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
-import { resolveSonkeGameId, getDefaultGameId } from "@/lib/games/resolve-slug";
+import { resolveSonkeGameId, getDefaultGameId, getAllPlayableSlugs } from "@/lib/games/resolve-slug";
 import { SonkePlayShell } from "@/components/game/SonkePlayShell";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export const dynamicParams = true;
 
 function resolveGameId(slug: string): string | null {
   const mapped = resolveSonkeGameId(slug);
@@ -17,8 +19,7 @@ function resolveGameId(slug: string): string | null {
 }
 
 export async function generateStaticParams() {
-  const { getAllGameIds } = await import("@/lib/games/catalog");
-  return getAllGameIds().map((slug) => ({ slug }));
+  return getAllPlayableSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
