@@ -1,32 +1,27 @@
 import Link from "next/link";
 import type { GamePageData } from "@/lib/games/types";
 import { GamePlayer } from "./players/GamePlayer";
-import "./game-page.css";
+import { SonkePbsPage } from "./SonkePbsPage";
 
 export function GamePageView({ data }: { data: GamePageData }) {
   const { game, gameType, wikipedia, ai, heroImage, relatedGames } = data;
 
   return (
-    <div className="sonke-game-page" data-category={game.categoryId}>
-      <header className="sonke-game-header">
-        <div className="sonke-game-header-inner">
-          <Link href="/" className="sonke-logo-chip" aria-label="Sonke Kids home">
-            <span className="sonke-logo-mark">SK</span>
-            <span>Sonke Kids</span>
-          </Link>
-          <nav className="sonke-game-nav" aria-label="Site">
-            <Link href="/games">Games</Link>
-            <Link href="/games/browse">All Games</Link>
-            <Link href="/videos">Videos</Link>
-          </nav>
+    <SonkePbsPage pageTitle={game.title}>
+      <div
+        data-theme-context="module"
+        data-theme-background-mode="pattern"
+        data-theme-module-contextid="sonke-game"
+        className="ThemedModule_moduleWrapper__8K1_V sonke-game-hero-module"
+      >
+        <div className="ThemedModule_bgLayers__8BKwC">
+          <div className="ThemedModule_solidColor__mtJEd" />
+          <div className="ThemedModule_pattern__rqwkC" />
         </div>
-      </header>
-
-      <main className="sonke-game-main">
-        <section className="sonke-game-hero">
+        <div className="ThemedModule_innerContent__58wFN sonke-game-hero">
           <div className="sonke-game-hero-copy">
             <p className="sonke-game-badge">{game.category}</p>
-            <h1>{game.title}</h1>
+            <h2 className="sonke-game-title">{game.title}</h2>
             <p className="sonke-game-tagline">{ai.tagline}</p>
             <p className="sonke-game-purpose">{gameType.purpose}</p>
           </div>
@@ -40,34 +35,40 @@ export function GamePageView({ data }: { data: GamePageData }) {
               </div>
             )}
           </div>
-        </section>
+        </div>
+      </div>
 
-        <section className="sonke-game-play themed-module">
-          <div className="themed-module-head">
-            <h2>Play {game.title}</h2>
-            <p>{gameType.howItWorks}</p>
+      <div data-theme-context="module" data-theme-module-contextid="sonke-game" className="ThemedModule_moduleWrapper__8K1_V">
+        <div className="ThemedModule_innerContent__58wFN sonke-game-play">
+          <div className="GamesCollage_iconHeaderWrapper__b6FGa">
+            <h2 className="sonke-section-title">Play {game.title}</h2>
           </div>
+          <p className="sonke-section-lead">{gameType.howItWorks}</p>
           <GamePlayer title={game.title} gameType={gameType} />
-        </section>
+        </div>
+      </div>
 
-        <div className="sonke-game-columns">
-          <section className="sonke-game-panel">
-            <h2>How to Play</h2>
+      <div className="sonke-game-columns">
+        <div data-theme-context="module" data-theme-module-contextid="sonke-game" className="ThemedModule_moduleWrapper__8K1_V sonke-game-panel">
+          <div className="ThemedModule_innerContent__58wFN">
+            <h2 className="sonke-section-title">How to Play</h2>
             <ol className="sonke-steps">
               {ai.howToPlay.map((step) => (
                 <li key={step}>{step}</li>
               ))}
             </ol>
-            <h3>What You&apos;ll Learn</h3>
+            <h3 className="sonke-subsection-title">What You&apos;ll Learn</h3>
             <ul className="sonke-skills">
               {ai.learningGoals.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}
             </ul>
-          </section>
+          </div>
+        </div>
 
-          <section className="sonke-game-panel sonke-game-panel-wiki">
-            <h2>Discover More</h2>
+        <div data-theme-context="module" data-theme-module-contextid="sonke-game" className="ThemedModule_moduleWrapper__8K1_V sonke-game-panel">
+          <div className="ThemedModule_innerContent__58wFN">
+            <h2 className="sonke-section-title">Discover More</h2>
             <p className="sonke-game-description">{ai.description}</p>
             <p className="sonke-fun-fact">
               <strong>Fun fact:</strong> {ai.funFact}
@@ -81,29 +82,29 @@ export function GamePageView({ data }: { data: GamePageData }) {
                 </a>
               </article>
             ) : (
-              <p className="sonke-wiki-fallback">
-                We&apos;re gathering extra facts for this game. Check back soon!
-              </p>
+              <p className="sonke-wiki-fallback">We&apos;re gathering extra facts for this game. Check back soon!</p>
             )}
-          </section>
+          </div>
         </div>
+      </div>
 
-        {relatedGames.length > 0 && (
-          <section className="sonke-related">
-            <h2>More {game.category}</h2>
+      {relatedGames.length > 0 && (
+        <div data-theme-context="module" data-theme-module-contextid="sonke-game" className="ThemedModule_moduleWrapper__8K1_V sonke-related-module">
+          <div className="ThemedModule_innerContent__58wFN">
+            <h2 className="sonke-section-title">More {game.category}</h2>
             <ul className="sonke-related-grid">
               {relatedGames.map((related) => (
                 <li key={related.id}>
-                  <Link href={`/games/${related.id}`} className="sonke-related-card">
-                    <span className="sonke-related-title">{related.title}</span>
+                  <Link href={`/games/${related.id}`} className="sonke-related-card MediaItem_mediaLink__JSobH">
+                    <span className="sonke-related-title MediaItem_heading__AybaX">{related.title}</span>
                     <span className="sonke-related-cta">Play</span>
                   </Link>
                 </li>
               ))}
             </ul>
-          </section>
-        )}
-      </main>
-    </div>
+          </div>
+        </div>
+      )}
+    </SonkePbsPage>
   );
 }
