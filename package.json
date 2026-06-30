@@ -11,6 +11,7 @@
     "extract-pbs": "npm run build-content && node scripts/setup-pbs-clone.mjs",
     "apply-content": "npm run build-content && node scripts/setup-pbs-clone.mjs",
     "build-content": "node scripts/build-sonke-catalog.mjs && node scripts/build-games-overrides.mjs && node scripts/build-property-map.mjs",
+    "enrich-games": "tsx scripts/enrich-game-pages.ts",
     "fetch-pbs": "curl.exe -sL https://pbskids.org/ -o public/pbs-home.html && curl.exe -sL https://pbskids.org/games -o public/pbs-games.html && curl.exe -sL https://pbskids.org/videos -o public/pbs-videos.html && npm run setup-pbs"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^5"
   }
 }

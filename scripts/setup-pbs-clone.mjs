@@ -9,6 +9,7 @@ import {
 } from "./lib/pbs-assets.mjs";
 import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 import { buildSonkeContentPatch } from "./lib/sonke-content-patch.mjs";
+import { buildGameLinkPatch } from "./lib/game-link-patch.mjs";
 import {
   applySonkeContent,
   loadSonkeContent,
@@ -127,6 +128,22 @@ function stripAnalytics(html) {
       /<noscript><iframe src="\/\/www\.googletagmanager\.com[^"]*"[\s\S]*?<\/iframe><\/noscript>/g,
       "",
     );
+}
+
+function injectGameLinkPatch(html) {
+  const mapPath = join(contentDir, "games-slug-map.json");
+  if (!existsSync(mapPath)) return html;
+
+  const mappings = JSON.parse(readFileSync(mapPath, "utf8"));
+  const slugMap = Object.fromEntries(
+    mappings.map((item) => [item.pbsSlug, item.sonkeId]),
+  );
+
+  const patch = buildGameLinkPatch(slugMap);
+  if (html.includes("</body>")) {
+    return html.replace("</body>", `${patch}</body>`);
+  }
+  return `${html}${patch}`;
 }
 
 function injectSonkeContentPatch(html, sonkeContent) {
@@ -281,6 +298,7 @@ async function main() {
     let localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);
     localized = applySonkeContent(localized, sonkeContent);
     localized = injectSonkeContentPatch(localized, sonkeContent);
+    localized = injectGameLinkPatch(localized);
     writeFileSync(join(pbsDir, dest), localized, "utf8");
     extractNextData(localized, dest, dataDir);
     console.log(`Wrote public/pbs/${dest} and public/pbs/data/${dest.replace(".html", ".json")}`);

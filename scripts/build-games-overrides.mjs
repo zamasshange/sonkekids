@@ -13,6 +13,13 @@ const catalog = JSON.parse(
   readFileSync(join(root, "content", "sonke-games-catalog.json"), "utf8"),
 );
 
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function gamesFromCategory(categoryId, count) {
   const category = catalog.categories.find((item) => item.id === categoryId);
   return category.games.slice(0, count).map((game) => game.title);
@@ -229,4 +236,19 @@ writeFileSync(
   "utf8",
 );
 
+const slugMappings = overrides
+  .filter((slot) => slot.pbsSlug)
+  .map((slot) => ({
+    pbsSlug: slot.pbsSlug,
+    sonkeId: slugify(slot.title),
+    title: slot.title,
+  }));
+
+writeFileSync(
+  join(root, "content", "games-slug-map.json"),
+  `${JSON.stringify(slugMappings, null, 2)}\n`,
+  "utf8",
+);
+
 console.log(`Wrote ${overrides.length} game slot overrides.`);
+console.log(`Wrote ${slugMappings.length} PBS slug mappings.`);

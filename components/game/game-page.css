@@ -1,0 +1,361 @@
+:root {
+  --sonke-blue: #2638c4;
+  --sonke-green: #99cf16;
+  --sonke-yellow: #f7e03b;
+  --sonke-pink: #e5296b;
+  --sonke-magenta: #bc005a;
+  --sonke-sky: #0081ca;
+  --sonke-ink: #1f2340;
+  --sonke-paper: #fffdf3;
+}
+
+.sonke-game-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(153, 207, 22, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(38, 56, 196, 0.16), transparent 24%),
+    linear-gradient(180deg, #fff8cf 0%, #fffdf8 24%, #ffffff 100%);
+  color: var(--sonke-ink);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.sonke-game-header {
+  background: var(--sonke-blue);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(38, 56, 196, 0.22);
+}
+
+.sonke-game-header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.sonke-logo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.sonke-logo-mark {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--sonke-green);
+  color: var(--sonke-blue);
+  font-weight: 900;
+}
+
+.sonke-game-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.sonke-game-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.sonke-game-main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.sonke-game-hero,
+.sonke-game-play,
+.sonke-game-panel,
+.sonke-related {
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.sonke-game-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--sonke-yellow), #ffe66d 55%, #ffd24d);
+  box-shadow: 0 18px 40px rgba(247, 224, 59, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+.sonke-game-badge {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--sonke-pink);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sonke-game-hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+.sonke-game-tagline,
+.sonke-game-purpose {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.sonke-game-hero-art {
+  display: grid;
+  place-items: center;
+}
+
+.sonke-game-hero-image,
+.sonke-game-hero-fallback {
+  width: min(100%, 360px);
+  aspect-ratio: 1;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.sonke-game-hero-fallback {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #fff, #f2f7ff);
+  font-size: 5rem;
+}
+
+.themed-module,
+.sonke-game-panel,
+.sonke-related {
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(31, 35, 64, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.sonke-game-play {
+  padding: 1.5rem;
+  border: 4px solid rgba(38, 56, 196, 0.08);
+}
+
+.themed-module-head h2,
+.sonke-game-panel h2,
+.sonke-related h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.8rem;
+}
+
+.sonke-game-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.sonke-game-panel {
+  padding: 1.5rem;
+}
+
+.sonke-steps,
+.sonke-skills,
+.sonke-related-grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sonke-steps li,
+.sonke-skills li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(31, 35, 64, 0.08);
+}
+
+.sonke-steps li:last-child,
+.sonke-skills li:last-child {
+  border-bottom: 0;
+}
+
+.sonke-fun-fact {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(153, 207, 22, 0.16);
+}
+
+.sonke-wiki-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: #f7f9ff;
+}
+
+.sonke-wiki-card a {
+  color: var(--sonke-blue);
+  font-weight: 700;
+}
+
+.sonke-related {
+  padding: 1.5rem;
+}
+
+.sonke-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.sonke-related-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(135deg, rgba(38, 56, 196, 0.08), rgba(229, 41, 107, 0.08));
+  font-weight: 700;
+}
+
+.sonke-related-cta {
+  color: var(--sonke-pink);
+}
+
+.player-shell {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #f4f8ff, #ffffff);
+  border: 3px solid rgba(38, 56, 196, 0.08);
+}
+
+.player-message {
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
+  gap: 0.75rem;
+}
+
+.match-card,
+.hidden-item,
+.color-swatch {
+  border: 0;
+  cursor: pointer;
+}
+
+.match-card {
+  aspect-ratio: 1;
+  border-radius: 18px;
+  background: var(--sonke-blue);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.match-card.is-open {
+  background: var(--sonke-green);
+  color: var(--sonke-blue);
+}
+
+.maze-canvas,
+.color-canvas {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  border: 3px solid rgba(38, 56, 196, 0.12);
+  background: #fff;
+}
+
+.hidden-scene {
+  position: relative;
+  min-height: 180px;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(153, 207, 22, 0.35), transparent 24%),
+    radial-gradient(circle at 80% 30%, rgba(0, 129, 202, 0.25), transparent 22%),
+    linear-gradient(180deg, #dff3ff, #fff6d8);
+}
+
+.hidden-item {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: var(--sonke-pink);
+  color: #fff;
+  font-weight: 800;
+}
+
+.hidden-item.is-found {
+  background: var(--sonke-green);
+  color: var(--sonke-blue);
+}
+
+.hidden-checklist {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hidden-checklist li {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(38, 56, 196, 0.08);
+}
+
+.hidden-checklist li.done {
+  background: rgba(153, 207, 22, 0.24);
+}
+
+.color-palette {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.color-swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px rgba(31, 35, 64, 0.12);
+}
+
+.color-swatch.active {
+  box-shadow: 0 0 0 3px var(--sonke-blue);
+}
+
+.player-placeholder {
+  text-align: center;
+}
+
+.player-placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .sonke-game-hero,
+  .sonke-game-columns {
+    grid-template-columns: 1fr;
+  }
+}
