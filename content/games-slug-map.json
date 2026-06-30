@@ -95,6 +95,26 @@
     "title": "Rocket Builder"
   },
   {
+    "pbsSlug": "lyla-in-the-loop-a-stu-of-your-own",
+    "sonkeId": "color-match",
+    "title": "Color Match"
+  },
+  {
+    "pbsSlug": "archer-fish-guid",
+    "sonkeId": "shape-match",
+    "title": "Shape Match"
+  },
+  {
+    "pbsSlug": "county-fair",
+    "sonkeId": "pirate-maze",
+    "title": "Pirate Maze"
+  },
+  {
+    "pbsSlug": "signs-seek",
+    "sonkeId": "jungle-maze",
+    "title": "Jungle Maze"
+  },
+  {
     "pbsSlug": "animal-match",
     "sonkeId": "animal-match",
     "title": "Animal Match"

@@ -3,10 +3,18 @@ import type { Metadata } from "next";
 import { GamePageView } from "@/components/game/GamePageView";
 import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
+import { resolveSonkeGameId } from "@/lib/games/resolve-slug";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+function resolveGameId(slug: string): string | null {
+  const mapped = resolveSonkeGameId(slug);
+  if (mapped && getGameById(mapped)) return mapped;
+  if (getGameById(slug)) return slug;
+  return null;
+}
 
 export async function generateStaticParams() {
   const { getAllGameIds } = await import("@/lib/games/catalog");
@@ -15,7 +23,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const data = await getGamePageData(slug);
+  const gameId = resolveGameId(slug);
+  if (!gameId) return { title: "Game | Sonke Kids" };
+
+  const data = await getGamePageData(gameId);
   if (!data) return { title: "Game | Sonke Kids" };
 
   const { seo, heroImage } = data;
@@ -40,10 +51,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function GamePage({ params }: PageProps) {
   const { slug } = await params;
-  const game = getGameById(slug);
-  if (!game) notFound();
+  const gameId = resolveGameId(slug);
+  if (!gameId) notFound();
 
-  const data = await getGamePageData(slug);
+  const data = await getGamePageData(gameId);
   if (!data) notFound();
 
   return <GamePageView data={data} />;

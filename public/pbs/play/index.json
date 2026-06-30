@@ -86,5 +86,37 @@
     "title": "Castle Maze",
     "playUrl": "/games/play/hero-maker/87276",
     "file": "hero-maker-87276.html"
+  },
+  {
+    "pbsSlug": "lyla-in-the-loop-a-stu-of-your-own",
+    "pbsId": "875068",
+    "sonkeId": "color-match",
+    "title": "Color Match",
+    "playUrl": "/games/play/lyla-in-the-loop-a-stu-of-your-own/875068",
+    "file": "lyla-in-the-loop-a-stu-of-your-own-875068.html"
+  },
+  {
+    "pbsSlug": "archer-fish-guid",
+    "pbsId": "559",
+    "sonkeId": "shape-match",
+    "title": "Shape Match",
+    "playUrl": "/games/play/archer-fish-guid/559",
+    "file": "archer-fish-guid-559.html"
+  },
+  {
+    "pbsSlug": "county-fair",
+    "pbsId": "2611664",
+    "sonkeId": "pirate-maze",
+    "title": "Pirate Maze",
+    "playUrl": "/games/play/county-fair/2611664",
+    "file": "county-fair-2611664.html"
+  },
+  {
+    "pbsSlug": "signs-seek",
+    "pbsId": "2577569",
+    "sonkeId": "jungle-maze",
+    "title": "Jungle Maze",
+    "playUrl": "/games/play/signs-seek/2577569",
+    "file": "signs-seek-2577569.html"
   }
 ]

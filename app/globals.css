@@ -7,3 +7,27 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.sonke-not-found {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  background: #ffd200;
+  color: #2638c4;
+}
+
+.sonke-not-found-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sonke-not-found-links a {
+  color: #2638c4;
+  font-weight: 700;
+}

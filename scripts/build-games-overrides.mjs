@@ -248,6 +248,26 @@ for (const slot of overrides) {
   });
 }
 
+// PBS HTML uses variant slugs that differ from our override keys.
+const PBS_SLUG_ALIASES = [
+  { pbsSlug: "lyla-in-the-loop-a-stu-of-your-own", sourceSlug: "lyla-stu-stunts" },
+  { pbsSlug: "archer-fish-guid", sourceSlug: "archerfish-bug-rush" },
+  { pbsSlug: "county-fair", sourceSlug: "count-y-fair" },
+  { pbsSlug: "signs-seek", sourceSlug: "phoebe-signs-seek" },
+];
+
+for (const alias of PBS_SLUG_ALIASES) {
+  if (seenPbsSlugs.has(alias.pbsSlug)) continue;
+  const source = slugMappings.find((item) => item.pbsSlug === alias.sourceSlug);
+  if (!source) continue;
+  seenPbsSlugs.add(alias.pbsSlug);
+  slugMappings.push({
+    pbsSlug: alias.pbsSlug,
+    sonkeId: source.sonkeId,
+    title: source.title,
+  });
+}
+
 // Every catalog game is also reachable directly by its Sonke id.
 for (const game of catalog.games) {
   slugMappings.push({
