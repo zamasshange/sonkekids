@@ -4,21 +4,24 @@
       "pbsSlug": "grownups-come-back-to-the-music-shop-katerinas-mommy-comes-back-home",
       "pbsTitle": "Grownups Come Back to the Music Shop/Katerina's Mommy Comes Back Home",
       "pbsSubtitle": "Grownups Come Back to the Music Shop/Katerina's Mommy Comes Back Home",
-      "title": "Melody's Music Shop Adventure",
-      "subtitle": "Melody's Music Shop Adventure",
-      "worldId": "music-city"
+      "title": "Amazing Animals",
+      "subtitle": "Amazing Animals"
     },
     {
       "pbsSlug": "kingsley-from-washington-d-c",
       "pbsTitle": "Kingsley from Washington, D.C.",
-      "title": "Meet Atlas in Washington, D.C.",
-      "worldId": "explorer-island"
+      "title": "U.S. States",
+      "subtitle": "Explore Washington, D.C."
     },
     {
       "pbsSlug": "jorge-cham-reads-elinor-wonders-why-the-seed-of-an-idea",
       "pbsTitle": "Jorge Cham Reads \"Elinor Wonders Why: The Seed of an Idea\"",
-      "title": "Willow Reads: The Seed of an Idea",
-      "worldId": "wonder-woods"
+      "pbsTitleAlt": "Jorge Cham Reads \"Wonder Woods: The Seed of an Idea\"",
+      "title": "Try This!",
+      "subtitle": "The Seed of an Idea"
     }
+  ],
+  "sectionHeadings": [
+    { "pbsHeading": "Picks of the Week", "title": "Discover This Week" }
   ]
 }

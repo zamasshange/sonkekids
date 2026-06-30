@@ -34,7 +34,7 @@
             "__typename": "PbsKidsTheme",
             "id": "2174973",
             "slug": "pbs-kids-stock-cyan-2-2",
-            "title": "PBSK- All Worlds-Blue Theme-v1",
+            "title": "PBSK- Games-Blue Theme-v1",
             "status": "LIVE",
             "bodyTextColor": "#000000",
             "bodyBackgroundColor": "#2ebfe9",
@@ -61,7 +61,7 @@
             "__typename": "PbsKidsTheme",
             "id": "2585140",
             "slug": "pbsk-pbs-kids-celebrate-masthead-v1-2",
-            "title": "PBSK-All Worlds-Celebrate Masthead-v1",
+            "title": "PBSK-Games-Celebrate Masthead-v1",
             "status": "LIVE",
             "bodyTextColor": "#000000",
             "bodyBackgroundColor": "#f7e03b",
@@ -97,7 +97,7 @@
             "__typename": "PbsKidsTheme",
             "id": "2572645",
             "slug": "pbsk-pbs-kids-celebrate-v1",
-            "title": "PBSK-All Worlds-Celebrate-v1",
+            "title": "PBSK-Games-Celebrate-v1",
             "status": "LIVE",
             "bodyTextColor": "#000000",
             "bodyBackgroundColor": "#f7e03b",
@@ -143,7 +143,7 @@
                 "property": [
                   {
                     "slug": "pbs-kids-2",
-                    "title": "All Worlds",
+                    "title": "Games",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -209,7 +209,7 @@
                 "property": [
                   {
                     "slug": "phoebe-jay",
-                    "title": "Pet Paradise",
+                    "title": "Birds",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -270,7 +270,7 @@
                 "property": [
                   {
                     "slug": "carl-the-collector",
-                    "title": "Wonder Woods",
+                    "title": "Weird But True!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -279,7 +279,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/CARL-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Wonder Woods"
+                        "altText": "Weird But True!"
                       }
                     ],
                     "characterImageBackground": [
@@ -301,7 +301,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/CARL-logo-v2.png",
                         "width": 728,
                         "height": 480,
-                        "altText": "Wonder Woods"
+                        "altText": "Weird But True!"
                       }
                     ],
                     "navigationCardColor": "#cb3170",
@@ -313,7 +313,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/CARL-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Wonder Woods"
+                        "altText": "Weird But True!"
                       }
                     ]
                   }
@@ -331,7 +331,7 @@
                 "property": [
                   {
                     "slug": "lyla-in-the-loop",
-                    "title": "Music City",
+                    "title": "Puzzles",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -340,7 +340,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/LYLO-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Music City"
+                        "altText": "Puzzles"
                       }
                     ],
                     "characterImageBackground": [
@@ -362,7 +362,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/LYLO-logo-v2.png",
                         "width": 751,
                         "height": 480,
-                        "altText": "Music City"
+                        "altText": "Puzzles"
                       }
                     ],
                     "navigationCardColor": "#81459a",
@@ -374,7 +374,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/LYLO-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Music City"
+                        "altText": "Puzzles"
                       }
                     ]
                   }
@@ -392,7 +392,7 @@
                 "property": [
                   {
                     "slug": "weather-hunters",
-                    "title": "Wonder Woods",
+                    "title": "Science",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -453,7 +453,7 @@
                 "property": [
                   {
                     "slug": "daniel",
-                    "title": "Imagination Kingdom",
+                    "title": "Amazing Animals",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -462,7 +462,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DTNB-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Imagination Kingdom"
+                        "altText": "Amazing Animals"
                       }
                     ],
                     "characterImageBackground": [
@@ -484,7 +484,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/DTIG-logo-v2.png",
                         "width": 802,
                         "height": 480,
-                        "altText": "Imagination Kingdom"
+                        "altText": "Amazing Animals"
                       }
                     ],
                     "navigationCardColor": "#6fc05b",
@@ -496,7 +496,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DTNB-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Imagination Kingdom"
+                        "altText": "Amazing Animals"
                       }
                     ]
                   }
@@ -514,7 +514,7 @@
                 "property": [
                   {
                     "slug": "wild-kratts",
-                    "title": "Wonder Woods",
+                    "title": "Mammals",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -523,7 +523,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WILK-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Wonder Woods"
+                        "altText": "Mammals"
                       }
                     ],
                     "characterImageBackground": [
@@ -545,7 +545,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WILK-logo-v2.png",
                         "width": 498,
                         "height": 480,
-                        "altText": "Wonder Woods"
+                        "altText": "Mammals"
                       }
                     ],
                     "navigationCardColor": "#6cd1d0",
@@ -557,7 +557,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WILK-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Wonder Woods"
+                        "altText": "Mammals"
                       }
                     ]
                   }
@@ -575,7 +575,7 @@
                 "property": [
                   {
                     "slug": "countonjunebug",
-                    "title": "Wonder Woods",
+                    "title": "Quizzes",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -636,7 +636,7 @@
                 "property": [
                   {
                     "slug": "sesame-street",
-                    "title": "Food Town",
+                    "title": "Try This!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -645,7 +645,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/SESA-character-shownav-v2.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Food Town"
+                        "altText": "Try This!"
                       }
                     ],
                     "characterImageBackground": [
@@ -667,7 +667,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SESA-logo-v2.png",
                         "width": 960,
                         "height": 377,
-                        "altText": "Food Town"
+                        "altText": "Try This!"
                       }
                     ],
                     "navigationCardColor": "#60c3e3",
@@ -679,7 +679,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/SESA-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Food Town"
+                        "altText": "Try This!"
                       }
                     ]
                   }
@@ -697,7 +697,7 @@
                 "property": [
                   {
                     "slug": "molly-of-denali",
-                    "title": "Explorer Island",
+                    "title": "U.S. States",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -706,7 +706,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/MDEN-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Explorer Island"
+                        "altText": "U.S. States"
                       }
                     ],
                     "characterImageBackground": [
@@ -728,7 +728,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/MDEN-logo-v2.png",
                         "width": 678,
                         "height": 480,
-                        "altText": "Explorer Island"
+                        "altText": "U.S. States"
                       }
                     ],
                     "navigationCardColor": "#82d2f9",
@@ -740,7 +740,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/MDEN-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Explorer Island"
+                        "altText": "U.S. States"
                       }
                     ]
                   }
@@ -758,7 +758,7 @@
                 "property": [
                   {
                     "slug": "pinkalicious-and-peterrific",
-                    "title": "Art Studio",
+                    "title": "Puzzles",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -789,7 +789,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Art Studio"
+                        "altText": "Puzzles"
                       }
                     ],
                     "navigationCardColor": "#d3338c",
@@ -801,7 +801,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/PIPE-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Art Studio"
+                        "altText": "Puzzles"
                       }
                     ]
                   }
@@ -819,7 +819,7 @@
                 "property": [
                   {
                     "slug": "odd-squad",
-                    "title": "Inventor Lab",
+                    "title": "Science",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -828,7 +828,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/328x368-ODDS-character-shownav-v2.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Inventor Lab"
+                        "altText": "Science"
                       }
                     ],
                     "characterImageBackground": [
@@ -850,7 +850,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/ODDS-logo-v2.png",
                         "width": 418,
                         "height": 480,
-                        "altText": "Inventor Lab"
+                        "altText": "Science"
                       }
                     ],
                     "navigationCardColor": "#7f4898",
@@ -862,7 +862,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ODDS-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Inventor Lab"
+                        "altText": "Science"
                       }
                     ]
                   }
@@ -880,7 +880,7 @@
                 "property": [
                   {
                     "slug": "arthur",
-                    "title": "Explorer Island",
+                    "title": "History",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -889,7 +889,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ARUR-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ],
                     "characterImageBackground": [
@@ -911,7 +911,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/ARUR-logo-v2.png",
                         "width": 960,
                         "height": 400,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ],
                     "navigationCardColor": "#6ac4f7",
@@ -923,7 +923,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ARUR-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ]
                   }
@@ -941,7 +941,7 @@
                 "property": [
                   {
                     "slug": "rosies-rules",
-                    "title": "Food Town",
+                    "title": "Personality Quizzes",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -950,7 +950,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/RORU-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Food Town"
+                        "altText": "Personality Quizzes"
                       }
                     ],
                     "characterImageBackground": [
@@ -972,7 +972,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/RORU-logo-v2.png",
                         "width": 928,
                         "height": 480,
-                        "altText": "Food Town"
+                        "altText": "Personality Quizzes"
                       }
                     ],
                     "navigationCardColor": "#f0c453",
@@ -984,7 +984,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/RORU-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Food Town"
+                        "altText": "Personality Quizzes"
                       }
                     ]
                   }
@@ -1002,7 +1002,7 @@
                 "property": [
                   {
                     "slug": "donkey-hodie",
-                    "title": "Imagination Kingdom",
+                    "title": "Funny Fill-In",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1033,7 +1033,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/DKYH-logo-v3.png",
                         "width": 801,
                         "height": 480,
-                        "altText": "Imagination Kingdom"
+                        "altText": "Funny Fill-In"
                       }
                     ],
                     "navigationCardColor": "#8edd65",
@@ -1045,7 +1045,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/DKYH-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Imagination Kingdom"
+                        "altText": "Funny Fill-In"
                       }
                     ]
                   }
@@ -1063,7 +1063,7 @@
                 "property": [
                   {
                     "slug": "work-it-out-wombats",
-                    "title": "Robot Factory",
+                    "title": "Action",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1072,7 +1072,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Robot Factory"
+                        "altText": "Action"
                       }
                     ],
                     "characterImageBackground": [
@@ -1094,7 +1094,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Robot Factory"
+                        "altText": "Action"
                       }
                     ],
                     "navigationCardColor": "#38b5b9",
@@ -1106,7 +1106,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Robot Factory"
+                        "altText": "Action"
                       }
                     ]
                   }
@@ -1124,7 +1124,7 @@
                 "property": [
                   {
                     "slug": "almas-way",
-                    "title": "Explorer Island",
+                    "title": "Amazing Animals",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1133,7 +1133,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/AWAY-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Explorer Island"
+                        "altText": "Amazing Animals"
                       }
                     ],
                     "characterImageBackground": [
@@ -1155,7 +1155,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/AWAY-logo-v2.png",
                         "width": 728,
                         "height": 480,
-                        "altText": "Explorer Island"
+                        "altText": "Amazing Animals"
                       }
                     ],
                     "navigationCardColor": "#9571b1",
@@ -1167,7 +1167,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/AWAY-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Explorer Island"
+                        "altText": "Amazing Animals"
                       }
                     ]
                   }
@@ -1185,7 +1185,7 @@
                 "property": [
                   {
                     "slug": "city-island",
-                    "title": "Speed City",
+                    "title": "Space",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1216,7 +1216,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CTYI-logo-v2.png",
                         "width": 643,
                         "height": 480,
-                        "altText": "Speed City"
+                        "altText": "Space"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1246,7 +1246,7 @@
                 "property": [
                   {
                     "slug": "curious-george",
-                    "title": "Inventor Lab",
+                    "title": "Mammals",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1255,7 +1255,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CUGE-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Inventor Lab"
+                        "altText": "Mammals"
                       }
                     ],
                     "characterImageBackground": [
@@ -1289,7 +1289,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CUGE-logo-shownav-v2.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Inventor Lab"
+                        "altText": "Mammals"
                       }
                     ]
                   }
@@ -1307,7 +1307,7 @@
                 "property": [
                   {
                     "slug": "xavier-riddle",
-                    "title": "Explorer Island",
+                    "title": "History",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1316,7 +1316,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/XRID-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ],
                     "characterImageBackground": [
@@ -1338,7 +1338,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/XRID-logo-v2.png",
                         "width": 592,
                         "height": 480,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1350,7 +1350,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/XRID-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Explorer Island"
+                        "altText": "History"
                       }
                     ]
                   }
@@ -1368,7 +1368,7 @@
                 "property": [
                   {
                     "slug": "clifford-big-red-dog",
-                    "title": "Pet Paradise",
+                    "title": "Mammals",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1399,7 +1399,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CBDG-logo-v2.png",
                         "width": 960,
                         "height": 456,
-                        "altText": "Pet Paradise"
+                        "altText": "Mammals"
                       }
                     ],
                     "navigationCardColor": "#d93731",
@@ -1411,7 +1411,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CBDG-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Pet Paradise"
+                        "altText": "Mammals"
                       }
                     ]
                   }
@@ -1429,7 +1429,7 @@
                 "property": [
                   {
                     "slug": "super-whys-comic-book-adventures",
-                    "title": "Wonder Woods",
+                    "title": "Quizzes",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1500,7 +1500,7 @@
                     "id": "2749308",
                     "guid": "a3ac1d22-e97f-4148-9d13-9ebf5f8c9dfa",
                     "slug": "grownups-come-back-to-the-music-shop-katerinas-mommy-comes-back-home",
-                    "title": "Melody's Music Shop Adventure",
+                    "title": "Amazing Animals",
                     "videoType": "fullVideo",
                     "posterImage": [],
                     "squareImage": [],
@@ -1510,7 +1510,7 @@
                       "duration": 1570,
                       "legacy_tp_media_id": "3109074123",
                       "premiered_on": "1782691200",
-                      "title": "Melody's Music Shop Adventure",
+                      "title": "Amazing Animals",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/8DnKHyh-asset-kids-mezzanine1-16x9-YtRpukl.png",
@@ -1522,7 +1522,7 @@
                       {
                         "id": "1310966",
                         "slug": "daniel",
-                        "title": "Imagination Kingdom"
+                        "title": "Amazing Animals"
                       }
                     ]
                   }
@@ -1539,7 +1539,7 @@
                     "id": "2735461",
                     "guid": "884102f8-cfec-4046-b054-f5e281fc4723",
                     "slug": "kingsley-from-washington-d-c",
-                    "title": "Meet Atlas in Washington, D.C.",
+                    "title": "U.S. States",
                     "videoType": "short",
                     "posterImage": [],
                     "squareImage": [],
@@ -1549,7 +1549,7 @@
                       "duration": 323,
                       "legacy_tp_media_id": "3110963591",
                       "premiered_on": "1779408000",
-                      "title": "Meet Atlas in Washington, D.C.",
+                      "title": "U.S. States",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/4YFBewm-asset-kids-mezzanine1-16x9-EkxM6Jx.png",
@@ -1561,7 +1561,7 @@
                       {
                         "id": "2604702",
                         "slug": "americas-awesome-kids",
-                        "title": "Explorer Island"
+                        "title": "U.S. States"
                       }
                     ]
                   }
@@ -1578,17 +1578,17 @@
                     "id": "2738166",
                     "guid": "b0efe81a-4509-42bd-804c-4bbc81a98d4b",
                     "slug": "jorge-cham-reads-elinor-wonders-why-the-seed-of-an-idea",
-                    "title": "Jorge Cham Reads \"Wonder Woods: The Seed of an Idea\"",
+                    "title": "Jorge Cham Reads \"Mammals: The Seed of an Idea\"",
                     "videoType": "clip",
                     "posterImage": [],
                     "squareImage": [],
                     "mezzanine": [],
                     "mediaManagerAsset": {
-                      "description_short": "Jorge Cham reads Wonder Woods and worlds kids how to draw Elinor.",
+                      "description_short": "Jorge Cham reads Mammals and games kids how to draw Elinor.",
                       "duration": 770,
                       "legacy_tp_media_id": "3111122628",
                       "premiered_on": "1780531200",
-                      "title": "Jorge Cham Reads \"Wonder Woods: The Seed of an Idea\"",
+                      "title": "Jorge Cham Reads \"Mammals: The Seed of an Idea\"",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/kmimEnH-asset-kids-mezzanine1-16x9-gxVj3fI.png",
@@ -1600,7 +1600,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "Story Time"
+                        "title": "Amazing Animals"
                       }
                     ]
                   }
@@ -1615,7 +1615,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "1281438",
                 "slug": "pbs-kids-stock-purple",
-                "title": "PBSK-All Worlds-Purple Theme-v1",
+                "title": "PBSK-Games-Purple Theme-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#ffffff",
                 "bodyBackgroundColor": "#a220df",
@@ -1640,13 +1640,13 @@
           {
             "__typename": "BodyContentModulesGamesCollage",
             "id": "2755094",
-            "anchor": "Summer Games Collage",
+            "anchor": "New and Popular! Collage",
             "theme": [
               {
                 "__typename": "PbsKidsTheme",
                 "id": "2309756",
                 "slug": "summer-games-theme",
-                "title": "PBSK-All Worlds-Summer Topic Games Theme-v1",
+                "title": "PBSK-Games-Summer Topic Games Theme-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#f7e03b",
@@ -1702,7 +1702,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Beach Treasure Hunt"
+                        "altText": "Bubble Burst"
                       }
                     ],
                     "springrollExperience": [
@@ -1717,13 +1717,13 @@
                     ],
                     "properties": [
                       {
-                        "title": "Art Studio"
+                        "title": "Puzzles"
                       }
                     ],
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "pinkalicious-beach-game",
-                    "title": "Beach Treasure Hunt",
+                    "title": "Bubble Burst",
                     "flair": []
                   }
                 ]
@@ -1804,13 +1804,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Wonder Woods"
+                    "title": "Action"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "hamster-water",
-                "title": "River Splash Dash",
+                "title": "Technology",
                 "flair": []
               },
               {
@@ -1826,7 +1826,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/DTIG-Daniel-Tigers-Neighborhood/Game-Cards/DTIG-BuildABoat-FeatureGraphic-Generic.jpg",
                     "width": 908,
                     "height": 510,
-                    "altText": "Build a Sailboat"
+                    "altText": "Puzzles: Habitats"
                   }
                 ],
                 "springrollExperience": [
@@ -1841,13 +1841,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Imagination Kingdom"
+                    "title": "Amazing Animals"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Build-a-Boat",
+                "title": "Puzzles: Habitats",
                 "flair": []
               },
               {
@@ -1863,7 +1863,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/DKHY-Donkey-Hodie/Game-Cards/DKYH-DonkeysFroyoStand-FeatureGraphic-Spring.jpg",
                     "width": 908,
                     "height": 510,
-                    "altText": "Frozen Treat Stand"
+                    "altText": "Money"
                   }
                 ],
                 "springrollExperience": [
@@ -1878,13 +1878,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Imagination Kingdom"
+                    "title": "Funny Fill-In"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "froyo-stand",
-                "title": "Donkey's FroYo Stand",
+                "title": "Money",
                 "flair": []
               },
               {
@@ -1961,13 +1961,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Wonder Woods"
+                    "title": "Science"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "weather-explorer",
-                "title": "Weather Explorer",
+                "title": "Animal trickster",
                 "flair": []
               },
               {
@@ -2026,13 +2026,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Wonder Woods"
+                    "title": "Mammals"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Camping Adventure",
+                "title": "Matching: Countries",
                 "flair": []
               },
               {
@@ -2109,13 +2109,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Explorer Island"
+                    "title": "U.S. States"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "Mountain Quest",
+                "title": "Matching: Gemstones",
                 "flair": []
               },
               {
@@ -2183,13 +2183,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Art Studio"
+                    "title": "Funny Fill-In"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Far and Away",
+                "title": "Discover your forest match.",
                 "flair": []
               },
               {
@@ -2266,13 +2266,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Robot Factory"
+                    "title": "Action"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "patternpalooza-fair",
-                "title": "Pattern Fair",
+                "title": "Discover which penguin species you're most like.",
                 "flair": []
               }
             ],
@@ -2341,13 +2341,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Wonder Woods"
+                    "title": "Mammals"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "baby-animals",
-                "title": "Wonder Woods Baby Animal Rescue",
+                "title": "Amazing Animals",
                 "flair": []
               }
             ],
@@ -2393,7 +2393,7 @@
           }
         ]
       },
-      "pageDescription": "Educational games and videos from Imagination Kingdom, Wonder Woods and other All Worlds worlds!",
+      "pageDescription": "Educational games and videos from Amazing Animals, Mammals and other Games!",
       "pageProperty": null,
       "pageTitle": "",
       "pageModuleCategory": "homepage",
@@ -2405,7 +2405,7 @@
               "__typename": "PbsKidsTheme",
               "id": "2572645",
               "slug": "pbsk-pbs-kids-celebrate-v1",
-              "title": "PBSK-All Worlds-Celebrate-v1",
+              "title": "PBSK-Games-Celebrate-v1",
               "status": "LIVE",
               "bodyTextColor": "#000000",
               "bodyBackgroundColor": "#f7e03b",
@@ -2444,7 +2444,7 @@
               "__typename": "PbsKidsTheme",
               "id": "2174973",
               "slug": "pbs-kids-stock-cyan-2-2",
-              "title": "PBSK- All Worlds-Blue Theme-v1",
+              "title": "PBSK- Games-Blue Theme-v1",
               "status": "LIVE",
               "bodyTextColor": "#000000",
               "bodyBackgroundColor": "#2ebfe9",
@@ -2473,7 +2473,7 @@
               "__typename": "PbsKidsTheme",
               "id": "2585140",
               "slug": "pbsk-pbs-kids-celebrate-masthead-v1-2",
-              "title": "PBSK-All Worlds-Celebrate Masthead-v1",
+              "title": "PBSK-Games-Celebrate Masthead-v1",
               "status": "LIVE",
               "bodyTextColor": "#000000",
               "bodyBackgroundColor": "#f7e03b",
@@ -2520,7 +2520,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "2174973",
                 "slug": "pbs-kids-stock-cyan-2-2",
-                "title": "PBSK- All Worlds-Blue Theme-v1",
+                "title": "PBSK- Games-Blue Theme-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#2ebfe9",
@@ -2565,7 +2565,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "2572645",
                 "slug": "pbsk-pbs-kids-celebrate-v1",
-                "title": "PBSK-All Worlds-Celebrate-v1",
+                "title": "PBSK-Games-Celebrate-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#f7e03b",
@@ -2626,7 +2626,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "2585140",
                 "slug": "pbsk-pbs-kids-celebrate-masthead-v1-2",
-                "title": "PBSK-All Worlds-Celebrate Masthead-v1",
+                "title": "PBSK-Games-Celebrate Masthead-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#f7e03b",
@@ -2665,7 +2665,7 @@
           "__typename": "PbsKidsTheme",
           "id": "2572645",
           "slug": "pbsk-pbs-kids-celebrate-v1",
-          "title": "PBSK-All Worlds-Celebrate-v1",
+          "title": "PBSK-Games-Celebrate-v1",
           "status": "LIVE",
           "bodyTextColor": "#000000",
           "bodyBackgroundColor": "#f7e03b",
@@ -2699,7 +2699,7 @@
           "__typename": "PbsKidsTheme",
           "id": "2585140",
           "slug": "pbsk-pbs-kids-celebrate-masthead-v1-2",
-          "title": "PBSK-All Worlds-Celebrate Masthead-v1",
+          "title": "PBSK-Games-Celebrate Masthead-v1",
           "status": "LIVE",
           "bodyTextColor": "#000000",
           "bodyBackgroundColor": "#f7e03b",
@@ -2729,7 +2729,7 @@
           "sponsorLogoStyle": "light",
           "stationLogoStyle": "white"
         },
-        "css": ":root {\n  /* PBSK-All Worlds-Celebrate-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #f7e03b;\n  --pbsk-theme-bodyBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.123756218905473;\n  --pbsk-theme-backgroundImage-width: 13262px;\n  --pbsk-theme-backgroundImage-height: 3216px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #e5296b;\n  --pbsk-theme-featureHighlightColor-rgb: 229 41 107;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #e5296b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #e5296b;\n  --pbsk-theme-badgeBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-navBackgroundColor: #ffffff;\n  --pbsk-theme-navBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-uiControlColor: #a220df;\n  --pbsk-theme-uiControlColor-rgb: 162 32 223;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #e5296b;\n  --pbsk-theme-uiHighlightColor-rgb: 229 41 107;\n}\n\n:root {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  :root {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n  }\n}\n\n[data-theme-context='footer'] {\n  /* PBSK- All Worlds-Blue Theme-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #2ebfe9;\n  --pbsk-theme-bodyBackgroundColor-rgb: 46 191 233;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #a220df;\n  --pbsk-theme-featureHighlightColor-rgb: 162 32 223;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #991fd3;\n  --pbsk-theme-calloutBackgroundColor-rgb: 153 31 211;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #08ab4e;\n  --pbsk-theme-badgeBackgroundColor-rgb: 8 171 78;\n  --pbsk-theme-navBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-uiControlColor: #e4276a;\n  --pbsk-theme-uiControlColor-rgb: 228 39 106;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #ffffff;\n  --pbsk-theme-uiHighlightColor-rgb: 255 255 255;\n}\n\n\n[data-theme-context='masthead'] {\n  /* PBSK-All Worlds-Celebrate Masthead-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #f7e03b;\n  --pbsk-theme-bodyBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.123756218905473;\n  --pbsk-theme-backgroundImage-width: 13262px;\n  --pbsk-theme-backgroundImage-height: 3216px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #e5296b;\n  --pbsk-theme-featureHighlightColor-rgb: 229 41 107;\n  --pbsk-theme-calloutTextColor: #e5296b;\n  --pbsk-theme-calloutTextColor-rgb: 229 41 107;\n  --pbsk-theme-calloutBackgroundColor: #f7e03b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #e5296b;\n  --pbsk-theme-badgeBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-navBackgroundColor: #ffffff;\n  --pbsk-theme-navBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-uiControlColor: #a220df;\n  --pbsk-theme-uiControlColor-rgb: 162 32 223;\n  --pbsk-theme-uiLabelColor: #f7e03b;\n  --pbsk-theme-uiLabelColor-rgb: 247 224 59;\n  --pbsk-theme-uiHighlightColor: #f5b338;\n  --pbsk-theme-uiHighlightColor-rgb: 245 179 56;\n}\n\n[data-theme-context='masthead'] {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n  }\n}\n",
+        "css": ":root {\n  /* PBSK-Games-Celebrate-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #f7e03b;\n  --pbsk-theme-bodyBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.123756218905473;\n  --pbsk-theme-backgroundImage-width: 13262px;\n  --pbsk-theme-backgroundImage-height: 3216px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #e5296b;\n  --pbsk-theme-featureHighlightColor-rgb: 229 41 107;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #e5296b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #e5296b;\n  --pbsk-theme-badgeBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-navBackgroundColor: #ffffff;\n  --pbsk-theme-navBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-uiControlColor: #a220df;\n  --pbsk-theme-uiControlColor-rgb: 162 32 223;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #e5296b;\n  --pbsk-theme-uiHighlightColor-rgb: 229 41 107;\n}\n\n:root {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  :root {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n  }\n}\n\n[data-theme-context='footer'] {\n  /* PBSK- Games-Blue Theme-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #2ebfe9;\n  --pbsk-theme-bodyBackgroundColor-rgb: 46 191 233;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #a220df;\n  --pbsk-theme-featureHighlightColor-rgb: 162 32 223;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #991fd3;\n  --pbsk-theme-calloutBackgroundColor-rgb: 153 31 211;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #08ab4e;\n  --pbsk-theme-badgeBackgroundColor-rgb: 8 171 78;\n  --pbsk-theme-navBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-uiControlColor: #e4276a;\n  --pbsk-theme-uiControlColor-rgb: 228 39 106;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #ffffff;\n  --pbsk-theme-uiHighlightColor-rgb: 255 255 255;\n}\n\n\n[data-theme-context='masthead'] {\n  /* PBSK-Games-Celebrate Masthead-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #f7e03b;\n  --pbsk-theme-bodyBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.123756218905473;\n  --pbsk-theme-backgroundImage-width: 13262px;\n  --pbsk-theme-backgroundImage-height: 3216px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #e5296b;\n  --pbsk-theme-featureHighlightColor-rgb: 229 41 107;\n  --pbsk-theme-calloutTextColor: #e5296b;\n  --pbsk-theme-calloutTextColor-rgb: 229 41 107;\n  --pbsk-theme-calloutBackgroundColor: #f7e03b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #e5296b;\n  --pbsk-theme-badgeBackgroundColor-rgb: 229 41 107;\n  --pbsk-theme-navBackgroundColor: #ffffff;\n  --pbsk-theme-navBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-uiControlColor: #a220df;\n  --pbsk-theme-uiControlColor-rgb: 162 32 223;\n  --pbsk-theme-uiLabelColor: #f7e03b;\n  --pbsk-theme-uiLabelColor-rgb: 247 224 59;\n  --pbsk-theme-uiHighlightColor: #f5b338;\n  --pbsk-theme-uiHighlightColor-rgb: 245 179 56;\n}\n\n[data-theme-context='masthead'] {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Themes/MainPagePUMA_Background_celebrate_03.svg') 2x\n    );\n  }\n}\n",
         "hasMastheadTheme": true
       },
       "seriesNavButtons": [],

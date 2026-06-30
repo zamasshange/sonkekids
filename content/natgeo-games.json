@@ -1,0 +1,75 @@
+{
+  "source": "https://kids.nationalgeographic.com/games",
+  "sections": [
+    {
+      "id": "new-and-popular",
+      "title": "New and Popular!",
+      "items": [
+        { "title": "Space Explorer", "type": "Action and Adventure" },
+        { "title": "Matching: Gemstones", "type": "Puzzles" },
+        { "title": "Puzzles: Habitats", "type": "Puzzles" },
+        { "title": "Maze: Oceans", "type": "Puzzles" },
+        { "title": "Bubble Burst", "type": "Action and Adventure" },
+        { "title": "Matching: Countries", "type": "Puzzles" }
+      ]
+    },
+    {
+      "id": "personality-quizzes",
+      "title": "Personality Quizzes",
+      "items": [
+        { "title": "Which \"chatty\" animal are you?", "type": "Personality Quiz" },
+        { "title": "Discover your forest match.", "type": "Personality Quiz" },
+        { "title": "Discover which penguin species you're most like.", "type": "Personality Quiz" },
+        { "title": "Animal trickster", "type": "Personality Quiz" }
+      ]
+    },
+    {
+      "id": "quizzes",
+      "title": "Quizzes",
+      "items": [
+        { "title": "Seahorses", "type": "Quiz" },
+        { "title": "Royalty", "type": "Quiz" },
+        { "title": "U.S. States", "type": "Quiz" },
+        { "title": "Big bear", "type": "Quiz" },
+        { "title": "Puffins", "type": "Quiz" },
+        { "title": "Forests", "type": "Quiz" },
+        { "title": "Technology", "type": "Quiz" },
+        { "title": "Money", "type": "Quiz" }
+      ]
+    },
+    {
+      "id": "action",
+      "title": "Action and Adventure",
+      "items": [
+        { "title": "Space Explorer", "type": "Action and Adventure" },
+        { "title": "Bubble Burst", "type": "Action and Adventure" }
+      ]
+    },
+    {
+      "id": "puzzles",
+      "title": "Puzzles",
+      "items": [
+        { "title": "Matching: Gemstones", "type": "Puzzles" },
+        { "title": "Puzzles: Habitats", "type": "Puzzles" },
+        { "title": "Maze: Oceans", "type": "Puzzles" },
+        { "title": "Matching: Countries", "type": "Puzzles" }
+      ]
+    }
+  ],
+  "categories": [
+    "Quizzes",
+    "Personality Quizzes",
+    "Puzzles",
+    "Action",
+    "Funny Fill-In",
+    "Amazing Animals",
+    "Weird But True!",
+    "Mammals",
+    "Birds",
+    "Prehistoric",
+    "Science",
+    "Space",
+    "U.S. States",
+    "History"
+  ]
+}

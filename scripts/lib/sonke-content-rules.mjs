@@ -5,14 +5,26 @@ export function buildReplacementRules(content) {
     if (mapping.pbsTitle && mapping.worldTitle) {
       rules.push([mapping.pbsTitle, mapping.worldTitle]);
     }
+    if (mapping.pbsTitleAlt && mapping.worldTitle) {
+      rules.push([mapping.pbsTitleAlt, mapping.worldTitle]);
+    }
   }
 
   for (const item of content.games.overrides) {
     if (item.pbsTitle && item.title) {
       rules.push([item.pbsTitle, item.title]);
     }
+    if (item.pbsTitleAlt && item.title) {
+      rules.push([item.pbsTitleAlt, item.title]);
+    }
     if (item.pbsAlt && item.alt) {
       rules.push([item.pbsAlt, item.alt]);
+    }
+  }
+
+  for (const item of content.games.sectionHeadings ?? []) {
+    if (item.pbsHeading && item.title) {
+      rules.push([item.pbsHeading, item.title]);
     }
   }
 
@@ -20,8 +32,17 @@ export function buildReplacementRules(content) {
     if (item.pbsTitle && item.title) {
       rules.push([item.pbsTitle, item.title]);
     }
+    if (item.pbsTitleAlt && item.title) {
+      rules.push([item.pbsTitleAlt, item.title]);
+    }
     if (item.pbsSubtitle && item.subtitle) {
       rules.push([item.pbsSubtitle, item.subtitle]);
+    }
+  }
+
+  for (const item of content.videos.sectionHeadings ?? []) {
+    if (item.pbsHeading && item.title) {
+      rules.push([item.pbsHeading, item.title]);
     }
   }
 

@@ -131,6 +131,12 @@ function stripAnalytics(html) {
 
 function injectSonkeContentPatch(html, sonkeContent) {
   const patch = buildSonkeContentPatch(sonkeContent);
+  if (html.includes('id="__NEXT_DATA__"')) {
+    return html.replace(
+      /(<script id="__NEXT_DATA__" type="application\/json">[\s\S]*?<\/script>)/,
+      `$1${patch}`,
+    );
+  }
   if (html.includes("</body>")) {
     return html.replace("</body>", `${patch}</body>`);
   }

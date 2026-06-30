@@ -1,74 +1,127 @@
 {
+  "sectionHeadings": [
+    { "pbsHeading": "Summer Games", "title": "New and Popular!" },
+    { "pbsHeading": "New Games", "title": "Quizzes" }
+  ],
   "overrides": [
     {
-      "pbsSlug": "pinkalicious-beach-game",
-      "pbsTitle": "Splashtastic Beach Day",
-      "title": "Beach Treasure Hunt",
-      "worldId": "ocean-world",
-      "type": "adventure"
-    },
-    {
-      "pbsSlug": "hamster-water",
-      "pbsTitle": "Team Hamster! Splash Dash",
-      "title": "River Splash Dash",
-      "worldId": "wonder-woods",
-      "type": "arcade"
-    },
-    {
-      "pbsSlug": "build-a-boat",
-      "pbsTitle": "Build a Boat",
-      "title": "Build a Sailboat",
-      "worldId": "ocean-world",
-      "type": "building"
-    },
-    {
-      "pbsSlug": "froyo-stand",
-      "pbsTitle": "Donkey's Froyo Stand game; Donkey holds a cup of frozen yogurt.",
-      "title": "Frozen Treat Stand",
-      "worldId": "food-town",
-      "type": "cooking"
-    },
-    {
-      "pbsSlug": "weather-explorer",
-      "pbsTitle": "Weather Explorer",
-      "title": "Weather Explorer",
-      "worldId": "wonder-woods",
-      "type": "science"
-    },
-    {
-      "pbsSlug": "elinor-curious-campout",
-      "pbsTitle": "Elinor Curious Campout",
-      "title": "Camping Adventure",
-      "worldId": "wonder-woods",
-      "type": "adventure"
+      "pbsSlug": "weather-reporter",
+      "pbsTitle": "Weather Reporter",
+      "title": "Space Explorer",
+      "category": "Action and Adventure"
     },
     {
       "pbsSlug": "seek-the-peak",
       "pbsTitle": "Seek the Peak",
-      "title": "Mountain Quest",
-      "worldId": "explorer-island",
-      "type": "adventure"
+      "title": "Matching: Gemstones",
+      "category": "Puzzles"
+    },
+    {
+      "pbsSlug": "build-a-boat",
+      "pbsTitle": "Build-a-Boat",
+      "pbsTitleAlt": "Build a Boat",
+      "title": "Puzzles: Habitats",
+      "category": "Puzzles"
+    },
+    {
+      "pbsSlug": "super-duper-halo-halo",
+      "pbsTitle": "Super Duper Halo-Halo",
+      "title": "Maze: Oceans",
+      "category": "Puzzles"
+    },
+    {
+      "pbsSlug": "pinkalicious-beach-game",
+      "pbsTitle": "Splashtastic Beach Day",
+      "title": "Bubble Burst",
+      "category": "Action and Adventure"
+    },
+    {
+      "pbsSlug": "elinor-curious-campout",
+      "pbsTitle": "Elinor Curious Campout",
+      "title": "Matching: Countries",
+      "category": "Puzzles"
+    },
+    {
+      "pbsSlug": "lyla-stu-stunts",
+      "pbsTitle": "Stu's Super Stunts",
+      "title": "Which chatty animal are you?",
+      "category": "Personality Quiz"
     },
     {
       "pbsSlug": "scribbles-and-ink-far-and-away",
       "pbsTitle": "Scribbles and Ink: Far and Away",
-      "title": "Far and Away",
-      "worldId": "art-studio",
-      "type": "drawing"
+      "pbsTitleAlt": "Far and Away",
+      "title": "Discover your forest match.",
+      "category": "Personality Quiz"
     },
     {
       "pbsSlug": "patternpalooza-fair",
       "pbsTitle": "Patternpalooza Fair",
-      "title": "Pattern Fair",
-      "worldId": "music-city",
-      "type": "pattern"
+      "pbsTitleAlt": "Pattern Fair",
+      "title": "Discover which penguin species you're most like.",
+      "category": "Personality Quiz"
+    },
+    {
+      "pbsSlug": "reboot-rescue",
+      "pbsTitle": "Reboot Rescue",
+      "title": "Seahorses",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "treeborhood-party-quest",
+      "pbsTitle": "Treeborhood Party Quest",
+      "title": "Royalty",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "count-y-fair",
+      "pbsTitle": "Count-y Fair",
+      "title": "U.S. States",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "phoebe-signs-seek",
+      "pbsTitle": "Signs & Seek",
+      "title": "Puffins",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "archerfish-bug-rush",
+      "pbsTitle": "Archerfish Bug Rush",
+      "title": "Big bear",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "hero-maker",
+      "pbsTitle": "Hero Maker",
+      "title": "Forests",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "hamster-water",
+      "pbsTitle": "Team Hamster! Splash Dash",
+      "title": "Technology",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "froyo-stand",
+      "pbsTitle": "Donkey's Froyo Stand game; Donkey holds a cup of frozen yogurt.",
+      "pbsTitleAlt": "Donkey's FroYo Stand",
+      "title": "Money",
+      "category": "Quiz"
+    },
+    {
+      "pbsSlug": "weather-explorer",
+      "pbsTitle": "Weather Explorer",
+      "title": "Animal trickster",
+      "category": "Personality Quiz"
     },
     {
       "pbsSlug": "baby-animals",
       "pbsTitle": "Baby Animal Rescue",
-      "title": "Baby Animal Rescue",
-      "worldId": "pet-paradise",
-      "type": "animals"
+      "pbsTitleAlt": "Wild Kratts Baby Animal Rescue",
+      "title": "Amazing Animals",
+      "category": "Video"
     }
   ]
 }

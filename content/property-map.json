@@ -1,134 +1,231 @@
 {
   "pbs-kids-2": {
     "pbsTitle": "Sonke Kids",
-    "worldId": "all-worlds",
-    "worldTitle": "All Worlds",
+    "pbsTitleAlt": "PBS KIDS",
+    "worldId": "games",
+    "worldTitle": "Games",
     "guide": null
   },
   "phoebe-jay": {
     "pbsTitle": "Phoebe & Jay",
-    "worldId": "pet-paradise",
-    "worldTitle": "Pet Paradise",
-    "guide": "Pip"
+    "worldId": "birds",
+    "worldTitle": "Birds",
+    "guide": null
   },
   "carl-the-collector": {
     "pbsTitle": "Carl the Collector",
-    "worldId": "wonder-woods",
-    "worldTitle": "Wonder Woods",
-    "guide": "Willow"
+    "worldId": "weird-but-true",
+    "worldTitle": "Weird But True!",
+    "guide": null
   },
   "lyla-in-the-loop": {
     "pbsTitle": "Lyla in the Loop",
-    "worldId": "music-city",
-    "worldTitle": "Music City",
-    "guide": "Melody"
+    "worldId": "puzzles",
+    "worldTitle": "Puzzles",
+    "guide": null
   },
   "weather-hunters": {
     "pbsTitle": "Weather Hunters",
-    "worldId": "wonder-woods",
-    "worldTitle": "Wonder Woods",
-    "guide": "Willow"
+    "worldId": "science",
+    "worldTitle": "Science",
+    "guide": null
   },
   "daniel": {
     "pbsTitle": "Daniel Tiger's Neighborhood",
-    "worldId": "imagination-kingdom",
-    "worldTitle": "Imagination Kingdom",
-    "guide": "Luna"
+    "worldId": "amazing-animals",
+    "worldTitle": "Amazing Animals",
+    "guide": null
   },
   "wild-kratts": {
     "pbsTitle": "Wild Kratts",
-    "worldId": "wonder-woods",
-    "worldTitle": "Wonder Woods",
-    "guide": "Willow"
+    "worldId": "mammals",
+    "worldTitle": "Mammals",
+    "guide": null
   },
   "countonjunebug": {
     "pbsTitle": "Count on June Bug!",
-    "worldId": "wonder-woods",
-    "worldTitle": "Wonder Woods",
-    "guide": "Willow"
+    "worldId": "quizzes",
+    "worldTitle": "Quizzes",
+    "guide": null
   },
   "sesame-street": {
     "pbsTitle": "Sesame Street",
-    "worldId": "food-town",
-    "worldTitle": "Food Town",
-    "guide": "Chef Apple"
+    "worldId": "try-this",
+    "worldTitle": "Try This!",
+    "guide": null
   },
   "molly-of-denali": {
     "pbsTitle": "Molly of Denali",
-    "worldId": "explorer-island",
-    "worldTitle": "Explorer Island",
-    "guide": "Atlas"
+    "worldId": "us-states",
+    "worldTitle": "U.S. States",
+    "guide": null
   },
   "pinkalicious-and-peterrific": {
     "pbsTitle": "Pinkalicious & Peterrific",
-    "worldId": "art-studio",
-    "worldTitle": "Art Studio",
-    "guide": "Sketch"
+    "worldId": "puzzles",
+    "worldTitle": "Puzzles",
+    "guide": null
   },
   "odd-squad": {
     "pbsTitle": "Odd Squad",
-    "worldId": "inventor-lab",
-    "worldTitle": "Inventor Lab",
-    "guide": "Professor Spark"
+    "worldId": "science",
+    "worldTitle": "Science",
+    "guide": null
   },
   "arthur": {
     "pbsTitle": "Arthur",
-    "worldId": "explorer-island",
-    "worldTitle": "Explorer Island",
-    "guide": "Atlas"
+    "worldId": "history",
+    "worldTitle": "History",
+    "guide": null
   },
   "rosies-rules": {
     "pbsTitle": "Rosie's Rules",
-    "worldId": "food-town",
-    "worldTitle": "Food Town",
-    "guide": "Chef Apple"
+    "worldId": "personality-quizzes",
+    "worldTitle": "Personality Quizzes",
+    "guide": null
   },
   "donkey-hodie": {
     "pbsTitle": "Donkey Hodie",
-    "worldId": "imagination-kingdom",
-    "worldTitle": "Imagination Kingdom",
-    "guide": "Luna"
+    "worldId": "funny-fill-in",
+    "worldTitle": "Funny Fill-In",
+    "guide": null
   },
   "work-it-out-wombats": {
     "pbsTitle": "Work It Out Wombats!",
-    "worldId": "robot-factory",
-    "worldTitle": "Robot Factory",
-    "guide": "Bolt"
+    "worldId": "action",
+    "worldTitle": "Action",
+    "guide": null
   },
   "almas-way": {
     "pbsTitle": "Alma's Way",
-    "worldId": "explorer-island",
-    "worldTitle": "Explorer Island",
-    "guide": "Atlas"
+    "worldId": "amazing-animals",
+    "worldTitle": "Amazing Animals",
+    "guide": null
   },
   "city-island": {
     "pbsTitle": "City Island",
-    "worldId": "speed-city",
-    "worldTitle": "Speed City",
-    "guide": "Zoom"
+    "worldId": "space",
+    "worldTitle": "Space",
+    "guide": null
   },
   "curious-george": {
     "pbsTitle": "Curious George",
-    "worldId": "inventor-lab",
-    "worldTitle": "Inventor Lab",
-    "guide": "Professor Spark"
+    "worldId": "mammals",
+    "worldTitle": "Mammals",
+    "guide": null
   },
   "xavier-riddle": {
     "pbsTitle": "Xavier Riddle and the Secret Museum",
-    "worldId": "explorer-island",
-    "worldTitle": "Explorer Island",
-    "guide": "Atlas"
+    "worldId": "history",
+    "worldTitle": "History",
+    "guide": null
   },
   "clifford-big-red-dog": {
     "pbsTitle": "Clifford the Big Red Dog",
-    "worldId": "pet-paradise",
-    "worldTitle": "Pet Paradise",
-    "guide": "Pip"
+    "worldId": "mammals",
+    "worldTitle": "Mammals",
+    "guide": null
   },
   "super-whys-comic-book-adventures": {
     "pbsTitle": "Super Why's Comic Book Adventures",
-    "worldId": "wonder-woods",
-    "worldTitle": "Wonder Woods",
-    "guide": "Willow"
+    "worldId": "quizzes",
+    "worldTitle": "Quizzes",
+    "guide": null
+  },
+  "acoustic-rooster": {
+    "pbsTitle": "Acoustic Rooster",
+    "worldId": "birds",
+    "worldTitle": "Birds",
+    "guide": null
+  },
+  "jelly-ben-pogo": {
+    "pbsTitle": "Jelly, Ben & Pogo",
+    "worldId": "amazing-animals",
+    "worldTitle": "Amazing Animals",
+    "guide": null
+  },
+  "nature-cat": {
+    "pbsTitle": "Nature Cat",
+    "worldId": "mammals",
+    "worldTitle": "Mammals",
+    "guide": null
+  },
+  "dinosaur-train": {
+    "pbsTitle": "Dinosaur Train",
+    "worldId": "prehistoric",
+    "worldTitle": "Prehistoric",
+    "guide": null
+  },
+  "lets-go-luna": {
+    "pbsTitle": "Let's Go Luna!",
+    "worldId": "history",
+    "worldTitle": "History",
+    "guide": null
+  },
+  "hero-elementary": {
+    "pbsTitle": "Hero Elementary",
+    "worldId": "science",
+    "worldTitle": "Science",
+    "guide": null
+  },
+  "cyberchase": {
+    "pbsTitle": "Cyberchase",
+    "worldId": "puzzles",
+    "worldTitle": "Puzzles",
+    "guide": null
+  },
+  "ruff-ruffman": {
+    "pbsTitle": "Ruff Ruffman: Humble Media Genius",
+    "worldId": "weird-but-true",
+    "worldTitle": "Weird But True!",
+    "guide": null
+  },
+  "the-cat-in-the-hat": {
+    "pbsTitle": "The Cat in the Hat",
+    "worldId": "funny-fill-in",
+    "worldTitle": "Funny Fill-In",
+    "guide": null
+  },
+  "ready-jet-go": {
+    "pbsTitle": "Ready Jet Go!",
+    "worldId": "space",
+    "worldTitle": "Space",
+    "guide": null
+  },
+  "super-why": {
+    "pbsTitle": "Super Why!",
+    "worldId": "quizzes",
+    "worldTitle": "Quizzes",
+    "guide": null
+  },
+  "sid-the-science-kid": {
+    "pbsTitle": "Sid the Science Kid",
+    "worldId": "science",
+    "worldTitle": "Science",
+    "guide": null
+  },
+  "peg-cat": {
+    "pbsTitle": "Peg + Cat",
+    "worldId": "puzzles",
+    "worldTitle": "Puzzles",
+    "guide": null
+  },
+  "scribbles-and-ink": {
+    "pbsTitle": "Scribbles and Ink",
+    "worldId": "funny-fill-in",
+    "worldTitle": "Funny Fill-In",
+    "guide": null
+  },
+  "elinor-wonders-why": {
+    "pbsTitle": "Elinor Wonders Why",
+    "worldId": "mammals",
+    "worldTitle": "Mammals",
+    "guide": null
+  },
+  "team-hamster": {
+    "pbsTitle": "Team Hamster! & Ruff Ruffman",
+    "worldId": "action",
+    "worldTitle": "Action",
+    "guide": null
   }
 }
