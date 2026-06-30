@@ -10,6 +10,7 @@ import {
 import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 import { buildSonkeContentPatch } from "./lib/sonke-content-patch.mjs";
 import { buildGameLinkPatch } from "./lib/game-link-patch.mjs";
+import { rewritePbsChunkScripts } from "./lib/pbs-play-process.mjs";
 import {
   applySonkeContent,
   loadSonkeContent,
@@ -237,21 +238,23 @@ function stripLegacyPatches(html) {
 }
 
 function processHtml(html, dest, sonkeContent) {
-  return applyBranding(
-    fixOrphanedScriptBeforeStyles(
-      stripServiceWorkerLoader(
-        ensureImgSrcFromSrcSet(
-          stripLegacyPatches(
-            html
-              .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
-              .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
-              .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+  return rewritePbsChunkScripts(
+    applyBranding(
+      fixOrphanedScriptBeforeStyles(
+        stripServiceWorkerLoader(
+          ensureImgSrcFromSrcSet(
+            stripLegacyPatches(
+              html
+                .replace(/href="https:\/\/pbskids\.org\/"/g, 'href="/"')
+                .replace(/href="https:\/\/pbskids\.org\/games"/g, 'href="/games"')
+                .replace(/href="https:\/\/pbskids\.org\/videos"/g, 'href="/videos"'),
+            ),
           ),
         ),
       ),
+      dest,
+      sonkeContent,
     ),
-    dest,
-    sonkeContent,
   );
 }
 

@@ -3,10 +3,11 @@
 type PlayActionsProps = {
   gameId: string;
   title: string;
+  playUrl?: string | null;
 };
 
-export function PlayActions({ gameId, title }: PlayActionsProps) {
-  const playHref = `#play-${gameId}`;
+export function PlayActions({ gameId, title, playUrl }: PlayActionsProps) {
+  const playHref = playUrl ?? `#play-${gameId}`;
 
   function handleFavorite() {
     try {

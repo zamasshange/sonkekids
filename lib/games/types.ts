@@ -120,6 +120,8 @@ export type GamePageData = {
   relatedContent: RelatedContentItem[];
   seo: SeoMetadata;
   enrichedAt: string;
+  /** PBS play shell URL when this game maps to a cached PBS play page */
+  playUrl: string | null;
 };
 
 export type PbsSlugMapping = {

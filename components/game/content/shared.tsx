@@ -59,7 +59,7 @@ export function GameHero({ data, large = false }: { data: GamePageData; large?: 
         <p className="sonke-game-tagline">{ai.tagline}</p>
         <p className="sonke-game-purpose">{ai.introduction}</p>
         <GameMetaBar data={data} />
-        <PlayActions gameId={game.id} title={game.title} />
+        <PlayActions gameId={game.id} title={game.title} playUrl={data.playUrl} />
       </div>
       <div className="sonke-game-hero-art">
         {visual.image ? (

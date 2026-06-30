@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { resolveImageRequest } from "./lib/pbs-image-resolve";
-import { resolveSonkeGameId } from "./lib/games/resolve-slug";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
@@ -47,14 +46,6 @@ async function proxyToPbs(request: NextRequest) {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const playMatch = pathname.match(/^\/games\/play\/([^/]+)/);
-  if (playMatch) {
-    const sonkeId = resolveSonkeGameId(playMatch[1]);
-    if (sonkeId) {
-      return NextResponse.redirect(new URL(`/games/${sonkeId}`, request.url), 307);
-    }
-  }
-
   if (pathname === "/_next/image") {
     const localPath = resolveImageRequest(
       request.nextUrl.searchParams.get("url"),
@@ -77,7 +68,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/games/play/:slug*",
     "/_next/image",
     "/_next/static/css/:path*",
     "/_next/static/media/:path*",

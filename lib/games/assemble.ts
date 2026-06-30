@@ -12,6 +12,7 @@ import {
   buildSeoMetadata,
 } from "./seo";
 import { buildFunFacts, buildTips } from "./topic-facts";
+import { getPlayUrlForSonkeGame } from "./play-url";
 
 function normalizeAi(
   partial: Partial<AiGameContent>,
@@ -95,5 +96,6 @@ export function assembleGamePageData(
     relatedContent,
     seo,
     enrichedAt,
+    playUrl: getPlayUrlForSonkeGame(game.id),
   };
 }
