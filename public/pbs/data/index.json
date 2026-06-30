@@ -1702,7 +1702,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Math Tiles: Addition 0-20"
+                        "altText": "Number Snake"
                       }
                     ],
                     "springrollExperience": [
@@ -1723,7 +1723,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "pinkalicious-beach-game",
-                    "title": "Math Tiles: Addition 0-20",
+                    "title": "Number Snake",
                     "flair": []
                   }
                 ]
@@ -1847,7 +1847,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Monkey GO Happy",
+                "title": "Mega Connect Four",
                 "flair": []
               },
               {
@@ -2032,7 +2032,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Ninja Painter",
+                "title": "Mega Connect Four",
                 "flair": []
               },
               {

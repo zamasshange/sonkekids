@@ -4,13 +4,13 @@
     "primarygames",
     "logiclike"
   ],
-  "totalGames": 44,
+  "totalGames": 37,
   "totalCategories": 8,
   "categories": [
     {
       "id": "puzzle-games",
       "title": "Puzzle Games",
-      "count": 6,
+      "count": 2,
       "games": [
         {
           "id": "mega-connect-four",
@@ -19,22 +19,6 @@
         {
           "id": "ultimate-sudoku",
           "title": "Ultimate Sudoku"
-        },
-        {
-          "id": "monkey-go-happy",
-          "title": "Monkey GO Happy"
-        },
-        {
-          "id": "ninja-painter",
-          "title": "Ninja Painter"
-        },
-        {
-          "id": "gems-swap-2",
-          "title": "Gems Swap 2"
-        },
-        {
-          "id": "juicy-stack",
-          "title": "Juicy Stack"
         }
       ]
     },
@@ -72,15 +56,11 @@
     {
       "id": "logic-games",
       "title": "Strategy & Board",
-      "count": 6,
+      "count": 5,
       "games": [
         {
           "id": "water-sort",
           "title": "Water Sort"
-        },
-        {
-          "id": "cake-mania",
-          "title": "Cake Mania"
         },
         {
           "id": "bingo-bash",
@@ -103,12 +83,8 @@
     {
       "id": "math-games",
       "title": "Math & Learn",
-      "count": 6,
+      "count": 4,
       "games": [
-        {
-          "id": "math-tiles-addition-0-20",
-          "title": "Math Tiles: Addition 0-20"
-        },
         {
           "id": "number-snake",
           "title": "Number Snake"
@@ -124,10 +100,6 @@
         {
           "id": "math-duck",
           "title": "Math Duck"
-        },
-        {
-          "id": "hangaroo",
-          "title": "Hangaroo"
         }
       ]
     },
@@ -262,46 +234,6 @@
       "embedSource": "primarygames"
     },
     {
-      "id": "monkey-go-happy",
-      "title": "Monkey GO Happy",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games",
-      "embedUrl": "https://cdn.primarygames.com/ruffle/monkeygohappy/",
-      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/monkeygohappy/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/puzzles/action/monkeygohappy/",
-      "embedSource": "primarygames"
-    },
-    {
-      "id": "ninja-painter",
-      "title": "Ninja Painter",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games",
-      "embedUrl": "https://cdn.primarygames.com/ruffle/ninjapainter/",
-      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/ninjapainter/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/puzzles/action/ninjapainter/",
-      "embedSource": "primarygames"
-    },
-    {
-      "id": "gems-swap-2",
-      "title": "Gems Swap 2",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games",
-      "embedUrl": "https://license.novelgames.com/games/popup.php?gameShortName=gems2&language=en&memberId=gg84950642",
-      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/gemsswap2/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/puzzles/action/gemsswap2/",
-      "embedSource": "primarygames"
-    },
-    {
-      "id": "juicy-stack",
-      "title": "Juicy Stack",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games",
-      "embedUrl": "https://www8.agame.com/mirror/html5/publishers/Juicy+Stack/en_US/index.html",
-      "thumbnailUrl": "https://www.primarygames.com/puzzles/physics/juicystack/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/puzzles/physics/juicystack/",
-      "embedSource": "primarygames"
-    },
-    {
       "id": "piano-tiles",
       "title": "Piano Tiles",
       "categoryId": "arcade-games",
@@ -372,16 +304,6 @@
       "embedSource": "primarygames"
     },
     {
-      "id": "cake-mania",
-      "title": "Cake Mania",
-      "categoryId": "logic-games",
-      "category": "Strategy & Board",
-      "embedUrl": "https://cdn.primarygames.com/ruffle/cakemania/index.php",
-      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/cakemania/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/cakemania/",
-      "embedSource": "primarygames"
-    },
-    {
       "id": "bingo-bash",
       "title": "BINGO Bash",
       "categoryId": "logic-games",
@@ -422,16 +344,6 @@
       "embedSource": "primarygames"
     },
     {
-      "id": "math-tiles-addition-0-20",
-      "title": "Math Tiles: Addition 0-20",
-      "categoryId": "math-games",
-      "category": "Math & Learn",
-      "embedUrl": "https://www.digipuzzle.net/digipuzzle/kids/puzzles/tilesmath_zero_to_twenty_links.htm",
-      "thumbnailUrl": "https://www.primarygames.com/math/mathtilesaddition0to20/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/math/mathtilesaddition0to20/",
-      "embedSource": "primarygames"
-    },
-    {
       "id": "number-snake",
       "title": "Number Snake",
       "categoryId": "math-games",
@@ -469,16 +381,6 @@
       "embedUrl": "https://cdn.primarygames.com/HTML5/MathDuck/",
       "thumbnailUrl": "https://www.primarygames.com/math/mathduck/logo200.png",
       "sourceUrl": "https://www.primarygames.com/math/mathduck/",
-      "embedSource": "primarygames"
-    },
-    {
-      "id": "hangaroo",
-      "title": "Hangaroo",
-      "categoryId": "math-games",
-      "category": "Math & Learn",
-      "embedUrl": "https://cdn.primarygames.com/ruffle/hangaroo/",
-      "thumbnailUrl": "https://www.primarygames.com/langarts/hangaroo/logo200.png",
-      "sourceUrl": "https://www.primarygames.com/langarts/hangaroo/",
       "embedSource": "primarygames"
     },
     {

@@ -23,6 +23,17 @@ function slugify(title) {
     .replace(/^-|-$/g, "");
 }
 
+const PG_CDN_HOST = "cdn.primarygames.com";
+
+function isLocalPrimaryEmbed(embedUrl) {
+  try {
+    const parsed = new URL(embedUrl);
+    return parsed.hostname === PG_CDN_HOST && parsed.pathname.includes("/HTML5/");
+  } catch {
+    return false;
+  }
+}
+
 async function fetchPrimaryEmbedUrl(pageUrl) {
   const res = await fetch(pageUrl, {
     headers: { "User-Agent": "SonkeKidsCatalog/1.0" },
@@ -68,6 +79,10 @@ for (const category of primarySource.categories) {
   const resolved = await mapWithConcurrency(entries, 4, async (entry) => {
     try {
       const embedUrl = await fetchPrimaryEmbedUrl(entry.pageUrl);
+      if (!isLocalPrimaryEmbed(embedUrl)) {
+        console.warn(`  ✗ ${entry.title}: external or non-HTML5 embed (${embedUrl})`);
+        return null;
+      }
       process.stdout.write(`  ✓ ${entry.title}\n`);
       return {
         id: entry.id,

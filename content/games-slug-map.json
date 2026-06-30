@@ -11,8 +11,8 @@
   },
   {
     "pbsSlug": "build-a-boat",
-    "sonkeId": "monkey-go-happy",
-    "title": "Monkey GO Happy"
+    "sonkeId": "mega-connect-four",
+    "title": "Mega Connect Four"
   },
   {
     "pbsSlug": "super-duper-halo-halo",
@@ -21,13 +21,13 @@
   },
   {
     "pbsSlug": "pinkalicious-beach-game",
-    "sonkeId": "math-tiles-addition-0-20",
-    "title": "Math Tiles: Addition 0-20"
+    "sonkeId": "number-snake",
+    "title": "Number Snake"
   },
   {
     "pbsSlug": "elinor-curious-campout",
-    "sonkeId": "ninja-painter",
-    "title": "Ninja Painter"
+    "sonkeId": "mega-connect-four",
+    "title": "Mega Connect Four"
   },
   {
     "pbsSlug": "lyla-stu-stunts",
@@ -41,13 +41,13 @@
   },
   {
     "pbsSlug": "patternpalooza-fair",
-    "sonkeId": "block-triangle-puzzle",
-    "title": "Block Triangle Puzzle"
+    "sonkeId": "bubble-sort",
+    "title": "Bubble Sort"
   },
   {
     "pbsSlug": "archerfish-bug-rush",
-    "sonkeId": "gems-swap-2",
-    "title": "Gems Swap 2"
+    "sonkeId": "mega-connect-four",
+    "title": "Mega Connect Four"
   },
   {
     "pbsSlug": "reboot-rescue",
@@ -56,18 +56,18 @@
   },
   {
     "pbsSlug": "treeborhood-party-quest",
-    "sonkeId": "cake-mania",
-    "title": "Cake Mania"
+    "sonkeId": "bingo-bash",
+    "title": "BINGO Bash"
   },
   {
     "pbsSlug": "count-y-fair",
-    "sonkeId": "number-snake",
-    "title": "Number Snake"
+    "sonkeId": "tic-tac-toe-addition",
+    "title": "Tic Tac Toe Addition"
   },
   {
     "pbsSlug": "phoebe-signs-seek",
-    "sonkeId": "tic-tac-toe-addition",
-    "title": "Tic Tac Toe Addition"
+    "sonkeId": "math-lines",
+    "title": "Math Lines"
   },
   {
     "pbsSlug": "hero-maker",
@@ -81,18 +81,18 @@
   },
   {
     "pbsSlug": "archer-fish-guid",
-    "sonkeId": "gems-swap-2",
-    "title": "Gems Swap 2"
+    "sonkeId": "mega-connect-four",
+    "title": "Mega Connect Four"
   },
   {
     "pbsSlug": "county-fair",
-    "sonkeId": "number-snake",
-    "title": "Number Snake"
+    "sonkeId": "tic-tac-toe-addition",
+    "title": "Tic Tac Toe Addition"
   },
   {
     "pbsSlug": "signs-seek",
-    "sonkeId": "tic-tac-toe-addition",
-    "title": "Tic Tac Toe Addition"
+    "sonkeId": "math-lines",
+    "title": "Math Lines"
   },
   {
     "pbsSlug": "hamster-water",
@@ -101,8 +101,8 @@
   },
   {
     "pbsSlug": "froyo-stand",
-    "sonkeId": "monkey-go-happy",
-    "title": "Monkey GO Happy"
+    "sonkeId": "mega-connect-four",
+    "title": "Mega Connect Four"
   },
   {
     "pbsSlug": "weather-explorer",
@@ -123,26 +123,6 @@
     "pbsSlug": "ultimate-sudoku",
     "sonkeId": "ultimate-sudoku",
     "title": "Ultimate Sudoku"
-  },
-  {
-    "pbsSlug": "monkey-go-happy",
-    "sonkeId": "monkey-go-happy",
-    "title": "Monkey GO Happy"
-  },
-  {
-    "pbsSlug": "ninja-painter",
-    "sonkeId": "ninja-painter",
-    "title": "Ninja Painter"
-  },
-  {
-    "pbsSlug": "gems-swap-2",
-    "sonkeId": "gems-swap-2",
-    "title": "Gems Swap 2"
-  },
-  {
-    "pbsSlug": "juicy-stack",
-    "sonkeId": "juicy-stack",
-    "title": "Juicy Stack"
   },
   {
     "pbsSlug": "piano-tiles",
@@ -180,11 +160,6 @@
     "title": "Water Sort"
   },
   {
-    "pbsSlug": "cake-mania",
-    "sonkeId": "cake-mania",
-    "title": "Cake Mania"
-  },
-  {
     "pbsSlug": "bingo-bash",
     "sonkeId": "bingo-bash",
     "title": "BINGO Bash"
@@ -205,11 +180,6 @@
     "title": "Cube Move"
   },
   {
-    "pbsSlug": "math-tiles-addition-0-20",
-    "sonkeId": "math-tiles-addition-0-20",
-    "title": "Math Tiles: Addition 0-20"
-  },
-  {
     "pbsSlug": "number-snake",
     "sonkeId": "number-snake",
     "title": "Number Snake"
@@ -228,11 +198,6 @@
     "pbsSlug": "math-duck",
     "sonkeId": "math-duck",
     "title": "Math Duck"
-  },
-  {
-    "pbsSlug": "hangaroo",
-    "sonkeId": "hangaroo",
-    "title": "Hangaroo"
   },
   {
     "pbsSlug": "sumo-smash",

@@ -2555,7 +2555,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Monkey GO Happy",
+                "title": "Mega Connect Four",
                 "flair": []
               },
               {
@@ -2608,7 +2608,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Math Tiles: Addition 0-20"
+                    "altText": "Number Snake"
                   }
                 ],
                 "springrollExperience": [
@@ -2629,7 +2629,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "pinkalicious-beach-game",
-                "title": "Math Tiles: Addition 0-20",
+                "title": "Number Snake",
                 "flair": []
               },
               {
@@ -2694,7 +2694,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Ninja Painter",
+                "title": "Mega Connect Four",
                 "flair": []
               },
               {
@@ -2995,7 +2995,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "archer-fish-guid",
-                "title": "Gems Swap 2",
+                "title": "Mega Connect Four",
                 "flair": []
               }
             ]
@@ -3219,7 +3219,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "treeborhood-party-quest",
-                "title": "Cake Mania",
+                "title": "BINGO Bash",
                 "flair": []
               },
               {
@@ -3364,7 +3364,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/COJB-Count-On-June-Bug/June-Bug-County-Fair-Promo-V1-908x510px-English.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "The Number Snake"
+                    "altText": "The Tic Tac Toe Addition"
                   }
                 ],
                 "springrollExperience": [
@@ -3385,7 +3385,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "county-fair",
-                "title": "Number Snake",
+                "title": "Tic Tac Toe Addition",
                 "flair": []
               },
               {
@@ -3468,7 +3468,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "signs-seek",
-                "title": "Tic Tac Toe Addition",
+                "title": "Math Lines",
                 "flair": []
               }
             ],
