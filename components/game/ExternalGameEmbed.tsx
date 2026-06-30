@@ -3,7 +3,7 @@
 type ExternalGameEmbedProps = {
   title: string;
   embedUrl: string;
-  sourceUrl: string | null;
+  sourceUrl?: string | null;
   embedSource?: "primarygames" | "logiclike";
   topicLabel?: string | null;
 };
@@ -11,12 +11,8 @@ type ExternalGameEmbedProps = {
 export function ExternalGameEmbed({
   title,
   embedUrl,
-  sourceUrl,
-  embedSource = "primarygames",
   topicLabel,
 }: ExternalGameEmbedProps) {
-  const partner = embedSource === "logiclike" ? "LogicLike" : "PrimaryGames";
-
   return (
     <div className="sonke-pg-embed">
       {topicLabel ? (
@@ -32,17 +28,8 @@ export function ExternalGameEmbed({
         allowFullScreen
         loading="eager"
         referrerPolicy="no-referrer-when-downgrade"
+        sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-popups allow-modals"
       />
-      {sourceUrl ? (
-        <a
-          href={sourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="sonke-pg-embed-fallback"
-        >
-          Open on {partner} if the game does not load
-        </a>
-      ) : null}
     </div>
   );
 }

@@ -184,18 +184,10 @@ export function SonkePlayShell({ data }: SonkePlayShellProps) {
         </div>
         <p className="sonke-play-credits">
           Sonke Kids · {game.category} · Ages {data.meta.ageMin}–{data.meta.ageMax}
-          {embedUrl && sourceUrl ? (
-            <>
-              {" · "}
-              <a
-                href={sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="sonke-play-attribution"
-              >
-                Game by {embedSource === "logiclike" || game.embedSource === "logiclike" ? "LogicLike" : "PrimaryGames"}
-              </a>
-            </>
+          {embedUrl && (embedSource === "logiclike" || game.embedSource === "logiclike") ? (
+            <> · Game content from LogicLike</>
+          ) : embedUrl ? (
+            <> · Game content from PrimaryGames CDN</>
           ) : null}
         </p>
       </footer>

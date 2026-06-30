@@ -447,12 +447,26 @@
 }
 
 .sonke-related-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   min-height: 4.5rem;
+  text-decoration: none;
+}
+
+.sonke-related-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
 }
 
 .sonke-related-title {
-  margin: 0;
+  margin: 0.4rem 0 0;
+  padding: 0.2rem 0.35rem 0.5rem;
+  color: #2638c4;
+  font-weight: 800;
+  text-align: center;
 }
 
 .player-shell {

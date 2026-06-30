@@ -19,6 +19,10 @@
     {
       "pbsHeading": "Quizzes",
       "title": "Sports & Skill"
+    },
+    {
+      "pbsHeading": "Video Discover This Week",
+      "title": "Featured"
     }
   ],
   "overrides": [
@@ -26,91 +30,154 @@
       "pbsSlug": "weather-reporter",
       "pbsTitle": "Weather Reporter",
       "title": "Mega Connect Four",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "sonkeId": "mega-connect-four"
     },
     {
       "pbsSlug": "seek-the-peak",
       "pbsTitle": "Seek the Peak",
-      "title": "The Imposter",
-      "category": "Arcade Games"
+      "title": "Ultimate Sudoku",
+      "category": "Puzzle Games",
+      "sonkeId": "ultimate-sudoku"
     },
     {
       "pbsSlug": "build-a-boat",
       "pbsTitle": "Build-a-Boat",
-      "title": "Mega Connect Four",
-      "category": "Puzzle Games"
+      "title": "Piano Tiles",
+      "category": "Arcade Games",
+      "sonkeId": "piano-tiles"
     },
     {
       "pbsSlug": "super-duper-halo-halo",
       "pbsTitle": "Super Duper Halo-Halo",
-      "title": "Water Sort",
-      "category": "Strategy & Board"
+      "title": "The Imposter",
+      "category": "Arcade Games",
+      "sonkeId": "the-imposter"
     },
     {
       "pbsSlug": "pinkalicious-beach-game",
       "pbsTitle": "Splashtastic Beach Day",
-      "title": "Number Snake",
-      "category": "Math & Learn"
+      "title": "Marble Lines",
+      "category": "Arcade Games",
+      "sonkeId": "marble-lines"
     },
     {
       "pbsSlug": "elinor-curious-campout",
       "pbsTitle": "Elinor Curious Campout",
-      "title": "Mega Connect Four",
-      "category": "Puzzle Games"
+      "title": "Invace Spaders",
+      "category": "Arcade Games",
+      "sonkeId": "invace-spaders"
     },
     {
-      "pbsSlug": "lyla-stu-stunts",
+      "pbsSlug": "lyla-in-the-loop-a-stu-of-your-own",
       "pbsTitle": "Stu's Super Stunts",
-      "title": "Sumo Smash!",
-      "category": "Sports & Skill"
+      "title": "Fidget Spinner Revolution",
+      "category": "Arcade Games",
+      "sonkeId": "fidget-spinner-revolution"
     },
     {
       "pbsSlug": "scribbles-and-ink-far-and-away",
-      "pbsTitle": "Far and Away",
-      "title": "Marble Lines",
-      "category": "Arcade Games"
+      "pbsTitle": "Scribbles and Ink: Far and Away",
+      "title": "Flight Sim",
+      "category": "Arcade Games",
+      "sonkeId": "flight-sim"
     },
     {
       "pbsSlug": "patternpalooza-fair",
-      "pbsTitle": "Pattern Fair",
-      "title": "Bubble Sort",
-      "category": "Strategy & Board"
+      "pbsTitle": "Patternpalooza Fair",
+      "title": "Water Sort",
+      "category": "Strategy & Board",
+      "sonkeId": "water-sort"
     },
     {
-      "pbsSlug": "archerfish-bug-rush",
+      "pbsSlug": "archer-fish-guid",
       "pbsTitle": "Archerfish Bug Rush",
-      "title": "Mega Connect Four",
-      "category": "Puzzle Games"
+      "title": "BINGO Bash",
+      "category": "Strategy & Board",
+      "sonkeId": "bingo-bash"
     },
     {
       "pbsSlug": "reboot-rescue",
       "pbsTitle": "Reboot Rescue",
-      "title": "Piano Tiles",
-      "category": "Arcade Games"
+      "title": "Block Triangle Puzzle",
+      "category": "Strategy & Board",
+      "sonkeId": "block-triangle-puzzle"
     },
     {
       "pbsSlug": "treeborhood-party-quest",
       "pbsTitle": "Treeborhood Party Quest",
-      "title": "BINGO Bash",
-      "category": "Strategy & Board"
+      "title": "Bubble Sort",
+      "category": "Strategy & Board",
+      "sonkeId": "bubble-sort"
     },
     {
-      "pbsSlug": "count-y-fair",
+      "pbsSlug": "county-fair",
       "pbsTitle": "Count-y Fair",
-      "title": "Tic Tac Toe Addition",
-      "category": "Math & Learn"
+      "title": "Cube Move",
+      "category": "Strategy & Board",
+      "sonkeId": "cube-move"
     },
     {
-      "pbsSlug": "phoebe-signs-seek",
+      "pbsSlug": "signs-seek",
       "pbsTitle": "Signs & Seek",
-      "title": "Math Lines",
-      "category": "Math & Learn"
+      "title": "Number Snake",
+      "category": "Math & Learn",
+      "sonkeId": "number-snake"
     },
     {
       "pbsSlug": "hero-maker",
       "pbsTitle": "Hero Maker",
-      "title": "Shortcut Race",
-      "category": "Sports & Skill"
+      "title": "Tic Tac Toe Addition",
+      "category": "Math & Learn",
+      "sonkeId": "tic-tac-toe-addition"
+    },
+    {
+      "pbsSlug": "hamster-water",
+      "pbsTitle": "Team Hamster! Splash Dash",
+      "pbsTitleAlt": "Team Hamster! Splash Dash",
+      "title": "Mega Connect Four",
+      "category": "Puzzle Games",
+      "sonkeId": "mega-connect-four"
+    },
+    {
+      "pbsSlug": "froyo-stand",
+      "pbsTitle": "Donkey's FroYo Stand",
+      "pbsTitleAlt": "Donkey's FroYo Stand",
+      "title": "Piano Tiles",
+      "category": "Arcade Games",
+      "sonkeId": "piano-tiles"
+    },
+    {
+      "pbsSlug": "weather-explorer",
+      "pbsTitle": "Weather Explorer",
+      "pbsTitleAlt": "Weather Explorer",
+      "title": "Ultimate Sudoku",
+      "category": "Puzzle Games",
+      "sonkeId": "ultimate-sudoku"
+    },
+    {
+      "pbsSlug": "baby-animals",
+      "pbsTitle": "Wild Kratts Baby Animal Rescue",
+      "pbsTitleAlt": "Wild Kratts Baby Animal Rescue",
+      "title": "Block Triangle Puzzle",
+      "category": "Strategy & Board",
+      "sonkeId": "block-triangle-puzzle"
+    },
+    {
+      "pbsSlug": "lyla-stu-stunts",
+      "pbsTitle": "Stu's Super Stunts",
+      "pbsTitleAlt": "Stu's Super Stunts",
+      "title": "Fidget Spinner Revolution",
+      "category": "Arcade Games",
+      "sonkeId": "fidget-spinner-revolution"
+    },
+    {
+      "pbsSlug": "archerfish-bug-rush",
+      "pbsTitle": "Archerfish Bug Rush",
+      "pbsTitleAlt": "Archerfish Bug Rush",
+      "title": "BINGO Bash",
+      "category": "Strategy & Board",
+      "sonkeId": "bingo-bash"
     }
   ]
 }

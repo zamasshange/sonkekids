@@ -1479,7 +1479,7 @@
                 ],
                 "rank": null,
                 "target": [],
-                "targetUrl": "/videos/super-whys-comic-book-adventures"
+                "targetUrl": "/games/mega-connect-four/play"
               }
             ]
           },
@@ -1608,7 +1608,7 @@
                 "targetUrl": ""
               }
             ],
-            "heading": "Video Discover This Week",
+            "heading": "Featured",
             "headingIcon": [],
             "theme": [
               {
@@ -1702,7 +1702,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Number Snake"
+                        "altText": "Marble Lines"
                       }
                     ],
                     "springrollExperience": [
@@ -1723,7 +1723,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "pinkalicious-beach-game",
-                    "title": "Number Snake",
+                    "title": "Marble Lines",
                     "flair": []
                   }
                 ]
@@ -1810,7 +1810,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "hamster-water",
-                "title": "Team Hamster! Splash Dash",
+                "title": "Mega Connect Four",
                 "flair": []
               },
               {
@@ -1847,7 +1847,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Mega Connect Four",
+                "title": "Piano Tiles",
                 "flair": []
               },
               {
@@ -1884,7 +1884,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "froyo-stand",
-                "title": "Donkey's FroYo Stand",
+                "title": "Piano Tiles",
                 "flair": []
               },
               {
@@ -1967,7 +1967,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "weather-explorer",
-                "title": "Weather Explorer",
+                "title": "Ultimate Sudoku",
                 "flair": []
               },
               {
@@ -2032,7 +2032,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Mega Connect Four",
+                "title": "Invace Spaders",
                 "flair": []
               },
               {
@@ -2115,7 +2115,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "The Imposter",
+                "title": "Ultimate Sudoku",
                 "flair": []
               },
               {
@@ -2189,7 +2189,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Scribbles and Ink: Marble Lines",
+                "title": "Flight Sim",
                 "flair": []
               },
               {
@@ -2272,7 +2272,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "patternpalooza-fair",
-                "title": "Patternpalooza Fair",
+                "title": "Water Sort",
                 "flair": []
               }
             ],
@@ -2347,11 +2347,11 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "baby-animals",
-                "title": "Wild Kratts Baby Animal Rescue",
+                "title": "Block Triangle Puzzle",
                 "flair": []
               }
             ],
-            "targetUrl": "/videos/weatherhunters",
+            "targetUrl": "/games/block-triangle-puzzle/play",
             "interactBehavior": "sticker",
             "interactiveElement": [
               {

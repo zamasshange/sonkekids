@@ -10,6 +10,11 @@ for (const item of slugMappings) {
 
 const SONKE_IDS = new Set(catalog.games.map((game) => game.id));
 
+export function getDefaultGameId(): string {
+  const first = slugMappings[0];
+  return first?.sonkeId ?? catalog.games[0]?.id ?? "mega-connect-four";
+}
+
 /** Resolve a PBS play URL slug to a Sonke catalog game id. Edge-safe. */
 export function resolveSonkeGameId(slug: string): string | null {
   const mapped = PBS_TO_SONKE.get(slug);

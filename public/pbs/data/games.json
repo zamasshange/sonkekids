@@ -2518,7 +2518,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "The Imposter",
+                "title": "Ultimate Sudoku",
                 "flair": []
               },
               {
@@ -2555,7 +2555,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Mega Connect Four",
+                "title": "Piano Tiles",
                 "flair": []
               },
               {
@@ -2571,7 +2571,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/JBPO-Jelly-Ben-and-Pogo/Game-Cards/JBPO-SuperDuperHaloHalo-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Water Sort"
+                    "altText": "The Imposter"
                   }
                 ],
                 "springrollExperience": [
@@ -2592,7 +2592,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "super-duper-halo-halo",
-                "title": "Water Sort",
+                "title": "The Imposter",
                 "flair": []
               },
               {
@@ -2608,7 +2608,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Number Snake"
+                    "altText": "Marble Lines"
                   }
                 ],
                 "springrollExperience": [
@@ -2629,7 +2629,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "pinkalicious-beach-game",
-                "title": "Number Snake",
+                "title": "Marble Lines",
                 "flair": []
               },
               {
@@ -2694,7 +2694,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Mega Connect Four",
+                "title": "Invace Spaders",
                 "flair": []
               },
               {
@@ -2710,7 +2710,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/LYLO-Lyla-in-the-Loop/Game-Cards/LYLO-StusSuperStunts-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Sumo Smash!"
+                    "altText": "Fidget Spinner Revolution"
                   }
                 ],
                 "springrollExperience": [
@@ -2731,7 +2731,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "lyla-in-the-loop-a-stu-of-your-own",
-                "title": "Sumo Smash!",
+                "title": "Fidget Spinner Revolution",
                 "flair": []
               },
               {
@@ -2805,7 +2805,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Scribbles and Ink: Marble Lines",
+                "title": "Flight Sim",
                 "flair": []
               },
               {
@@ -2888,7 +2888,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "patternpalooza-fair",
-                "title": "Patternpalooza Fair",
+                "title": "Water Sort",
                 "flair": []
               }
             ],
@@ -2995,7 +2995,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "archer-fish-guid",
-                "title": "Mega Connect Four",
+                "title": "BINGO Bash",
                 "flair": []
               }
             ]
@@ -3132,7 +3132,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "reboot-rescue",
-                    "title": "Piano Tiles",
+                    "title": "Block Triangle Puzzle",
                     "flair": []
                   }
                 ]
@@ -3219,7 +3219,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "treeborhood-party-quest",
-                "title": "BINGO Bash",
+                "title": "Bubble Sort",
                 "flair": []
               },
               {
@@ -3302,7 +3302,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "The Imposter",
+                "title": "Ultimate Sudoku",
                 "flair": []
               },
               {
@@ -3364,7 +3364,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/COJB-Count-On-June-Bug/June-Bug-County-Fair-Promo-V1-908x510px-English.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "The Tic Tac Toe Addition"
+                    "altText": "The Cube Move"
                   }
                 ],
                 "springrollExperience": [
@@ -3385,7 +3385,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "county-fair",
-                "title": "Tic Tac Toe Addition",
+                "title": "Cube Move",
                 "flair": []
               },
               {
@@ -3468,7 +3468,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "signs-seek",
-                "title": "Math Lines",
+                "title": "Number Snake",
                 "flair": []
               }
             ],
@@ -3641,7 +3641,7 @@
                 "id": "87276",
                 "guid": "f28cc250-8890-11e9-8984-97b5c47fd2af",
                 "slug": "hero-maker",
-                "title": "Shortcut Race",
+                "title": "Tic Tac Toe Addition",
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "gameLogo": [
@@ -3706,7 +3706,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Game-Cards/XRID-HeroMaker-FeatureGraphic-AAPI.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Shortcut Race"
+                    "altText": "Tic Tac Toe Addition"
                   }
                 ]
               }

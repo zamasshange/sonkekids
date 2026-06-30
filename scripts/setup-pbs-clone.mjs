@@ -10,6 +10,8 @@ import {
 import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 import { buildSonkeContentPatch } from "./lib/sonke-content-patch.mjs";
 import { buildGameLinkPatch } from "./lib/game-link-patch.mjs";
+import { patchPbsGameData } from "./lib/pbs-game-data-patch.mjs";
+import { buildPbsCardStylesPatch } from "./lib/pbs-card-styles-patch.mjs";
 import { rewritePbsChunkScripts } from "./lib/pbs-play-process.mjs";
 import { simplifyPbsHtml } from "./lib/sonke-simplify-patch.mjs";
 import {
@@ -132,6 +134,14 @@ function stripAnalytics(html) {
     );
 }
 
+function injectPbsCardStyles(html) {
+  const patch = buildPbsCardStylesPatch();
+  if (html.includes("</head>")) {
+    return html.replace("</head>", `${patch}</head>`);
+  }
+  return `${patch}${html}`;
+}
+
 function injectGameLinkPatch(html) {
   const mapPath = join(contentDir, "games-slug-map.json");
   if (!existsSync(mapPath)) return html;
@@ -140,8 +150,15 @@ function injectGameLinkPatch(html) {
   const slugMap = Object.fromEntries(
     mappings.map((item) => [item.pbsSlug, item.sonkeId]),
   );
+  const titleMap = Object.fromEntries(
+    mappings.map((item) => [item.pbsSlug, item.title]),
+  );
+  for (const item of mappings) {
+    titleMap[item.sonkeId] = item.title;
+  }
+  const defaultId = mappings[0]?.sonkeId ?? "";
 
-  const patch = buildGameLinkPatch(slugMap);
+  const patch = buildGameLinkPatch(slugMap, defaultId, titleMap);
   if (html.includes("</body>")) {
     return html.replace("</body>", `${patch}</body>`);
   }
@@ -301,12 +318,16 @@ async function main() {
   for (const { dest, branded } of brandedPages) {
     let localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);
     localized = applySonkeContent(localized, sonkeContent);
-    localized = injectSonkeContentPatch(localized, sonkeContent);
-    localized = injectGameLinkPatch(localized);
 
     const mappings = JSON.parse(readFileSync(join(contentDir, "games-slug-map.json"), "utf8"));
+    localized = patchPbsGameData(localized, mappings);
+
+    localized = injectSonkeContentPatch(localized, sonkeContent);
+    localized = injectPbsCardStyles(localized);
+    localized = injectGameLinkPatch(localized);
+
     const slugMap = Object.fromEntries(
-      mappings.filter((m) => m.pbsSlug !== m.sonkeId).map((m) => [m.pbsSlug, m.sonkeId]),
+      mappings.map((m) => [m.pbsSlug, m.sonkeId]),
     );
     let videoIds = [];
     const videosPath = join(contentDir, "sonke-videos-catalog.json");

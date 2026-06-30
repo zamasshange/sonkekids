@@ -1,8 +1,8 @@
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
-import { resolveSonkeGameId } from "@/lib/games/resolve-slug";
+import { resolveSonkeGameId, getDefaultGameId } from "@/lib/games/resolve-slug";
 import { SonkePlayShell } from "@/components/game/SonkePlayShell";
 
 type PageProps = {
@@ -35,11 +35,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function GamePlayPage({ params }: PageProps) {
   const { slug } = await params;
-  const gameId = resolveGameId(slug);
-  if (!gameId) notFound();
+  const gameId = resolveGameId(slug) ?? getDefaultGameId();
 
   const data = await getGamePageData(gameId);
-  if (!data) notFound();
+  if (!data) redirect(`/games/${getDefaultGameId()}/play`);
 
   return <SonkePlayShell data={data} />;
 }

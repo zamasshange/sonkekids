@@ -1,5 +1,5 @@
-import { redirect, notFound } from "next/navigation";
-import { resolveSonkeGameId } from "@/lib/games/resolve-slug";
+import { redirect } from "next/navigation";
+import { resolveSonkeGameId, getDefaultGameId } from "@/lib/games/resolve-slug";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -10,11 +10,6 @@ type RouteContext = {
 
 export async function GET(_request: Request, context: RouteContext) {
   const { slug } = await context.params;
-  const sonkeId = resolveSonkeGameId(slug);
-
-  if (!sonkeId) {
-    notFound();
-  }
-
+  const sonkeId = resolveSonkeGameId(slug) ?? getDefaultGameId();
   redirect(`/games/${sonkeId}/play`);
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { loadCatalog } from "@/lib/games/catalog";
+import Image from "next/image";
+import { loadCatalog, getGameById } from "@/lib/games/catalog";
 import { SonkePbsPage } from "@/components/game/SonkePbsPage";
 import { ContentModule, SectionHeading } from "@/components/game/content/shared";
 
@@ -68,13 +69,26 @@ export default async function GamesBrowsePage({ searchParams }: BrowsePageProps)
         <ContentModule key={category.id} className="sonke-related-module">
           <SectionHeading>{category.title}</SectionHeading>
           <ul className="GamesCollage_gamesGrid__jv6Iv sonke-related-grid">
-            {category.games.map((game) => (
+            {category.games.map((game) => {
+              const full = getGameById(game.id);
+              return (
               <li key={game.id}>
-                <Link href={`/games/${game.id}`} className="MediaItem_mediaLink__JSobH sonke-related-card">
+                <Link href={`/games/${game.id}/play`} className="MediaItem_mediaLink__JSobH sonke-related-card">
+                  {full?.thumbnailUrl ? (
+                    <Image
+                      src={full.thumbnailUrl}
+                      alt=""
+                      width={200}
+                      height={200}
+                      className="sonke-related-thumb"
+                      unoptimized
+                    />
+                  ) : null}
                   <p className="MediaItem_heading__AybaX sonke-related-title">{game.title}</p>
                 </Link>
               </li>
-            ))}
+              );
+            })}
           </ul>
         </ContentModule>
       ))}

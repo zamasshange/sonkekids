@@ -237,7 +237,7 @@ export function RelatedGamesSection({
       <ul className="GamesCollage_gamesGrid__jv6Iv sonke-related-grid">
         {games.map((related) => (
           <li key={related.id}>
-            <Link href={`/games/${related.id}`} className="MediaItem_mediaLink__JSobH sonke-related-card">
+            <Link href={`/games/${related.id}/play`} className="MediaItem_mediaLink__JSobH sonke-related-card">
               <p className="MediaItem_heading__AybaX sonke-related-title">{related.title}</p>
             </Link>
           </li>

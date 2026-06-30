@@ -1,13 +1,21 @@
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { GamePageView } from "@/components/game/GamePageView";
 import { getGameById } from "@/lib/games/catalog";
 import { getGamePageData } from "@/lib/games/enrich";
-import { resolveSonkeGameId } from "@/lib/games/resolve-slug";
+import { resolveSonkeGameId, getDefaultGameId } from "@/lib/games/resolve-slug";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+const TOPIC_SLUGS = new Set([
+  "story-games",
+  "all-topics",
+  "spanish",
+  "community-games-topic-page",
+  "osgu-games",
+]);
 
 function resolveGameId(slug: string): string | null {
   const mapped = resolveSonkeGameId(slug);
@@ -52,10 +60,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function GamePage({ params }: PageProps) {
   const { slug } = await params;
   const gameId = resolveGameId(slug);
-  if (!gameId) notFound();
+  if (!gameId) {
+    if (TOPIC_SLUGS.has(slug)) {
+      redirect("/games/browse");
+    }
+    redirect(`/games/${getDefaultGameId()}/play`);
+  }
 
   const data = await getGamePageData(gameId);
-  if (!data) notFound();
+  if (!data) redirect(`/games/${getDefaultGameId()}/play`);
 
   return <GamePageView data={data} />;
 }
