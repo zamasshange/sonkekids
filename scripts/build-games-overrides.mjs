@@ -236,13 +236,26 @@ writeFileSync(
   "utf8",
 );
 
-const slugMappings = overrides
-  .filter((slot) => slot.pbsSlug)
-  .map((slot) => ({
+const slugMappings = [];
+const seenPbsSlugs = new Set();
+for (const slot of overrides) {
+  if (!slot.pbsSlug || seenPbsSlugs.has(slot.pbsSlug)) continue;
+  seenPbsSlugs.add(slot.pbsSlug);
+  slugMappings.push({
     pbsSlug: slot.pbsSlug,
     sonkeId: slugify(slot.title),
     title: slot.title,
-  }));
+  });
+}
+
+// Every catalog game is also reachable directly by its Sonke id.
+for (const game of catalog.games) {
+  slugMappings.push({
+    pbsSlug: game.id,
+    sonkeId: game.id,
+    title: game.title,
+  });
+}
 
 writeFileSync(
   join(root, "content", "games-slug-map.json"),
