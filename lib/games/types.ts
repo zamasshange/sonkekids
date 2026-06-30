@@ -3,6 +3,12 @@ export type SonkeGame = {
   title: string;
   categoryId: string;
   category: string;
+  /** CDN or partner URL loaded in the play iframe */
+  embedUrl?: string;
+  thumbnailUrl?: string;
+  /** PrimaryGames game page for attribution */
+  sourceUrl?: string;
+  embedSource?: "primarygames";
 };
 
 export type SonkeCategory = {
@@ -122,6 +128,8 @@ export type GamePageData = {
   enrichedAt: string;
   /** PBS play shell URL when this game maps to a cached PBS play page */
   playUrl: string | null;
+  embedUrl: string | null;
+  sourceUrl: string | null;
 };
 
 export type PbsSlugMapping = {

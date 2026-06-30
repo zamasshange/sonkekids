@@ -81,20 +81,27 @@ export function assembleGamePageData(
   const pageSlice = { game, ai, heroImage, meta };
   const seo = buildSeoMetadata(pageSlice);
 
+  const resolvedHero = heroImage ?? game.thumbnailUrl ?? null;
+  const imagesWithThumb = game.thumbnailUrl
+    ? { ...images, thumbnail: game.thumbnailUrl, banner: images.banner ?? game.thumbnailUrl, gallery: images.gallery.length ? images.gallery : [game.thumbnailUrl] }
+    : images;
+
   return {
     game,
     gameType,
     layout,
     meta,
-    images,
+    images: imagesWithThumb,
     wikipedia,
     ai,
-    heroImage,
+    heroImage: resolvedHero,
     relatedGames,
     suggestedGames: suggestedGames.length > 0 ? suggestedGames : relatedGames,
     relatedContent,
     seo,
     enrichedAt,
     playUrl: null,
+    embedUrl: game.embedUrl ?? null,
+    sourceUrl: game.sourceUrl ?? null,
   };
 }

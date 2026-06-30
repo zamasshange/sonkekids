@@ -20,17 +20,44 @@ function toSerializable(gameType: GameTypeDefinition): SerializableGameType {
 }
 
 function migrateCachedPage(cached: GamePageData, gameTypeDef: GameTypeDefinition): GamePageData {
+  const game = getGameById(cached.game.id) ?? cached.game;
+
   if (cached.layout && cached.meta && cached.seo && cached.ai.funFacts) {
-    return cached;
+    const embedUrl = game.embedUrl ?? cached.embedUrl ?? null;
+    const sourceUrl = game.sourceUrl ?? cached.sourceUrl ?? null;
+    const heroImage = cached.heroImage ?? game.thumbnailUrl ?? null;
+    const needsEmbedPatch =
+      embedUrl !== cached.embedUrl ||
+      sourceUrl !== cached.sourceUrl ||
+      heroImage !== cached.heroImage ||
+      cached.game.id !== game.id;
+
+    if (!needsEmbedPatch) return cached;
+
+    return {
+      ...cached,
+      game,
+      heroImage,
+      embedUrl,
+      sourceUrl,
+      images: game.thumbnailUrl
+        ? {
+            ...cached.images,
+            thumbnail: game.thumbnailUrl,
+            banner: cached.images.banner ?? game.thumbnailUrl,
+            gallery: cached.images.gallery.length ? cached.images.gallery : [game.thumbnailUrl],
+          }
+        : cached.images,
+    };
   }
 
   return assembleGamePageData(
     {
-      game: cached.game,
+      game,
       gameType: cached.gameType,
       wikipedia: cached.wikipedia,
       ai: cached.ai,
-      heroImage: cached.heroImage,
+      heroImage: cached.heroImage ?? game.thumbnailUrl ?? null,
       enrichedAt: cached.enrichedAt,
     },
     gameTypeDef,
@@ -76,7 +103,7 @@ export async function enrichGamePage(slug: string, options?: { force?: boolean }
       gameType: toSerializable(gameTypeDef),
       wikipedia,
       ai,
-      heroImage: wikipedia?.imageUrl ?? wikipedia?.thumbnailUrl ?? null,
+      heroImage: wikipedia?.imageUrl ?? wikipedia?.thumbnailUrl ?? game.thumbnailUrl ?? null,
       enrichedAt: new Date().toISOString(),
     },
     gameTypeDef,

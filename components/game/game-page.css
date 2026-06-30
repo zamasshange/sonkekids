@@ -613,3 +613,47 @@
   background: #2638c4;
   color: #fff;
 }
+
+.sonke-quiz-player {
+  text-align: center;
+}
+
+.sonke-quiz-question {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0.5rem 0 1rem;
+}
+
+.sonke-quiz-options {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.sonke-quiz-option {
+  padding: 0.75rem 1rem;
+  border: 3px solid #2638c4;
+  border-radius: 12px;
+  background: #fff;
+  color: #2638c4;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sonke-quiz-option.correct {
+  background: #99cf16;
+  border-color: #5a8f10;
+  color: #fff;
+}
+
+.sonke-quiz-option.wrong {
+  background: #e5296b;
+  border-color: #bc005a;
+  color: #fff;
+}
+
+.sonke-game-play-cta {
+  text-align: center;
+}

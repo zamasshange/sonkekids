@@ -1702,7 +1702,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Color Animals"
+                        "altText": "Math Tiles: Addition 0-20"
                       }
                     ],
                     "springrollExperience": [
@@ -1723,7 +1723,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "pinkalicious-beach-game",
-                    "title": "Color Animals",
+                    "title": "Math Tiles: Addition 0-20",
                     "flair": []
                   }
                 ]
@@ -1847,7 +1847,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Fruit Match",
+                "title": "Monkey GO Happy",
                 "flair": []
               },
               {
@@ -2032,7 +2032,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Number Match",
+                "title": "Ninja Painter",
                 "flair": []
               },
               {
@@ -2115,7 +2115,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "Pirate Maze",
+                "title": "The Imposter",
                 "flair": []
               },
               {
@@ -2189,7 +2189,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Scribbles and Ink: Free Draw",
+                "title": "Scribbles and Ink: Marble Lines",
                 "flair": []
               },
               {
@@ -2276,7 +2276,7 @@
                 "flair": []
               }
             ],
-            "heading": "Memory Games",
+            "heading": "Strategy & Board",
             "headingIcon": [
               {
                 "uiAssets": [

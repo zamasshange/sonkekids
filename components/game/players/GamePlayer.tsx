@@ -5,6 +5,7 @@ import { ColoringPlayer } from "./ColoringPlayer";
 import { HiddenObjectPlayer } from "./HiddenObjectPlayer";
 import { MatchPlayer } from "./MatchPlayer";
 import { MazePlayer } from "./MazePlayer";
+import { QuizPlayer } from "./QuizPlayer";
 
 export function GamePlayer({ title, gameType }: { title: string; gameType: SerializableGameType }) {
   switch (gameType.playerKind) {
@@ -17,6 +18,8 @@ export function GamePlayer({ title, gameType }: { title: string; gameType: Seria
     case "coloring":
     case "drawing":
       return <ColoringPlayer title={title} />;
+    case "quiz":
+      return <QuizPlayer title={title} />;
     default:
       return (
         <div className="player-shell player-placeholder">

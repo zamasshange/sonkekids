@@ -23,7 +23,11 @@ const CATEGORY_ASSETS: Record<string, CategoryAsset> = {
   "weather-games": { emoji: "⛅", gradient: ["#0081ca", "#f7e03b"], accent: "#0081ca" },
   "history-games": { emoji: "🏛️", gradient: ["#bc005a", "#f7e03b"], accent: "#bc005a" },
   "adventure-games": { emoji: "🗺️", gradient: ["#6b8e23", "#e5296b"], accent: "#6b8e23" },
+  "arcade-games": { emoji: "👾", gradient: ["#bc005a", "#2638c4"], accent: "#bc005a" },
   "logic-games": { emoji: "💡", gradient: ["#2638c4", "#e5296b"], accent: "#2638c4" },
+  "memory-games": { emoji: "🃏", gradient: ["#2638c4", "#e5296b"], accent: "#2638c4" },
+  "quiz-games": { emoji: "❓", gradient: ["#f7e03b", "#2638c4"], accent: "#2638c4" },
+  "creative-games": { emoji: "🎨", gradient: ["#e5296b", "#99cf16"], accent: "#e5296b" },
   "creativity-games": { emoji: "✨", gradient: ["#e5296b", "#99cf16"], accent: "#e5296b" },
   "seasonal-games": { emoji: "🎃", gradient: ["#e5296b", "#f7e03b"], accent: "#e5296b" },
 };

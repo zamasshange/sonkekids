@@ -2410,7 +2410,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/WEHU-Weather-Hunters/Game-Cards/WEHU-WeatherReporter-FeatureGraphic-Generic.png",
                         "width": 3632,
                         "height": 2040,
-                        "altText": "Animal Match"
+                        "altText": "Mega Connect Four"
                       }
                     ],
                     "springrollExperience": [
@@ -2431,7 +2431,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "weather-reporter",
-                    "title": "Animal Match",
+                    "title": "Mega Connect Four",
                     "flair": []
                   }
                 ]
@@ -2518,7 +2518,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "Pirate Maze",
+                "title": "The Imposter",
                 "flair": []
               },
               {
@@ -2555,7 +2555,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Fruit Match",
+                "title": "Monkey GO Happy",
                 "flair": []
               },
               {
@@ -2571,7 +2571,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/JBPO-Jelly-Ben-and-Pogo/Game-Cards/JBPO-SuperDuperHaloHalo-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Alphabet Match"
+                    "altText": "Water Sort"
                   }
                 ],
                 "springrollExperience": [
@@ -2592,7 +2592,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "super-duper-halo-halo",
-                "title": "Alphabet Match",
+                "title": "Water Sort",
                 "flair": []
               },
               {
@@ -2608,7 +2608,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Color Animals"
+                    "altText": "Math Tiles: Addition 0-20"
                   }
                 ],
                 "springrollExperience": [
@@ -2629,7 +2629,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "pinkalicious-beach-game",
-                "title": "Color Animals",
+                "title": "Math Tiles: Addition 0-20",
                 "flair": []
               },
               {
@@ -2694,7 +2694,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "elinor-curious-campout",
-                "title": "Number Match",
+                "title": "Ninja Painter",
                 "flair": []
               },
               {
@@ -2710,7 +2710,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/LYLO-Lyla-in-the-Loop/Game-Cards/LYLO-StusSuperStunts-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Color Match"
+                    "altText": "Sumo Smash!"
                   }
                 ],
                 "springrollExperience": [
@@ -2731,7 +2731,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "lyla-in-the-loop-a-stu-of-your-own",
-                "title": "Color Match",
+                "title": "Sumo Smash!",
                 "flair": []
               },
               {
@@ -2805,7 +2805,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Scribbles and Ink: Free Draw",
+                "title": "Scribbles and Ink: Marble Lines",
                 "flair": []
               },
               {
@@ -2995,7 +2995,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "archer-fish-guid",
-                "title": "Shape Match",
+                "title": "Gems Swap 2",
                 "flair": []
               }
             ]
@@ -3003,7 +3003,7 @@
           {
             "__typename": "BodyContentModulesGamesCollage",
             "id": "2738925",
-            "anchor": "Collage-Maze Games",
+            "anchor": "Collage-Arcade Games",
             "theme": [
               {
                 "__typename": "PbsKidsTheme",
@@ -3132,7 +3132,7 @@
                     "contentLanguage": "en_us",
                     "status": "LIVE",
                     "slug": "reboot-rescue",
-                    "title": "Forest Maze",
+                    "title": "Piano Tiles",
                     "flair": []
                   }
                 ]
@@ -3219,7 +3219,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "treeborhood-party-quest",
-                "title": "Space Maze",
+                "title": "Cake Mania",
                 "flair": []
               },
               {
@@ -3302,7 +3302,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "seek-the-peak",
-                "title": "Pirate Maze",
+                "title": "The Imposter",
                 "flair": []
               },
               {
@@ -3364,7 +3364,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/COJB-Count-On-June-Bug/June-Bug-County-Fair-Promo-V1-908x510px-English.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "The Jungle Maze"
+                    "altText": "The Number Snake"
                   }
                 ],
                 "springrollExperience": [
@@ -3385,7 +3385,7 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "county-fair",
-                "title": "Jungle Maze",
+                "title": "Number Snake",
                 "flair": []
               },
               {
@@ -3468,11 +3468,11 @@
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "signs-seek",
-                "title": "Castle Maze",
+                "title": "Tic Tac Toe Addition",
                 "flair": []
               }
             ],
-            "heading": "Maze Games",
+            "heading": "Arcade Games",
             "headingIcon": [
               {
                 "uiAssets": [
@@ -3641,7 +3641,7 @@
                 "id": "87276",
                 "guid": "f28cc250-8890-11e9-8984-97b5c47fd2af",
                 "slug": "hero-maker",
-                "title": "Underwater Maze",
+                "title": "Shortcut Race",
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "gameLogo": [
@@ -3706,7 +3706,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Game-Cards/XRID-HeroMaker-FeatureGraphic-AAPI.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Underwater Maze"
+                    "altText": "Shortcut Race"
                   }
                 ]
               }

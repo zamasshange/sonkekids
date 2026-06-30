@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import type { GamePageData, QuizQuestion, RelatedContentItem, SonkeGame } from "@/lib/games/types";
 import { getHeroVisual } from "@/lib/games/images";
-import { GamePlayer } from "../players/GamePlayer";
 import { PlayActions } from "./PlayActions";
 
 export function ContentModule({
@@ -85,13 +84,19 @@ export function GameHero({ data, large = false }: { data: GamePageData; large?: 
 }
 
 export function GamePlaySection({ data }: { data: GamePageData }) {
-  const { game, gameType, ai } = data;
+  const { game, ai } = data;
   return (
-    <ContentModule className="sonke-game-play" panel id={`play-${game.id}`}>
-      <SectionHeading>Play {game.title}</SectionHeading>
-      <p className="sonke-section-lead">{gameType.howItWorks}</p>
-      <GamePlayer title={game.title} gameType={gameType} />
-      <p className="sonke-player-hint">{ai.tips[0]}</p>
+    <ContentModule className="sonke-game-play-cta" panel>
+      <SectionHeading>Ready to Play?</SectionHeading>
+      <p className="sonke-section-lead">{ai.tagline}</p>
+      <div className="sonke-play-actions">
+        <Link href={`/games/${game.id}/play`} className="sonke-btn sonke-btn-play">
+          Play {game.title}
+        </Link>
+        <Link href="/games/browse" className="sonke-btn sonke-btn-secondary">
+          More Games
+        </Link>
+      </div>
     </ContentModule>
   );
 }

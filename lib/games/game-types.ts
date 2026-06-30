@@ -108,6 +108,16 @@ export const GAME_TYPES: Record<string, GameTypeDefinition> = {
     ...base("match", "Train recall by remembering positions, sounds, and picture pairs.", "Players flip cards or repeat patterns to strengthen memory.", ["working memory", "concentration", "matching"]),
     wikiSearchTerms: (g) => [g.title, "memory game"],
   },
+  "quiz-games": {
+    id: "quiz-games",
+    ...base("quiz", "Build knowledge with quick questions and fun challenges.", "Players answer kid-friendly quiz questions and learn from instant feedback.", ["knowledge", "logic", "reading"]),
+    wikiSearchTerms: (g) => [g.title, "quiz", "educational game"],
+  },
+  "creative-games": {
+    id: "creative-games",
+    ...base("coloring", "Express creativity through art, music, and imaginative play.", "Players color, draw, build, and create in open-ended activities.", ["creativity", "imagination", "fine motor skills"]),
+    wikiSearchTerms: (g) => [g.title, "creative play", "art"],
+  },
   "seasonal-games": {
     id: "seasonal-games",
     ...base("default", "Celebrate holidays and seasons with themed puzzles and activities.", "Players enjoy festive challenges tied to holidays and weather.", ["seasons", "traditions", "creativity"]),

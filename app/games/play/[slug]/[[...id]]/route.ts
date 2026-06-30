@@ -16,5 +16,5 @@ export async function GET(_request: Request, context: RouteContext) {
     notFound();
   }
 
-  redirect(`/games/${sonkeId}`);
+  redirect(`/games/${sonkeId}/play`);
 }

@@ -1,344 +1,465 @@
 {
-  "version": 2,
+  "version": 3,
+  "source": "primarygames",
   "totalGames": 30,
   "totalCategories": 5,
   "categories": [
     {
       "id": "puzzle-games",
       "title": "Puzzle Games",
-      "count": 8,
-      "games": [
-        {
-          "id": "animal-match",
-          "title": "Animal Match"
-        },
-        {
-          "id": "dinosaur-match",
-          "title": "Dinosaur Match"
-        },
-        {
-          "id": "fruit-match",
-          "title": "Fruit Match"
-        },
-        {
-          "id": "alphabet-match",
-          "title": "Alphabet Match"
-        },
-        {
-          "id": "number-match",
-          "title": "Number Match"
-        },
-        {
-          "id": "color-match",
-          "title": "Color Match"
-        },
-        {
-          "id": "shadow-match",
-          "title": "Shadow Match"
-        },
-        {
-          "id": "shape-match",
-          "title": "Shape Match"
-        }
-      ]
-    },
-    {
-      "id": "maze-games",
-      "title": "Maze Games",
       "count": 6,
       "games": [
         {
-          "id": "forest-maze",
-          "title": "Forest Maze"
+          "id": "mega-connect-four",
+          "title": "Mega Connect Four"
         },
         {
-          "id": "space-maze",
-          "title": "Space Maze"
+          "id": "ultimate-sudoku",
+          "title": "Ultimate Sudoku"
         },
         {
-          "id": "pirate-maze",
-          "title": "Pirate Maze"
+          "id": "monkey-go-happy",
+          "title": "Monkey GO Happy"
         },
         {
-          "id": "jungle-maze",
-          "title": "Jungle Maze"
+          "id": "ninja-painter",
+          "title": "Ninja Painter"
         },
         {
-          "id": "castle-maze",
-          "title": "Castle Maze"
+          "id": "gems-swap-2",
+          "title": "Gems Swap 2"
         },
         {
-          "id": "underwater-maze",
-          "title": "Underwater Maze"
+          "id": "juicy-stack",
+          "title": "Juicy Stack"
         }
       ]
     },
     {
-      "id": "memory-games",
-      "title": "Memory Games",
+      "id": "arcade-games",
+      "title": "Arcade Games",
       "count": 6,
       "games": [
         {
-          "id": "memory-cards",
-          "title": "Memory Cards"
+          "id": "piano-tiles",
+          "title": "Piano Tiles"
         },
         {
-          "id": "picture-pairs",
-          "title": "Picture Pairs"
+          "id": "the-imposter",
+          "title": "The Imposter"
         },
         {
-          "id": "emoji-memory",
-          "title": "Emoji Memory"
+          "id": "marble-lines",
+          "title": "Marble Lines"
         },
         {
-          "id": "animal-memory",
-          "title": "Animal Memory"
+          "id": "invace-spaders",
+          "title": "Invace Spaders"
         },
         {
-          "id": "card-flip",
-          "title": "Card Flip"
+          "id": "fidget-spinner-revolution",
+          "title": "Fidget Spinner Revolution"
         },
         {
-          "id": "music-memory",
-          "title": "Music Memory"
+          "id": "flight-sim",
+          "title": "Flight Sim"
         }
       ]
     },
     {
-      "id": "quiz-games",
-      "title": "Quiz & Learn",
-      "count": 5,
+      "id": "logic-games",
+      "title": "Strategy & Board",
+      "count": 6,
       "games": [
         {
-          "id": "odd-one-out",
-          "title": "Odd One Out"
+          "id": "water-sort",
+          "title": "Water Sort"
         },
         {
-          "id": "spot-the-difference",
-          "title": "Spot the Difference"
+          "id": "cake-mania",
+          "title": "Cake Mania"
         },
         {
-          "id": "count-the-animals",
-          "title": "Count the Animals"
+          "id": "bingo-bash",
+          "title": "BINGO Bash"
         },
         {
-          "id": "rhyming-words",
-          "title": "Rhyming Words"
+          "id": "block-triangle-puzzle",
+          "title": "Block Triangle Puzzle"
         },
         {
-          "id": "math-memory",
-          "title": "Math Memory"
+          "id": "bubble-sort",
+          "title": "Bubble Sort"
+        },
+        {
+          "id": "cube-move",
+          "title": "Cube Move"
         }
       ]
     },
     {
-      "id": "creative-games",
-      "title": "Creative Play",
-      "count": 5,
+      "id": "math-games",
+      "title": "Math & Learn",
+      "count": 6,
       "games": [
         {
-          "id": "color-animals",
-          "title": "Color Animals"
+          "id": "math-tiles-addition-0-20",
+          "title": "Math Tiles: Addition 0-20"
         },
         {
-          "id": "free-draw",
-          "title": "Free Draw"
+          "id": "number-snake",
+          "title": "Number Snake"
         },
         {
-          "id": "beat-maker",
-          "title": "Beat Maker"
+          "id": "tic-tac-toe-addition",
+          "title": "Tic Tac Toe Addition"
         },
         {
-          "id": "pizza-maker",
-          "title": "Pizza Maker"
+          "id": "math-lines",
+          "title": "Math Lines"
         },
         {
-          "id": "treasure-hunt",
-          "title": "Treasure Hunt"
+          "id": "math-duck",
+          "title": "Math Duck"
+        },
+        {
+          "id": "hangaroo",
+          "title": "Hangaroo"
+        }
+      ]
+    },
+    {
+      "id": "sports-games",
+      "title": "Sports & Skill",
+      "count": 6,
+      "games": [
+        {
+          "id": "sumo-smash",
+          "title": "Sumo Smash!"
+        },
+        {
+          "id": "ultimate-wheelie",
+          "title": "Ultimate Wheelie"
+        },
+        {
+          "id": "shortcut-race",
+          "title": "Shortcut Race"
+        },
+        {
+          "id": "penalty-kicks",
+          "title": "Penalty Kicks"
+        },
+        {
+          "id": "head-soccer-2022",
+          "title": "Head Soccer 2022"
+        },
+        {
+          "id": "balance-ball",
+          "title": "Balance Ball"
         }
       ]
     }
   ],
   "games": [
     {
-      "id": "animal-match",
-      "title": "Animal Match",
+      "id": "mega-connect-four",
+      "title": "Mega Connect Four",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/MegaConnectFour/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/board/megaconnectfour/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/board/megaconnectfour/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "dinosaur-match",
-      "title": "Dinosaur Match",
+      "id": "ultimate-sudoku",
+      "title": "Ultimate Sudoku",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/UltimateSudoku/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/sudoku/ultimatesudoku/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/sudoku/ultimatesudoku/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "fruit-match",
-      "title": "Fruit Match",
+      "id": "monkey-go-happy",
+      "title": "Monkey GO Happy",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://cdn.primarygames.com/ruffle/monkeygohappy/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/monkeygohappy/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/action/monkeygohappy/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "alphabet-match",
-      "title": "Alphabet Match",
+      "id": "ninja-painter",
+      "title": "Ninja Painter",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://cdn.primarygames.com/ruffle/ninjapainter/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/ninjapainter/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/action/ninjapainter/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "number-match",
-      "title": "Number Match",
+      "id": "gems-swap-2",
+      "title": "Gems Swap 2",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://license.novelgames.com/games/popup.php?gameShortName=gems2&language=en&memberId=gg84950642",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/action/gemsswap2/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/action/gemsswap2/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "color-match",
-      "title": "Color Match",
+      "id": "juicy-stack",
+      "title": "Juicy Stack",
       "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "category": "Puzzle Games",
+      "embedUrl": "https://www8.agame.com/mirror/html5/publishers/Juicy+Stack/en_US/index.html",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/physics/juicystack/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/physics/juicystack/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "shadow-match",
-      "title": "Shadow Match",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "id": "piano-tiles",
+      "title": "Piano Tiles",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/PianoTiles/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/music/pianotiles/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/music/pianotiles/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "shape-match",
-      "title": "Shape Match",
-      "categoryId": "puzzle-games",
-      "category": "Puzzle Games"
+      "id": "the-imposter",
+      "title": "The Imposter",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/TheImposter/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/adventure/theimposter/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/adventure/theimposter/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "forest-maze",
-      "title": "Forest Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "marble-lines",
+      "title": "Marble Lines",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/MarbleLines/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/action/marblelines/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/action/marblelines/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "space-maze",
-      "title": "Space Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "invace-spaders",
+      "title": "Invace Spaders",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/InvaceSpaders/index.php",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/classic/invacespaders/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/classic/invacespaders/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "pirate-maze",
-      "title": "Pirate Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "fidget-spinner-revolution",
+      "title": "Fidget Spinner Revolution",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/FidgetSpinnerRevolution/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/skill/fidgetspinnerrevolution/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/skill/fidgetspinnerrevolution/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "jungle-maze",
-      "title": "Jungle Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "flight-sim",
+      "title": "Flight Sim",
+      "categoryId": "arcade-games",
+      "category": "Arcade Games",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/FlightSim/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/simulation/flightsim/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/simulation/flightsim/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "castle-maze",
-      "title": "Castle Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "water-sort",
+      "title": "Water Sort",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/WaterSort/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/watersort/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/watersort/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "underwater-maze",
-      "title": "Underwater Maze",
-      "categoryId": "maze-games",
-      "category": "Maze Games"
+      "id": "cake-mania",
+      "title": "Cake Mania",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/ruffle/cakemania/index.php",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/cakemania/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/cakemania/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "memory-cards",
-      "title": "Memory Cards",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "bingo-bash",
+      "title": "BINGO Bash",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/BingoBash/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/board/bingobash/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/board/bingobash/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "picture-pairs",
-      "title": "Picture Pairs",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "block-triangle-puzzle",
+      "title": "Block Triangle Puzzle",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/BlockTrianglePuzzle/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/blocktrianglepuzzle/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/blocktrianglepuzzle/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "emoji-memory",
-      "title": "Emoji Memory",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "bubble-sort",
+      "title": "Bubble Sort",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/BubbleSort/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/bubblesort/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/bubblesort/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "animal-memory",
-      "title": "Animal Memory",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "cube-move",
+      "title": "Cube Move",
+      "categoryId": "logic-games",
+      "category": "Strategy & Board",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/CubeMove/",
+      "thumbnailUrl": "https://www.primarygames.com/puzzles/strategy/cubemove/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/puzzles/strategy/cubemove/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "card-flip",
-      "title": "Card Flip",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "math-tiles-addition-0-20",
+      "title": "Math Tiles: Addition 0-20",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://www.digipuzzle.net/digipuzzle/kids/puzzles/tilesmath_zero_to_twenty_links.htm",
+      "thumbnailUrl": "https://www.primarygames.com/math/mathtilesaddition0to20/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/math/mathtilesaddition0to20/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "music-memory",
-      "title": "Music Memory",
-      "categoryId": "memory-games",
-      "category": "Memory Games"
+      "id": "number-snake",
+      "title": "Number Snake",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/NumberSnake/",
+      "thumbnailUrl": "https://www.primarygames.com/math/numbersnake/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/math/numbersnake/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "odd-one-out",
-      "title": "Odd One Out",
-      "categoryId": "quiz-games",
-      "category": "Quiz & Learn"
+      "id": "tic-tac-toe-addition",
+      "title": "Tic Tac Toe Addition",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/TicTacToeAddition/",
+      "thumbnailUrl": "https://www.primarygames.com/math/tictactoeaddition/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/math/tictactoeaddition/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "spot-the-difference",
-      "title": "Spot the Difference",
-      "categoryId": "quiz-games",
-      "category": "Quiz & Learn"
+      "id": "math-lines",
+      "title": "Math Lines",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/MathLines/",
+      "thumbnailUrl": "https://www.primarygames.com/math/mathlines/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/math/mathlines/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "count-the-animals",
-      "title": "Count the Animals",
-      "categoryId": "quiz-games",
-      "category": "Quiz & Learn"
+      "id": "math-duck",
+      "title": "Math Duck",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/MathDuck/",
+      "thumbnailUrl": "https://www.primarygames.com/math/mathduck/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/math/mathduck/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "rhyming-words",
-      "title": "Rhyming Words",
-      "categoryId": "quiz-games",
-      "category": "Quiz & Learn"
+      "id": "hangaroo",
+      "title": "Hangaroo",
+      "categoryId": "math-games",
+      "category": "Math & Learn",
+      "embedUrl": "https://cdn.primarygames.com/ruffle/hangaroo/",
+      "thumbnailUrl": "https://www.primarygames.com/langarts/hangaroo/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/langarts/hangaroo/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "math-memory",
-      "title": "Math Memory",
-      "categoryId": "quiz-games",
-      "category": "Quiz & Learn"
+      "id": "sumo-smash",
+      "title": "Sumo Smash!",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/SumoSmash/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/action/sumosmash/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/action/sumosmash/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "color-animals",
-      "title": "Color Animals",
-      "categoryId": "creative-games",
-      "category": "Creative Play"
+      "id": "ultimate-wheelie",
+      "title": "Ultimate Wheelie",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/UltimateWheelie/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/skill/ultimatewheelie/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/skill/ultimatewheelie/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "free-draw",
-      "title": "Free Draw",
-      "categoryId": "creative-games",
-      "category": "Creative Play"
+      "id": "shortcut-race",
+      "title": "Shortcut Race",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/ShortcutRace/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/racing/shortcutrace/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/racing/shortcutrace/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "beat-maker",
-      "title": "Beat Maker",
-      "categoryId": "creative-games",
-      "category": "Creative Play"
+      "id": "penalty-kicks",
+      "title": "Penalty Kicks",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/PenaltyKicks/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/sports/penaltykicks/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/sports/penaltykicks/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "pizza-maker",
-      "title": "Pizza Maker",
-      "categoryId": "creative-games",
-      "category": "Creative Play"
+      "id": "head-soccer-2022",
+      "title": "Head Soccer 2022",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/HeadSoccer2022/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/sports/headsoccer2022/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/sports/headsoccer2022/",
+      "embedSource": "primarygames"
     },
     {
-      "id": "treasure-hunt",
-      "title": "Treasure Hunt",
-      "categoryId": "creative-games",
-      "category": "Creative Play"
+      "id": "balance-ball",
+      "title": "Balance Ball",
+      "categoryId": "sports-games",
+      "category": "Sports & Skill",
+      "embedUrl": "https://cdn.primarygames.com/HTML5/BalanceBall/",
+      "thumbnailUrl": "https://www.primarygames.com/arcade/sports/balanceball/logo200.png",
+      "sourceUrl": "https://www.primarygames.com/arcade/sports/balanceball/",
+      "embedSource": "primarygames"
     }
   ]
 }

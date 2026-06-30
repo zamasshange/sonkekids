@@ -7,7 +7,7 @@ export function buildGameImages(
   wikipedia: WikipediaData | null,
 ): GameImages {
   const asset = getCategoryAsset(game.categoryId);
-  const wikiImage = wikipedia?.imageUrl ?? wikipedia?.thumbnailUrl ?? null;
+  const wikiImage = wikipedia?.imageUrl ?? wikipedia?.thumbnailUrl ?? game.thumbnailUrl ?? null;
   const gradientBg = `linear-gradient(135deg, ${asset.gradient[0]}, ${asset.gradient[1]})`;
 
   return {
@@ -22,8 +22,9 @@ export function buildGameImages(
 
 export function getHeroVisual(game: SonkeGame, heroImage: string | null) {
   const asset = getCategoryAsset(game.categoryId);
+  const image = heroImage ?? game.thumbnailUrl ?? null;
   return {
-    image: heroImage,
+    image,
     emoji: asset.emoji,
     gradient: asset.gradient,
     accent: asset.accent,

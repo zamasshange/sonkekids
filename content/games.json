@@ -6,111 +6,111 @@
     },
     {
       "pbsHeading": "New Games",
-      "title": "Maze Games"
+      "title": "Arcade Games"
     },
     {
       "pbsHeading": "Summer Is Here!",
-      "title": "Memory Games"
+      "title": "Strategy & Board"
     },
     {
       "pbsHeading": "New and Popular!",
-      "title": "Quiz & Learn"
+      "title": "Math & Learn"
     },
     {
       "pbsHeading": "Quizzes",
-      "title": "Creative Play"
+      "title": "Sports & Skill"
     }
   ],
   "overrides": [
     {
       "pbsSlug": "weather-reporter",
       "pbsTitle": "Weather Reporter",
-      "title": "Animal Match",
+      "title": "Mega Connect Four",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "seek-the-peak",
       "pbsTitle": "Seek the Peak",
-      "title": "Pirate Maze",
-      "category": "Maze Games"
+      "title": "The Imposter",
+      "category": "Arcade Games"
     },
     {
       "pbsSlug": "build-a-boat",
       "pbsTitle": "Build-a-Boat",
-      "title": "Fruit Match",
+      "title": "Monkey GO Happy",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "super-duper-halo-halo",
       "pbsTitle": "Super Duper Halo-Halo",
-      "title": "Alphabet Match",
-      "category": "Puzzle Games"
+      "title": "Water Sort",
+      "category": "Strategy & Board"
     },
     {
       "pbsSlug": "pinkalicious-beach-game",
       "pbsTitle": "Splashtastic Beach Day",
-      "title": "Color Animals",
-      "category": "Creative Play"
+      "title": "Math Tiles: Addition 0-20",
+      "category": "Math & Learn"
     },
     {
       "pbsSlug": "elinor-curious-campout",
       "pbsTitle": "Elinor Curious Campout",
-      "title": "Number Match",
+      "title": "Ninja Painter",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "lyla-stu-stunts",
       "pbsTitle": "Stu's Super Stunts",
-      "title": "Color Match",
-      "category": "Puzzle Games"
+      "title": "Sumo Smash!",
+      "category": "Sports & Skill"
     },
     {
       "pbsSlug": "scribbles-and-ink-far-and-away",
       "pbsTitle": "Far and Away",
-      "title": "Free Draw",
-      "category": "Creative Play"
+      "title": "Marble Lines",
+      "category": "Arcade Games"
     },
     {
       "pbsSlug": "patternpalooza-fair",
       "pbsTitle": "Pattern Fair",
-      "title": "Shadow Match",
-      "category": "Puzzle Games"
+      "title": "Block Triangle Puzzle",
+      "category": "Strategy & Board"
     },
     {
       "pbsSlug": "archerfish-bug-rush",
       "pbsTitle": "Archerfish Bug Rush",
-      "title": "Shape Match",
+      "title": "Gems Swap 2",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "reboot-rescue",
       "pbsTitle": "Reboot Rescue",
-      "title": "Forest Maze",
-      "category": "Maze Games"
+      "title": "Piano Tiles",
+      "category": "Arcade Games"
     },
     {
       "pbsSlug": "treeborhood-party-quest",
       "pbsTitle": "Treeborhood Party Quest",
-      "title": "Space Maze",
-      "category": "Maze Games"
+      "title": "Cake Mania",
+      "category": "Strategy & Board"
     },
     {
       "pbsSlug": "count-y-fair",
       "pbsTitle": "Count-y Fair",
-      "title": "Jungle Maze",
-      "category": "Maze Games"
+      "title": "Number Snake",
+      "category": "Math & Learn"
     },
     {
       "pbsSlug": "phoebe-signs-seek",
       "pbsTitle": "Signs & Seek",
-      "title": "Castle Maze",
-      "category": "Maze Games"
+      "title": "Tic Tac Toe Addition",
+      "category": "Math & Learn"
     },
     {
       "pbsSlug": "hero-maker",
       "pbsTitle": "Hero Maker",
-      "title": "Underwater Maze",
-      "category": "Maze Games"
+      "title": "Shortcut Race",
+      "category": "Sports & Skill"
     }
   ]
 }

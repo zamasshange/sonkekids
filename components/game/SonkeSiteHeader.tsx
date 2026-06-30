@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SONKE_LOGO_SVG } from "@/lib/pbs-shell";
+import { SONKE_LOGO_SVG } from "@/lib/sonke-branding";
 
 type SonkeSiteHeaderProps = {
   pageTitle: string;

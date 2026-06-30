@@ -12,28 +12,28 @@
     "worldTitle": "Puzzle Games",
     "guide": null
   },
-  "maze-games": {
-    "pbsTitle": "Maze Games",
-    "worldId": "maze-games",
-    "worldTitle": "Maze Games",
+  "arcade-games": {
+    "pbsTitle": "Arcade Games",
+    "worldId": "arcade-games",
+    "worldTitle": "Arcade Games",
     "guide": null
   },
-  "memory-games": {
-    "pbsTitle": "Memory Games",
-    "worldId": "memory-games",
-    "worldTitle": "Memory Games",
+  "logic-games": {
+    "pbsTitle": "Strategy & Board",
+    "worldId": "logic-games",
+    "worldTitle": "Strategy & Board",
     "guide": null
   },
-  "quiz-games": {
-    "pbsTitle": "Quiz & Learn",
-    "worldId": "quiz-games",
-    "worldTitle": "Quiz & Learn",
+  "math-games": {
+    "pbsTitle": "Math & Learn",
+    "worldId": "math-games",
+    "worldTitle": "Math & Learn",
     "guide": null
   },
-  "creative-games": {
-    "pbsTitle": "Creative Play",
-    "worldId": "creative-games",
-    "worldTitle": "Creative Play",
+  "sports-games": {
+    "pbsTitle": "Sports & Skill",
+    "worldId": "sports-games",
+    "worldTitle": "Sports & Skill",
     "guide": null
   }
 }

@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": "puzzle-games",
+      "title": "Puzzle Games",
+      "games": [
+        { "title": "Mega Connect Four", "path": "puzzles/board/megaconnectfour" },
+        { "title": "Ultimate Sudoku", "path": "puzzles/sudoku/ultimatesudoku" },
+        { "title": "Monkey GO Happy", "path": "puzzles/action/monkeygohappy" },
+        { "title": "Ninja Painter", "path": "puzzles/action/ninjapainter" },
+        { "title": "Gems Swap 2", "path": "puzzles/action/gemsswap2" },
+        { "title": "Juicy Stack", "path": "puzzles/physics/juicystack" }
+      ]
+    },
+    {
+      "id": "arcade-games",
+      "title": "Arcade Games",
+      "games": [
+        { "title": "Piano Tiles", "path": "arcade/music/pianotiles" },
+        { "title": "The Imposter", "path": "arcade/adventure/theimposter" },
+        { "title": "Marble Lines", "path": "arcade/action/marblelines" },
+        { "title": "Invace Spaders", "path": "arcade/classic/invacespaders" },
+        { "title": "Fidget Spinner Revolution", "path": "arcade/skill/fidgetspinnerrevolution" },
+        { "title": "Flight Sim", "path": "arcade/simulation/flightsim" }
+      ]
+    },
+    {
+      "id": "logic-games",
+      "title": "Strategy & Board",
+      "games": [
+        { "title": "Water Sort", "path": "puzzles/strategy/watersort" },
+        { "title": "Cake Mania", "path": "puzzles/strategy/cakemania" },
+        { "title": "BINGO Bash", "path": "puzzles/board/bingobash" },
+        { "title": "Block Triangle Puzzle", "path": "puzzles/strategy/blocktrianglepuzzle" },
+        { "title": "Bubble Sort", "path": "puzzles/strategy/bubblesort" },
+        { "title": "Cube Move", "path": "puzzles/strategy/cubemove" }
+      ]
+    },
+    {
+      "id": "math-games",
+      "title": "Math & Learn",
+      "games": [
+        { "title": "Math Tiles: Addition 0-20", "path": "math/mathtilesaddition0to20" },
+        { "title": "Number Snake", "path": "math/numbersnake" },
+        { "title": "Tic Tac Toe Addition", "path": "math/tictactoeaddition" },
+        { "title": "Math Lines", "path": "math/mathlines" },
+        { "title": "Math Duck", "path": "math/mathduck" },
+        { "title": "Hangaroo", "path": "langarts/hangaroo" }
+      ]
+    },
+    {
+      "id": "sports-games",
+      "title": "Sports & Skill",
+      "games": [
+        { "title": "Sumo Smash!", "path": "arcade/action/sumosmash" },
+        { "title": "Ultimate Wheelie", "path": "arcade/skill/ultimatewheelie" },
+        { "title": "Shortcut Race", "path": "arcade/racing/shortcutrace" },
+        { "title": "Penalty Kicks", "path": "arcade/sports/penaltykicks" },
+        { "title": "Head Soccer 2022", "path": "arcade/sports/headsoccer2022" },
+        { "title": "Balance Ball", "path": "arcade/sports/balanceball" }
+      ]
+    }
+  ]
+}

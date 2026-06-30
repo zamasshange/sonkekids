@@ -26,20 +26,20 @@ function pick(categoryId, index) {
 
 const gamesPageSlots = [
   { pbsSlug: "weather-reporter", pbsTitle: "Weather Reporter", title: pick("puzzle-games", 0), category: "Puzzle Games" },
-  { pbsSlug: "seek-the-peak", pbsTitle: "Seek the Peak", title: pick("maze-games", 2), category: "Maze Games" },
+  { pbsSlug: "seek-the-peak", pbsTitle: "Seek the Peak", title: pick("arcade-games", 1), category: "Arcade Games" },
   { pbsSlug: "build-a-boat", pbsTitle: "Build-a-Boat", title: pick("puzzle-games", 2), category: "Puzzle Games" },
-  { pbsSlug: "super-duper-halo-halo", pbsTitle: "Super Duper Halo-Halo", title: pick("puzzle-games", 3), category: "Puzzle Games" },
-  { pbsSlug: "pinkalicious-beach-game", pbsTitle: "Splashtastic Beach Day", title: pick("creative-games", 0), category: "Creative Play" },
-  { pbsSlug: "elinor-curious-campout", pbsTitle: "Elinor Curious Campout", title: pick("puzzle-games", 4), category: "Puzzle Games" },
-  { pbsSlug: "lyla-stu-stunts", pbsTitle: "Stu's Super Stunts", title: pick("puzzle-games", 5), category: "Puzzle Games" },
-  { pbsSlug: "scribbles-and-ink-far-and-away", pbsTitle: "Far and Away", title: pick("creative-games", 1), category: "Creative Play" },
-  { pbsSlug: "patternpalooza-fair", pbsTitle: "Pattern Fair", title: pick("puzzle-games", 6), category: "Puzzle Games" },
-  { pbsSlug: "archerfish-bug-rush", pbsTitle: "Archerfish Bug Rush", title: pick("puzzle-games", 7), category: "Puzzle Games" },
-  { pbsSlug: "reboot-rescue", pbsTitle: "Reboot Rescue", title: pick("maze-games", 0), category: "Maze Games" },
-  { pbsSlug: "treeborhood-party-quest", pbsTitle: "Treeborhood Party Quest", title: pick("maze-games", 1), category: "Maze Games" },
-  { pbsSlug: "count-y-fair", pbsTitle: "Count-y Fair", title: pick("maze-games", 3), category: "Maze Games" },
-  { pbsSlug: "phoebe-signs-seek", pbsTitle: "Signs & Seek", title: pick("maze-games", 4), category: "Maze Games" },
-  { pbsSlug: "hero-maker", pbsTitle: "Hero Maker", title: pick("maze-games", 5), category: "Maze Games" },
+  { pbsSlug: "super-duper-halo-halo", pbsTitle: "Super Duper Halo-Halo", title: pick("logic-games", 0), category: "Strategy & Board" },
+  { pbsSlug: "pinkalicious-beach-game", pbsTitle: "Splashtastic Beach Day", title: pick("math-games", 0), category: "Math & Learn" },
+  { pbsSlug: "elinor-curious-campout", pbsTitle: "Elinor Curious Campout", title: pick("puzzle-games", 3), category: "Puzzle Games" },
+  { pbsSlug: "lyla-stu-stunts", pbsTitle: "Stu's Super Stunts", title: pick("sports-games", 0), category: "Sports & Skill" },
+  { pbsSlug: "scribbles-and-ink-far-and-away", pbsTitle: "Far and Away", title: pick("arcade-games", 2), category: "Arcade Games" },
+  { pbsSlug: "patternpalooza-fair", pbsTitle: "Pattern Fair", title: pick("logic-games", 3), category: "Strategy & Board" },
+  { pbsSlug: "archerfish-bug-rush", pbsTitle: "Archerfish Bug Rush", title: pick("puzzle-games", 4), category: "Puzzle Games" },
+  { pbsSlug: "reboot-rescue", pbsTitle: "Reboot Rescue", title: pick("arcade-games", 0), category: "Arcade Games" },
+  { pbsSlug: "treeborhood-party-quest", pbsTitle: "Treeborhood Party Quest", title: pick("logic-games", 1), category: "Strategy & Board" },
+  { pbsSlug: "count-y-fair", pbsTitle: "Count-y Fair", title: pick("math-games", 1), category: "Math & Learn" },
+  { pbsSlug: "phoebe-signs-seek", pbsTitle: "Signs & Seek", title: pick("math-games", 2), category: "Math & Learn" },
+  { pbsSlug: "hero-maker", pbsTitle: "Hero Maker", title: pick("sports-games", 2), category: "Sports & Skill" },
 ];
 
 const homePageSlots = gamesPageSlots.slice(0, 10);
@@ -59,10 +59,10 @@ writeFileSync(
   `${JSON.stringify({
     sectionHeadings: [
       { pbsHeading: "Summer Games", title: "Puzzle Games" },
-      { pbsHeading: "New Games", title: "Maze Games" },
-      { pbsHeading: "Summer Is Here!", title: "Memory Games" },
-      { pbsHeading: "New and Popular!", title: "Quiz & Learn" },
-      { pbsHeading: "Quizzes", title: "Creative Play" },
+      { pbsHeading: "New Games", title: "Arcade Games" },
+      { pbsHeading: "Summer Is Here!", title: "Strategy & Board" },
+      { pbsHeading: "New and Popular!", title: "Math & Learn" },
+      { pbsHeading: "Quizzes", title: "Sports & Skill" },
     ],
     overrides,
   }, null, 2)}\n`,

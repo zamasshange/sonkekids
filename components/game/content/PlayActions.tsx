@@ -6,7 +6,7 @@ type PlayActionsProps = {
 };
 
 export function PlayActions({ gameId, title }: PlayActionsProps) {
-  const playHref = `#play-${gameId}`;
+  const playHref = `/games/${gameId}/play`;
 
   function handleFavorite() {
     try {
