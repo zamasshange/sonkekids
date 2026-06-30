@@ -1,231 +1,225 @@
 {
   "pbs-kids-2": {
-    "pbsTitle": "Sonke Kids",
-    "pbsTitleAlt": "PBS KIDS",
-    "worldId": "games",
-    "worldTitle": "Games",
-    "guide": null
-  },
-  "phoebe-jay": {
-    "pbsTitle": "Phoebe & Jay",
-    "worldId": "birds",
-    "worldTitle": "Birds",
-    "guide": null
-  },
-  "carl-the-collector": {
-    "pbsTitle": "Carl the Collector",
-    "worldId": "weird-but-true",
-    "worldTitle": "Weird But True!",
-    "guide": null
-  },
-  "lyla-in-the-loop": {
-    "pbsTitle": "Lyla in the Loop",
-    "worldId": "puzzles",
-    "worldTitle": "Puzzles",
-    "guide": null
-  },
-  "weather-hunters": {
-    "pbsTitle": "Weather Hunters",
-    "worldId": "science",
-    "worldTitle": "Science",
+    "pbsTitle": "PBS KIDS",
+    "pbsTitleAlt": "Sonke Kids",
+    "worldId": "all-games",
+    "worldTitle": "All Games",
     "guide": null
   },
   "daniel": {
     "pbsTitle": "Daniel Tiger's Neighborhood",
-    "worldId": "amazing-animals",
-    "worldTitle": "Amazing Animals",
+    "worldId": "puzzle-games",
+    "worldTitle": "Puzzle Games",
     "guide": null
   },
-  "wild-kratts": {
-    "pbsTitle": "Wild Kratts",
-    "worldId": "mammals",
-    "worldTitle": "Mammals",
-    "guide": null
-  },
-  "countonjunebug": {
-    "pbsTitle": "Count on June Bug!",
-    "worldId": "quizzes",
-    "worldTitle": "Quizzes",
+  "phoebe-jay": {
+    "pbsTitle": "Phoebe & Jay",
+    "worldId": "maze-games",
+    "worldTitle": "Maze Games",
     "guide": null
   },
   "sesame-street": {
     "pbsTitle": "Sesame Street",
-    "worldId": "try-this",
-    "worldTitle": "Try This!",
+    "worldId": "hidden-object-games",
+    "worldTitle": "Hidden Object Games",
     "guide": null
   },
-  "molly-of-denali": {
-    "pbsTitle": "Molly of Denali",
-    "worldId": "us-states",
-    "worldTitle": "U.S. States",
+  "weather-hunters": {
+    "pbsTitle": "Weather Hunters",
+    "worldId": "coloring-games",
+    "worldTitle": "Coloring Games",
     "guide": null
   },
-  "pinkalicious-and-peterrific": {
-    "pbsTitle": "Pinkalicious & Peterrific",
-    "worldId": "puzzles",
-    "worldTitle": "Puzzles",
+  "carl-the-collector": {
+    "pbsTitle": "Carl the Collector",
+    "worldId": "drawing-games",
+    "worldTitle": "Drawing Games",
     "guide": null
   },
-  "odd-squad": {
-    "pbsTitle": "Odd Squad",
-    "worldId": "science",
-    "worldTitle": "Science",
+  "wild-kratts": {
+    "pbsTitle": "Wild Kratts",
+    "worldId": "music-games",
+    "worldTitle": "Music Games",
     "guide": null
   },
-  "arthur": {
-    "pbsTitle": "Arthur",
-    "worldId": "history",
-    "worldTitle": "History",
+  "lyla-in-the-loop": {
+    "pbsTitle": "Lyla in the Loop",
+    "worldId": "animal-games",
+    "worldTitle": "Animal Games",
+    "guide": null
+  },
+  "countonjunebug": {
+    "pbsTitle": "Count on June Bug!",
+    "worldId": "dinosaur-games",
+    "worldTitle": "Dinosaur Games",
     "guide": null
   },
   "rosies-rules": {
     "pbsTitle": "Rosie's Rules",
-    "worldId": "personality-quizzes",
-    "worldTitle": "Personality Quizzes",
-    "guide": null
-  },
-  "donkey-hodie": {
-    "pbsTitle": "Donkey Hodie",
-    "worldId": "funny-fill-in",
-    "worldTitle": "Funny Fill-In",
+    "worldId": "space-games",
+    "worldTitle": "Space Games",
     "guide": null
   },
   "work-it-out-wombats": {
     "pbsTitle": "Work It Out Wombats!",
-    "worldId": "action",
-    "worldTitle": "Action",
+    "worldId": "food-games",
+    "worldTitle": "Food Games",
     "guide": null
   },
   "almas-way": {
     "pbsTitle": "Alma's Way",
-    "worldId": "amazing-animals",
-    "worldTitle": "Amazing Animals",
+    "worldId": "math-games",
+    "worldTitle": "Math Games",
+    "guide": null
+  },
+  "donkey-hodie": {
+    "pbsTitle": "Donkey Hodie",
+    "worldId": "reading-games",
+    "worldTitle": "Reading Games",
+    "guide": null
+  },
+  "odd-squad": {
+    "pbsTitle": "Odd Squad",
+    "worldId": "science-games",
+    "worldTitle": "Science Games",
     "guide": null
   },
   "city-island": {
     "pbsTitle": "City Island",
-    "worldId": "space",
-    "worldTitle": "Space",
+    "worldId": "geography-games",
+    "worldTitle": "Geography Games",
     "guide": null
   },
-  "curious-george": {
-    "pbsTitle": "Curious George",
-    "worldId": "mammals",
-    "worldTitle": "Mammals",
+  "arthur": {
+    "pbsTitle": "Arthur",
+    "worldId": "logic-games",
+    "worldTitle": "Logic Games",
     "guide": null
   },
-  "xavier-riddle": {
-    "pbsTitle": "Xavier Riddle and the Secret Museum",
-    "worldId": "history",
-    "worldTitle": "History",
+  "pinkalicious-and-peterrific": {
+    "pbsTitle": "Pinkalicious & Peterrific",
+    "worldId": "adventure-games",
+    "worldTitle": "Adventure Games",
     "guide": null
   },
   "clifford-big-red-dog": {
     "pbsTitle": "Clifford the Big Red Dog",
-    "worldId": "mammals",
-    "worldTitle": "Mammals",
-    "guide": null
-  },
-  "super-whys-comic-book-adventures": {
-    "pbsTitle": "Super Why's Comic Book Adventures",
-    "worldId": "quizzes",
-    "worldTitle": "Quizzes",
-    "guide": null
-  },
-  "acoustic-rooster": {
-    "pbsTitle": "Acoustic Rooster",
-    "worldId": "birds",
-    "worldTitle": "Birds",
-    "guide": null
-  },
-  "jelly-ben-pogo": {
-    "pbsTitle": "Jelly, Ben & Pogo",
-    "worldId": "amazing-animals",
-    "worldTitle": "Amazing Animals",
-    "guide": null
-  },
-  "nature-cat": {
-    "pbsTitle": "Nature Cat",
-    "worldId": "mammals",
-    "worldTitle": "Mammals",
-    "guide": null
-  },
-  "dinosaur-train": {
-    "pbsTitle": "Dinosaur Train",
-    "worldId": "prehistoric",
-    "worldTitle": "Prehistoric",
-    "guide": null
-  },
-  "lets-go-luna": {
-    "pbsTitle": "Let's Go Luna!",
-    "worldId": "history",
-    "worldTitle": "History",
-    "guide": null
-  },
-  "hero-elementary": {
-    "pbsTitle": "Hero Elementary",
-    "worldId": "science",
-    "worldTitle": "Science",
-    "guide": null
-  },
-  "cyberchase": {
-    "pbsTitle": "Cyberchase",
-    "worldId": "puzzles",
-    "worldTitle": "Puzzles",
-    "guide": null
-  },
-  "ruff-ruffman": {
-    "pbsTitle": "Ruff Ruffman: Humble Media Genius",
-    "worldId": "weird-but-true",
-    "worldTitle": "Weird But True!",
-    "guide": null
-  },
-  "the-cat-in-the-hat": {
-    "pbsTitle": "The Cat in the Hat",
-    "worldId": "funny-fill-in",
-    "worldTitle": "Funny Fill-In",
-    "guide": null
-  },
-  "ready-jet-go": {
-    "pbsTitle": "Ready Jet Go!",
-    "worldId": "space",
-    "worldTitle": "Space",
-    "guide": null
-  },
-  "super-why": {
-    "pbsTitle": "Super Why!",
-    "worldId": "quizzes",
-    "worldTitle": "Quizzes",
-    "guide": null
-  },
-  "sid-the-science-kid": {
-    "pbsTitle": "Sid the Science Kid",
-    "worldId": "science",
-    "worldTitle": "Science",
-    "guide": null
-  },
-  "peg-cat": {
-    "pbsTitle": "Peg + Cat",
-    "worldId": "puzzles",
-    "worldTitle": "Puzzles",
-    "guide": null
-  },
-  "scribbles-and-ink": {
-    "pbsTitle": "Scribbles and Ink",
-    "worldId": "funny-fill-in",
-    "worldTitle": "Funny Fill-In",
+    "worldId": "arcade-games",
+    "worldTitle": "Arcade Games",
     "guide": null
   },
   "elinor-wonders-why": {
     "pbsTitle": "Elinor Wonders Why",
-    "worldId": "mammals",
-    "worldTitle": "Mammals",
+    "worldId": "typing-games",
+    "worldTitle": "Typing Games",
     "guide": null
   },
-  "team-hamster": {
+  "acoustic-rooster": {
+    "pbsTitle": "Acoustic Rooster",
+    "worldId": "sports-games",
+    "worldTitle": "Sports Games",
+    "guide": null
+  },
+  "jelly-ben-pogo": {
+    "pbsTitle": "Jelly, Ben & Pogo",
+    "worldId": "memory-games",
+    "worldTitle": "Memory Games",
+    "guide": null
+  },
+  "molly-of-denali": {
+    "pbsTitle": "Molly of Denali",
+    "worldId": "seasonal-games",
+    "worldTitle": "Seasonal Games",
+    "guide": null
+  },
+  "xavier-riddle": {
+    "pbsTitle": "Xavier Riddle and the Secret Museum",
+    "worldId": "puzzle-games",
+    "worldTitle": "Puzzle Games",
+    "guide": null
+  },
+  "nature-cat": {
+    "pbsTitle": "Nature Cat",
+    "worldId": "maze-games",
+    "worldTitle": "Maze Games",
+    "guide": null
+  },
+  "dinosaur-train": {
+    "pbsTitle": "Dinosaur Train",
+    "worldId": "hidden-object-games",
+    "worldTitle": "Hidden Object Games",
+    "guide": null
+  },
+  "scribbles-and-ink": {
+    "pbsTitle": "Scribbles and Ink",
+    "worldId": "coloring-games",
+    "worldTitle": "Coloring Games",
+    "guide": null
+  },
+  "lets-go-luna": {
+    "pbsTitle": "Let's Go Luna!",
+    "worldId": "drawing-games",
+    "worldTitle": "Drawing Games",
+    "guide": null
+  },
+  "hero-elementary": {
+    "pbsTitle": "Hero Elementary",
+    "worldId": "music-games",
+    "worldTitle": "Music Games",
+    "guide": null
+  },
+  "cyberchase": {
+    "pbsTitle": "Cyberchase",
+    "worldId": "animal-games",
+    "worldTitle": "Animal Games",
+    "guide": null
+  },
+  "ruff-ruffman-show": {
     "pbsTitle": "Team Hamster! & Ruff Ruffman",
-    "worldId": "action",
-    "worldTitle": "Action",
+    "worldId": "dinosaur-games",
+    "worldTitle": "Dinosaur Games",
+    "guide": null
+  },
+  "ruff-ruffman-humble-media-genius": {
+    "pbsTitle": "Ruff Ruffman: Humble Media Genius",
+    "worldId": "space-games",
+    "worldTitle": "Space Games",
+    "guide": null
+  },
+  "curious-george": {
+    "pbsTitle": "Curious George",
+    "worldId": "food-games",
+    "worldTitle": "Food Games",
+    "guide": null
+  },
+  "the-cat-in-the-hat": {
+    "pbsTitle": "The Cat in the Hat",
+    "worldId": "math-games",
+    "worldTitle": "Math Games",
+    "guide": null
+  },
+  "peg-cat": {
+    "pbsTitle": "Peg + Cat",
+    "worldId": "reading-games",
+    "worldTitle": "Reading Games",
+    "guide": null
+  },
+  "ready-jet-go": {
+    "pbsTitle": "Ready Jet Go!",
+    "worldId": "science-games",
+    "worldTitle": "Science Games",
+    "guide": null
+  },
+  "super-why": {
+    "pbsTitle": "Super Why!",
+    "worldId": "geography-games",
+    "worldTitle": "Geography Games",
+    "guide": null
+  },
+  "sid-the-science-kid": {
+    "pbsTitle": "Sid the Science Kid",
+    "worldId": "logic-games",
+    "worldTitle": "Logic Games",
     "guide": null
   }
 }
