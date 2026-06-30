@@ -5,11 +5,20 @@ import { ContentModule, SectionHeading } from "@/components/game/content/shared"
 
 export const metadata = {
   title: "All Games | Sonke Kids",
-  description: "Browse all 254 Sonke Kids games by category.",
+  description: "Browse all Sonke Kids learning games by category.",
 };
 
-export default function GamesBrowsePage() {
+type BrowsePageProps = {
+  searchParams: Promise<{ category?: string }>;
+};
+
+export default async function GamesBrowsePage({ searchParams }: BrowsePageProps) {
+  const { category: activeCategory } = await searchParams;
   const catalog = loadCatalog();
+
+  const categories = activeCategory
+    ? catalog.categories.filter((c) => c.id === activeCategory)
+    : catalog.categories;
 
   return (
     <SonkePbsPage pageTitle="All Games">
@@ -17,14 +26,45 @@ export default function GamesBrowsePage() {
         <div className="sonke-game-hero-copy">
           <p className="sonke-game-badge">All Games</p>
           <h2 className="sonke-game-title">{catalog.totalGames} Games to Play</h2>
-          <p className="sonke-game-tagline">Browse every Sonke Kids game by category and jump into play.</p>
-          <Link href="/games/search" className="sonke-btn sonke-btn-play">
-            Search Games
-          </Link>
+          <p className="sonke-game-tagline">
+            Puzzle, maze, memory, quiz, and creative games for curious kids.
+          </p>
+          <div className="sonke-play-actions">
+            <Link href="/games/search" className="sonke-btn sonke-btn-play">
+              Search Games
+            </Link>
+            <Link href="/videos" className="sonke-btn sonke-btn-secondary">
+              Watch Videos
+            </Link>
+          </div>
         </div>
       </ContentModule>
 
-      {catalog.categories.map((category) => (
+      <ContentModule>
+        <nav className="sonke-category-nav" aria-label="Game categories">
+          <Link
+            href="/games/browse"
+            className={!activeCategory ? "sonke-category-pill active" : "sonke-category-pill"}
+          >
+            All
+          </Link>
+          {catalog.categories.map((category) => (
+            <Link
+              key={category.id}
+              href={`/games/browse?category=${category.id}`}
+              className={
+                activeCategory === category.id
+                  ? "sonke-category-pill active"
+                  : "sonke-category-pill"
+              }
+            >
+              {category.title}
+            </Link>
+          ))}
+        </nav>
+      </ContentModule>
+
+      {categories.map((category) => (
         <ContentModule key={category.id} className="sonke-related-module">
           <SectionHeading>{category.title}</SectionHeading>
           <ul className="GamesCollage_gamesGrid__jv6Iv sonke-related-grid">

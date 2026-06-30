@@ -1,225 +1,39 @@
 {
   "pbs-kids-2": {
-    "pbsTitle": "PBS KIDS",
-    "pbsTitleAlt": "Sonke Kids",
+    "pbsTitle": "Sonke Kids",
+    "pbsTitleAlt": "All Games",
     "worldId": "all-games",
     "worldTitle": "All Games",
     "guide": null
   },
-  "daniel": {
-    "pbsTitle": "Daniel Tiger's Neighborhood",
+  "puzzle-games": {
+    "pbsTitle": "Puzzle Games",
     "worldId": "puzzle-games",
     "worldTitle": "Puzzle Games",
     "guide": null
   },
-  "phoebe-jay": {
-    "pbsTitle": "Phoebe & Jay",
+  "maze-games": {
+    "pbsTitle": "Maze Games",
     "worldId": "maze-games",
     "worldTitle": "Maze Games",
     "guide": null
   },
-  "sesame-street": {
-    "pbsTitle": "Sesame Street",
-    "worldId": "hidden-object-games",
-    "worldTitle": "Hidden Object Games",
-    "guide": null
-  },
-  "weather-hunters": {
-    "pbsTitle": "Weather Hunters",
-    "worldId": "coloring-games",
-    "worldTitle": "Coloring Games",
-    "guide": null
-  },
-  "carl-the-collector": {
-    "pbsTitle": "Carl the Collector",
-    "worldId": "drawing-games",
-    "worldTitle": "Drawing Games",
-    "guide": null
-  },
-  "wild-kratts": {
-    "pbsTitle": "Wild Kratts",
-    "worldId": "music-games",
-    "worldTitle": "Music Games",
-    "guide": null
-  },
-  "lyla-in-the-loop": {
-    "pbsTitle": "Lyla in the Loop",
-    "worldId": "animal-games",
-    "worldTitle": "Animal Games",
-    "guide": null
-  },
-  "countonjunebug": {
-    "pbsTitle": "Count on June Bug!",
-    "worldId": "dinosaur-games",
-    "worldTitle": "Dinosaur Games",
-    "guide": null
-  },
-  "rosies-rules": {
-    "pbsTitle": "Rosie's Rules",
-    "worldId": "space-games",
-    "worldTitle": "Space Games",
-    "guide": null
-  },
-  "work-it-out-wombats": {
-    "pbsTitle": "Work It Out Wombats!",
-    "worldId": "food-games",
-    "worldTitle": "Food Games",
-    "guide": null
-  },
-  "almas-way": {
-    "pbsTitle": "Alma's Way",
-    "worldId": "math-games",
-    "worldTitle": "Math Games",
-    "guide": null
-  },
-  "donkey-hodie": {
-    "pbsTitle": "Donkey Hodie",
-    "worldId": "reading-games",
-    "worldTitle": "Reading Games",
-    "guide": null
-  },
-  "odd-squad": {
-    "pbsTitle": "Odd Squad",
-    "worldId": "science-games",
-    "worldTitle": "Science Games",
-    "guide": null
-  },
-  "city-island": {
-    "pbsTitle": "City Island",
-    "worldId": "geography-games",
-    "worldTitle": "Geography Games",
-    "guide": null
-  },
-  "arthur": {
-    "pbsTitle": "Arthur",
-    "worldId": "logic-games",
-    "worldTitle": "Logic Games",
-    "guide": null
-  },
-  "pinkalicious-and-peterrific": {
-    "pbsTitle": "Pinkalicious & Peterrific",
-    "worldId": "adventure-games",
-    "worldTitle": "Adventure Games",
-    "guide": null
-  },
-  "clifford-big-red-dog": {
-    "pbsTitle": "Clifford the Big Red Dog",
-    "worldId": "arcade-games",
-    "worldTitle": "Arcade Games",
-    "guide": null
-  },
-  "elinor-wonders-why": {
-    "pbsTitle": "Elinor Wonders Why",
-    "worldId": "typing-games",
-    "worldTitle": "Typing Games",
-    "guide": null
-  },
-  "acoustic-rooster": {
-    "pbsTitle": "Acoustic Rooster",
-    "worldId": "sports-games",
-    "worldTitle": "Sports Games",
-    "guide": null
-  },
-  "jelly-ben-pogo": {
-    "pbsTitle": "Jelly, Ben & Pogo",
+  "memory-games": {
+    "pbsTitle": "Memory Games",
     "worldId": "memory-games",
     "worldTitle": "Memory Games",
     "guide": null
   },
-  "molly-of-denali": {
-    "pbsTitle": "Molly of Denali",
-    "worldId": "seasonal-games",
-    "worldTitle": "Seasonal Games",
+  "quiz-games": {
+    "pbsTitle": "Quiz & Learn",
+    "worldId": "quiz-games",
+    "worldTitle": "Quiz & Learn",
     "guide": null
   },
-  "xavier-riddle": {
-    "pbsTitle": "Xavier Riddle and the Secret Museum",
-    "worldId": "puzzle-games",
-    "worldTitle": "Puzzle Games",
-    "guide": null
-  },
-  "nature-cat": {
-    "pbsTitle": "Nature Cat",
-    "worldId": "maze-games",
-    "worldTitle": "Maze Games",
-    "guide": null
-  },
-  "dinosaur-train": {
-    "pbsTitle": "Dinosaur Train",
-    "worldId": "hidden-object-games",
-    "worldTitle": "Hidden Object Games",
-    "guide": null
-  },
-  "scribbles-and-ink": {
-    "pbsTitle": "Scribbles and Ink",
-    "worldId": "coloring-games",
-    "worldTitle": "Coloring Games",
-    "guide": null
-  },
-  "lets-go-luna": {
-    "pbsTitle": "Let's Go Luna!",
-    "worldId": "drawing-games",
-    "worldTitle": "Drawing Games",
-    "guide": null
-  },
-  "hero-elementary": {
-    "pbsTitle": "Hero Elementary",
-    "worldId": "music-games",
-    "worldTitle": "Music Games",
-    "guide": null
-  },
-  "cyberchase": {
-    "pbsTitle": "Cyberchase",
-    "worldId": "animal-games",
-    "worldTitle": "Animal Games",
-    "guide": null
-  },
-  "ruff-ruffman-show": {
-    "pbsTitle": "Team Hamster! & Ruff Ruffman",
-    "worldId": "dinosaur-games",
-    "worldTitle": "Dinosaur Games",
-    "guide": null
-  },
-  "ruff-ruffman-humble-media-genius": {
-    "pbsTitle": "Ruff Ruffman: Humble Media Genius",
-    "worldId": "space-games",
-    "worldTitle": "Space Games",
-    "guide": null
-  },
-  "curious-george": {
-    "pbsTitle": "Curious George",
-    "worldId": "food-games",
-    "worldTitle": "Food Games",
-    "guide": null
-  },
-  "the-cat-in-the-hat": {
-    "pbsTitle": "The Cat in the Hat",
-    "worldId": "math-games",
-    "worldTitle": "Math Games",
-    "guide": null
-  },
-  "peg-cat": {
-    "pbsTitle": "Peg + Cat",
-    "worldId": "reading-games",
-    "worldTitle": "Reading Games",
-    "guide": null
-  },
-  "ready-jet-go": {
-    "pbsTitle": "Ready Jet Go!",
-    "worldId": "science-games",
-    "worldTitle": "Science Games",
-    "guide": null
-  },
-  "super-why": {
-    "pbsTitle": "Super Why!",
-    "worldId": "geography-games",
-    "worldTitle": "Geography Games",
-    "guide": null
-  },
-  "sid-the-science-kid": {
-    "pbsTitle": "Sid the Science Kid",
-    "worldId": "logic-games",
-    "worldTitle": "Logic Games",
+  "creative-games": {
+    "pbsTitle": "Creative Play",
+    "worldId": "creative-games",
+    "worldTitle": "Creative Play",
     "guide": null
   }
 }

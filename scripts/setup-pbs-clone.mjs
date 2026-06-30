@@ -11,6 +11,7 @@ import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
 import { buildSonkeContentPatch } from "./lib/sonke-content-patch.mjs";
 import { buildGameLinkPatch } from "./lib/game-link-patch.mjs";
 import { rewritePbsChunkScripts } from "./lib/pbs-play-process.mjs";
+import { simplifyPbsHtml } from "./lib/sonke-simplify-patch.mjs";
 import {
   applySonkeContent,
   loadSonkeContent,
@@ -302,6 +303,18 @@ async function main() {
     localized = applySonkeContent(localized, sonkeContent);
     localized = injectSonkeContentPatch(localized, sonkeContent);
     localized = injectGameLinkPatch(localized);
+
+    const mappings = JSON.parse(readFileSync(join(contentDir, "games-slug-map.json"), "utf8"));
+    const slugMap = Object.fromEntries(
+      mappings.filter((m) => m.pbsSlug !== m.sonkeId).map((m) => [m.pbsSlug, m.sonkeId]),
+    );
+    let videoIds = [];
+    const videosPath = join(contentDir, "sonke-videos-catalog.json");
+    if (existsSync(videosPath)) {
+      videoIds = JSON.parse(readFileSync(videosPath, "utf8")).videos.map((v) => v.id);
+    }
+    localized = simplifyPbsHtml(localized, slugMap, videoIds);
+
     writeFileSync(join(pbsDir, dest), localized, "utf8");
     extractNextData(localized, dest, dataDir);
     console.log(`Wrote public/pbs/${dest} and public/pbs/data/${dest.replace(".html", ".json")}`);

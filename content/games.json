@@ -10,15 +10,15 @@
     },
     {
       "pbsHeading": "Summer Is Here!",
-      "title": "Featured Games"
+      "title": "Memory Games"
     },
     {
       "pbsHeading": "New and Popular!",
-      "title": "Puzzle Games"
+      "title": "Quiz & Learn"
     },
     {
       "pbsHeading": "Quizzes",
-      "title": "Maze Games"
+      "title": "Creative Play"
     }
   ],
   "overrides": [
@@ -37,28 +37,20 @@
     {
       "pbsSlug": "build-a-boat",
       "pbsTitle": "Build-a-Boat",
-      "pbsTitleAlt": "Build a Boat",
-      "title": "Dinosaur Match",
-      "category": "Puzzle Games"
-    },
-    {
-      "pbsSlug": "build-a-boat",
-      "pbsTitle": "Build-a-Boat",
-      "pbsTitleAlt": "Build a Boat",
-      "title": "Dinosaur Match",
+      "title": "Fruit Match",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "super-duper-halo-halo",
       "pbsTitle": "Super Duper Halo-Halo",
-      "title": "Fruit Match",
+      "title": "Alphabet Match",
       "category": "Puzzle Games"
     },
     {
       "pbsSlug": "pinkalicious-beach-game",
       "pbsTitle": "Splashtastic Beach Day",
-      "title": "Alphabet Match",
-      "category": "Puzzle Games"
+      "title": "Color Animals",
+      "category": "Creative Play"
     },
     {
       "pbsSlug": "elinor-curious-campout",
@@ -74,29 +66,13 @@
     },
     {
       "pbsSlug": "scribbles-and-ink-far-and-away",
-      "pbsTitle": "Scribbles and Ink: Far and Away",
-      "pbsTitleAlt": "Far and Away",
-      "title": "Emoji Match",
-      "category": "Puzzle Games"
-    },
-    {
-      "pbsSlug": "scribbles-and-ink-far-and-away",
-      "pbsTitle": "Scribbles and Ink: Far and Away",
-      "pbsTitleAlt": "Far and Away",
-      "title": "Emoji Match",
-      "category": "Puzzle Games"
+      "pbsTitle": "Far and Away",
+      "title": "Free Draw",
+      "category": "Creative Play"
     },
     {
       "pbsSlug": "patternpalooza-fair",
-      "pbsTitle": "Patternpalooza Fair",
-      "pbsTitleAlt": "Pattern Fair",
-      "title": "Shadow Match",
-      "category": "Puzzle Games"
-    },
-    {
-      "pbsSlug": "patternpalooza-fair",
-      "pbsTitle": "Patternpalooza Fair",
-      "pbsTitleAlt": "Pattern Fair",
+      "pbsTitle": "Pattern Fair",
       "title": "Shadow Match",
       "category": "Puzzle Games"
     },
@@ -121,60 +97,20 @@
     {
       "pbsSlug": "count-y-fair",
       "pbsTitle": "Count-y Fair",
-      "title": "Pirate Maze",
+      "title": "Jungle Maze",
       "category": "Maze Games"
     },
     {
       "pbsSlug": "phoebe-signs-seek",
       "pbsTitle": "Signs & Seek",
-      "title": "Jungle Maze",
+      "title": "Castle Maze",
       "category": "Maze Games"
     },
     {
       "pbsSlug": "hero-maker",
       "pbsTitle": "Hero Maker",
-      "title": "Castle Maze",
+      "title": "Underwater Maze",
       "category": "Maze Games"
-    },
-    {
-      "pbsSlug": "hamster-water",
-      "pbsTitle": "Team Hamster! Splash Dash",
-      "title": "Find the Stars",
-      "category": "Featured Games"
-    },
-    {
-      "pbsSlug": "froyo-stand",
-      "pbsTitle": "Donkey's Froyo Stand game; Donkey holds a cup of frozen yogurt.",
-      "pbsTitleAlt": "Donkey's FroYo Stand",
-      "title": "Color Animals",
-      "category": "Featured Games"
-    },
-    {
-      "pbsSlug": "froyo-stand",
-      "pbsTitle": "Donkey's Froyo Stand game; Donkey holds a cup of frozen yogurt.",
-      "pbsTitleAlt": "Donkey's FroYo Stand",
-      "title": "Color Animals",
-      "category": "Featured Games"
-    },
-    {
-      "pbsSlug": "weather-explorer",
-      "pbsTitle": "Weather Explorer",
-      "title": "Color Dinosaurs",
-      "category": "Featured Games"
-    },
-    {
-      "pbsSlug": "baby-animals",
-      "pbsTitle": "Baby Animal Rescue",
-      "pbsTitleAlt": "Wild Kratts Baby Animal Rescue",
-      "title": "Rocket Builder",
-      "category": "Featured Games"
-    },
-    {
-      "pbsSlug": "baby-animals",
-      "pbsTitle": "Baby Animal Rescue",
-      "pbsTitleAlt": "Wild Kratts Baby Animal Rescue",
-      "title": "Rocket Builder",
-      "category": "Featured Games"
     }
   ]
 }

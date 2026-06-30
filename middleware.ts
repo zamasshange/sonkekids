@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { resolveImageRequest } from "./lib/pbs-image-resolve";
-import { isGameDetailPath } from "./lib/pbs-route";
 
 const PBS_ORIGIN = "https://pbskids.org";
-
-const GAME_TOPIC_RE = /^\/games\/([^/]+)$/;
 
 function shouldProxyToPbs(pathname: string) {
   if (pathname.startsWith("/pbs-proxy/")) return true;
@@ -35,40 +32,23 @@ async function proxyToPbs(request: NextRequest) {
 
   const headers = new Headers();
   const contentType = upstream.headers.get("content-type");
-  if (contentType) {
-    headers.set("content-type", contentType);
-  }
+  if (contentType) headers.set("content-type", contentType);
   headers.set("cache-control", "public, max-age=86400");
 
-  return new NextResponse(upstream.body, {
-    status: upstream.status,
-    headers,
-  });
+  return new NextResponse(upstream.body, { status: upstream.status, headers });
 }
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  const topicMatch = pathname.match(GAME_TOPIC_RE);
-  if (topicMatch) {
-    const slug = topicMatch[1];
-    const reserved = new Set(["browse", "search", "play", "topic"]);
-    if (!reserved.has(slug) && !isGameDetailPath(pathname)) {
-      const rewriteUrl = new URL(`/games/topic/${slug}`, request.url);
-      return NextResponse.rewrite(rewriteUrl);
-    }
-  }
 
   if (pathname === "/_next/image") {
     const localPath = resolveImageRequest(
       request.nextUrl.searchParams.get("url"),
       {},
     );
-
     if (localPath) {
       return NextResponse.rewrite(new URL(localPath, request.url));
     }
-
     return proxyToPbs(request);
   }
 
@@ -81,7 +61,6 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/games/:slug",
     "/_next/image",
     "/_next/static/css/:path*",
     "/_next/static/media/:path*",

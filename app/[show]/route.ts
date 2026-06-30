@@ -1,35 +1,24 @@
-import { servePbsPage } from "@/lib/pbs-serve";
-import { isGameDetailPath } from "@/lib/pbs-route";
+import { NextRequest, NextResponse } from "next/server";
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
-
-const RESERVED = new Set(["games", "videos", "pbs-serve", "pbs-proxy", "pbs-assets", "_next"]);
-
-type RouteContext = {
-  params: Promise<{ show: string }>;
+const CATEGORY_HINTS: Record<string, string> = {
+  daniel: "puzzle-games",
+  elinor: "puzzle-games",
+  pinkalicious: "creative-games",
+  molly: "maze-games",
+  wildkratts: "quiz-games",
+  weatherhunters: "quiz-games",
+  sesame: "memory-games",
+  lyla: "puzzle-games",
+  arthur: "quiz-games",
+  curiousgeorge: "creative-games",
 };
 
-export async function GET(_request: Request, context: RouteContext) {
+export async function GET(
+  request: NextRequest,
+  context: { params: Promise<{ show: string }> },
+) {
   const { show } = await context.params;
-  if (RESERVED.has(show)) {
-    return new Response("Not found", { status: 404 });
-  }
-
-  const pathname = `/${show}`;
-  if (isGameDetailPath(`/games/${show}`)) {
-    return new Response("Not found", { status: 404 });
-  }
-
-  const html = await servePbsPage(pathname);
-  if (!html) {
-    return new Response("Not found", { status: 404 });
-  }
-
-  return new Response(html, {
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "public, max-age=3600",
-    },
-  });
+  const category = CATEGORY_HINTS[show];
+  const path = category ? `/games/browse?category=${category}` : "/games/browse";
+  return NextResponse.redirect(new URL(path, request.url), 307);
 }

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "totalVideos": 12,
+  "videos": [
+    {
+      "id": "counting-to-ten",
+      "title": "Counting to Ten",
+      "description": "Practice counting from 1 to 10 with fun animations.",
+      "category": "Math",
+      "youtubeId": "DR-cfDsHCGA",
+      "durationMinutes": 3
+    },
+    {
+      "id": "learn-the-alphabet",
+      "title": "Learn the Alphabet",
+      "description": "Sing along and learn letters A through Z.",
+      "category": "Reading",
+      "youtubeId": "lhX064AiyGg",
+      "durationMinutes": 4
+    },
+    {
+      "id": "animal-sounds",
+      "title": "Animal Sounds",
+      "description": "Can you guess which animal makes each sound?",
+      "category": "Science",
+      "youtubeId": "pWepfJZaJW4",
+      "durationMinutes": 5
+    },
+    {
+      "id": "colors-of-the-rainbow",
+      "title": "Colors of the Rainbow",
+      "description": "Explore red, orange, yellow, green, blue, and purple.",
+      "category": "Art",
+      "youtubeId": "cR_8uQiIQnE",
+      "durationMinutes": 3
+    },
+    {
+      "id": "shapes-all-around",
+      "title": "Shapes All Around",
+      "description": "Find circles, squares, and triangles in everyday life.",
+      "category": "Math",
+      "youtubeId": "UvOVf2vC6zU",
+      "durationMinutes": 4
+    },
+    {
+      "id": "weather-wonders",
+      "title": "Weather Wonders",
+      "description": "Learn about sun, rain, clouds, and wind.",
+      "category": "Science",
+      "youtubeId": "vH06uRntcYs",
+      "durationMinutes": 5
+    },
+    {
+      "id": "dinosaur-discovery",
+      "title": "Dinosaur Discovery",
+      "description": "Meet some favorite dinosaurs and learn fun facts.",
+      "category": "Science",
+      "youtubeId": "Qd6nLM2cKmk",
+      "durationMinutes": 6
+    },
+    {
+      "id": "space-adventure",
+      "title": "Space Adventure",
+      "description": "Blast off and explore planets in our solar system.",
+      "category": "Science",
+      "youtubeId": "libKVRa01L8",
+      "durationMinutes": 5
+    },
+    {
+      "id": "healthy-habits",
+      "title": "Healthy Habits",
+      "description": "Wash your hands, eat veggies, and stay active!",
+      "category": "Life Skills",
+      "youtubeId": "mK6Uoqiv_z0",
+      "durationMinutes": 4
+    },
+    {
+      "id": "friendship-sharing",
+      "title": "Friendship & Sharing",
+      "description": "Stories about being kind and working together.",
+      "category": "Social",
+      "youtubeId": "O6JcE6yA8n8",
+      "durationMinutes": 5
+    },
+    {
+      "id": "music-rhythm",
+      "title": "Music & Rhythm",
+      "description": "Clap, tap, and move to the beat.",
+      "category": "Music",
+      "youtubeId": "WqN-z9jrjYI",
+      "durationMinutes": 4
+    },
+    {
+      "id": "story-time",
+      "title": "Story Time",
+      "description": "A cozy read-aloud adventure for young learners.",
+      "category": "Reading",
+      "youtubeId": "jdMNoQE3mIQ",
+      "durationMinutes": 7
+    }
+  ]
+}

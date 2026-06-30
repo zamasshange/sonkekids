@@ -37,7 +37,7 @@
             "__typename": "PbsKidsTheme",
             "id": "2387469",
             "slug": "xrid-xavier-riddle-and-the-secret-museum-portal-theme-v2",
-            "title": "XRID-Puzzle Games-Portal Theme-v2",
+            "title": "XRID-Xavier Riddle and the Secret Museum-Portal Theme-v2",
             "status": "LIVE",
             "bodyTextColor": "#000000",
             "bodyBackgroundColor": "#16e4d8",
@@ -110,7 +110,7 @@
                 "property": [
                   {
                     "slug": "daniel",
-                    "title": "Puzzle Games",
+                    "title": "Daniel Tiger's Neighborhood",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -119,7 +119,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DTNB-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Puzzle Games"
+                        "altText": "Daniel Tiger's Neighborhood"
                       }
                     ],
                     "characterImageBackground": [
@@ -141,7 +141,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/DTIG-logo-v2.png",
                         "width": 802,
                         "height": 480,
-                        "altText": "Puzzle Games"
+                        "altText": "Daniel Tiger's Neighborhood"
                       }
                     ],
                     "navigationCardColor": "#6fc05b",
@@ -153,7 +153,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DTNB-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Puzzle Games"
+                        "altText": "Daniel Tiger's Neighborhood"
                       }
                     ]
                   }
@@ -171,7 +171,7 @@
                 "property": [
                   {
                     "slug": "phoebe-jay",
-                    "title": "Maze Games",
+                    "title": "Phoebe & Jay",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -232,7 +232,7 @@
                 "property": [
                   {
                     "slug": "sesame-street",
-                    "title": "Hidden Object Games",
+                    "title": "Sesame Street",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -241,7 +241,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/SESA-character-shownav-v2.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Hidden Object Games"
+                        "altText": "Sesame Street"
                       }
                     ],
                     "characterImageBackground": [
@@ -263,7 +263,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SESA-logo-v2.png",
                         "width": 960,
                         "height": 377,
-                        "altText": "Hidden Object Games"
+                        "altText": "Sesame Street"
                       }
                     ],
                     "navigationCardColor": "#60c3e3",
@@ -275,7 +275,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/SESA-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Hidden Object Games"
+                        "altText": "Sesame Street"
                       }
                     ]
                   }
@@ -293,7 +293,7 @@
                 "property": [
                   {
                     "slug": "weather-hunters",
-                    "title": "Coloring Games",
+                    "title": "Weather Hunters",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -354,7 +354,7 @@
                 "property": [
                   {
                     "slug": "carl-the-collector",
-                    "title": "Drawing Games",
+                    "title": "Carl the Collector",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -363,7 +363,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/CARL-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Drawing Games"
+                        "altText": "Carl the Collector"
                       }
                     ],
                     "characterImageBackground": [
@@ -385,7 +385,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/CARL-logo-v2.png",
                         "width": 728,
                         "height": 480,
-                        "altText": "Drawing Games"
+                        "altText": "Carl the Collector"
                       }
                     ],
                     "navigationCardColor": "#cb3170",
@@ -397,7 +397,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/CARL-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Drawing Games"
+                        "altText": "Carl the Collector"
                       }
                     ]
                   }
@@ -415,7 +415,7 @@
                 "property": [
                   {
                     "slug": "wild-kratts",
-                    "title": "Music Games",
+                    "title": "Wild Kratts",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -424,7 +424,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WILK-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Music Games"
+                        "altText": "Wild Kratts"
                       }
                     ],
                     "characterImageBackground": [
@@ -446,7 +446,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WILK-logo-v2.png",
                         "width": 498,
                         "height": 480,
-                        "altText": "Music Games"
+                        "altText": "Wild Kratts"
                       }
                     ],
                     "navigationCardColor": "#6cd1d0",
@@ -458,7 +458,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WILK-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Music Games"
+                        "altText": "Wild Kratts"
                       }
                     ]
                   }
@@ -476,7 +476,7 @@
                 "property": [
                   {
                     "slug": "lyla-in-the-loop",
-                    "title": "Animal Games",
+                    "title": "Lyla in the Loop",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -485,7 +485,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/LYLO-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Animal Games"
+                        "altText": "Lyla in the Loop"
                       }
                     ],
                     "characterImageBackground": [
@@ -507,7 +507,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/LYLO-logo-v2.png",
                         "width": 751,
                         "height": 480,
-                        "altText": "Animal Games"
+                        "altText": "Lyla in the Loop"
                       }
                     ],
                     "navigationCardColor": "#81459a",
@@ -519,7 +519,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/LYLO-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Animal Games"
+                        "altText": "Lyla in the Loop"
                       }
                     ]
                   }
@@ -537,7 +537,7 @@
                 "property": [
                   {
                     "slug": "countonjunebug",
-                    "title": "Dinosaur Games",
+                    "title": "Count on June Bug!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -598,7 +598,7 @@
                 "property": [
                   {
                     "slug": "rosies-rules",
-                    "title": "Space Games",
+                    "title": "Rosie's Rules",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -607,7 +607,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/RORU-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Space Games"
+                        "altText": "Rosie's Rules"
                       }
                     ],
                     "characterImageBackground": [
@@ -629,7 +629,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/RORU-logo-v2.png",
                         "width": 928,
                         "height": 480,
-                        "altText": "Space Games"
+                        "altText": "Rosie's Rules"
                       }
                     ],
                     "navigationCardColor": "#f0c453",
@@ -641,7 +641,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/RORU-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Space Games"
+                        "altText": "Rosie's Rules"
                       }
                     ]
                   }
@@ -659,7 +659,7 @@
                 "property": [
                   {
                     "slug": "work-it-out-wombats",
-                    "title": "Food Games",
+                    "title": "Work It Out Wombats!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -720,7 +720,7 @@
                 "property": [
                   {
                     "slug": "almas-way",
-                    "title": "Math Games",
+                    "title": "Alma's Way",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -729,7 +729,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/AWAY-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Math Games"
+                        "altText": "Alma's Way"
                       }
                     ],
                     "characterImageBackground": [
@@ -751,7 +751,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/AWAY-logo-v2.png",
                         "width": 728,
                         "height": 480,
-                        "altText": "Math Games"
+                        "altText": "Alma's Way"
                       }
                     ],
                     "navigationCardColor": "#9571b1",
@@ -763,7 +763,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/AWAY-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Math Games"
+                        "altText": "Alma's Way"
                       }
                     ]
                   }
@@ -781,7 +781,7 @@
                 "property": [
                   {
                     "slug": "donkey-hodie",
-                    "title": "Reading Games",
+                    "title": "Donkey Hodie",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -812,7 +812,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/DKYH-logo-v3.png",
                         "width": 801,
                         "height": 480,
-                        "altText": "Reading Games"
+                        "altText": "Donkey Hodie"
                       }
                     ],
                     "navigationCardColor": "#8edd65",
@@ -824,7 +824,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/DKYH-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Reading Games"
+                        "altText": "Donkey Hodie"
                       }
                     ]
                   }
@@ -842,7 +842,7 @@
                 "property": [
                   {
                     "slug": "odd-squad",
-                    "title": "Science Games",
+                    "title": "Odd Squad",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -851,7 +851,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/328x368-ODDS-character-shownav-v2.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Science Games"
+                        "altText": "Odd Squad"
                       }
                     ],
                     "characterImageBackground": [
@@ -873,7 +873,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/ODDS-logo-v2.png",
                         "width": 418,
                         "height": 480,
-                        "altText": "Science Games"
+                        "altText": "Odd Squad"
                       }
                     ],
                     "navigationCardColor": "#7f4898",
@@ -885,7 +885,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ODDS-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Science Games"
+                        "altText": "Odd Squad"
                       }
                     ]
                   }
@@ -903,7 +903,7 @@
                 "property": [
                   {
                     "slug": "city-island",
-                    "title": "Geography Games",
+                    "title": "City Island",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -934,7 +934,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CTYI-logo-v2.png",
                         "width": 643,
                         "height": 480,
-                        "altText": "Geography Games"
+                        "altText": "City Island"
                       }
                     ],
                     "navigationCardColor": null,
@@ -964,7 +964,7 @@
                 "property": [
                   {
                     "slug": "arthur",
-                    "title": "Logic Games",
+                    "title": "Arthur",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -973,7 +973,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ARUR-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Logic Games"
+                        "altText": "Arthur"
                       }
                     ],
                     "characterImageBackground": [
@@ -995,7 +995,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/ARUR-logo-v2.png",
                         "width": 960,
                         "height": 400,
-                        "altText": "Logic Games"
+                        "altText": "Arthur"
                       }
                     ],
                     "navigationCardColor": "#6ac4f7",
@@ -1007,7 +1007,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/ARUR-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Logic Games"
+                        "altText": "Arthur"
                       }
                     ]
                   }
@@ -1025,7 +1025,7 @@
                 "property": [
                   {
                     "slug": "pinkalicious-and-peterrific",
-                    "title": "Adventure Games",
+                    "title": "Pinkalicious & Peterrific",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1086,7 +1086,7 @@
                 "property": [
                   {
                     "slug": "clifford-big-red-dog",
-                    "title": "Arcade Games",
+                    "title": "Clifford the Big Red Dog",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1117,7 +1117,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CBDG-logo-v2.png",
                         "width": 960,
                         "height": 456,
-                        "altText": "Arcade Games"
+                        "altText": "Clifford the Big Red Dog"
                       }
                     ],
                     "navigationCardColor": "#d93731",
@@ -1129,7 +1129,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CBDG-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Arcade Games"
+                        "altText": "Clifford the Big Red Dog"
                       }
                     ]
                   }
@@ -1147,7 +1147,7 @@
                 "property": [
                   {
                     "slug": "elinor-wonders-why",
-                    "title": "Typing Games",
+                    "title": "Elinor Wonders Why",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1156,7 +1156,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Typing Games"
+                        "altText": "Elinor Wonders Why"
                       }
                     ],
                     "characterImageBackground": [
@@ -1178,7 +1178,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Typing Games"
+                        "altText": "Elinor Wonders Why"
                       }
                     ],
                     "navigationCardColor": "#f5bbe6",
@@ -1190,7 +1190,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Typing Games"
+                        "altText": "Elinor Wonders Why"
                       }
                     ]
                   }
@@ -1208,7 +1208,7 @@
                 "property": [
                   {
                     "slug": "acoustic-rooster",
-                    "title": "Sports Games",
+                    "title": "Acoustic Rooster",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1239,7 +1239,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/ARBD-logo-v2.png",
                         "width": 659,
                         "height": 480,
-                        "altText": "Sports Games"
+                        "altText": "Acoustic Rooster"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1269,7 +1269,7 @@
                 "property": [
                   {
                     "slug": "jelly-ben-pogo",
-                    "title": "Memory Games",
+                    "title": "Hidden Object Games",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1330,7 +1330,7 @@
                 "property": [
                   {
                     "slug": "molly-of-denali",
-                    "title": "Seasonal Games",
+                    "title": "Molly of Denali",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1339,7 +1339,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/MDEN-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Seasonal Games"
+                        "altText": "Molly of Denali"
                       }
                     ],
                     "characterImageBackground": [
@@ -1361,7 +1361,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/MDEN-logo-v2.png",
                         "width": 678,
                         "height": 480,
-                        "altText": "Seasonal Games"
+                        "altText": "Molly of Denali"
                       }
                     ],
                     "navigationCardColor": "#82d2f9",
@@ -1373,7 +1373,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/MDEN-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Seasonal Games"
+                        "altText": "Molly of Denali"
                       }
                     ]
                   }
@@ -1391,7 +1391,7 @@
                 "property": [
                   {
                     "slug": "xavier-riddle",
-                    "title": "Puzzle Games",
+                    "title": "Xavier Riddle and the Secret Museum",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1400,7 +1400,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/XRID-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Puzzle Games"
+                        "altText": "Xavier Riddle and the Secret Museum"
                       }
                     ],
                     "characterImageBackground": [
@@ -1422,7 +1422,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/XRID-logo-v2.png",
                         "width": 592,
                         "height": 480,
-                        "altText": "Puzzle Games"
+                        "altText": "Xavier Riddle and the Secret Museum"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1434,7 +1434,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/XRID-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Puzzle Games"
+                        "altText": "Xavier Riddle and the Secret Museum"
                       }
                     ]
                   }
@@ -1452,7 +1452,7 @@
                 "property": [
                   {
                     "slug": "nature-cat",
-                    "title": "Maze Games",
+                    "title": "Nature Cat",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1483,7 +1483,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/NCAT-logo-v1.png",
                         "width": 632,
                         "height": 480,
-                        "altText": "Maze Games"
+                        "altText": "Nature Cat"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1513,7 +1513,7 @@
                 "property": [
                   {
                     "slug": "dinosaur-train",
-                    "title": "Hidden Object Games",
+                    "title": "Dinosaur Train",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1522,7 +1522,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DINS-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Hidden Object Games"
+                        "altText": "Dinosaur Train"
                       }
                     ],
                     "characterImageBackground": [
@@ -1544,7 +1544,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/DINS-logo-v2.png",
                         "width": 521,
                         "height": 480,
-                        "altText": "Hidden Object Games"
+                        "altText": "Dinosaur Train"
                       }
                     ],
                     "navigationCardColor": "#00ab4e",
@@ -1556,7 +1556,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/DINS-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Hidden Object Games"
+                        "altText": "Dinosaur Train"
                       }
                     ]
                   }
@@ -1574,7 +1574,7 @@
                 "property": [
                   {
                     "slug": "scribbles-and-ink",
-                    "title": "Coloring Games",
+                    "title": "Scribbles and Ink",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1605,7 +1605,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SCRI-logo-v2.png",
                         "width": 920,
                         "height": 480,
-                        "altText": "Coloring Games"
+                        "altText": "Scribbles and Ink"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1635,7 +1635,7 @@
                 "property": [
                   {
                     "slug": "lets-go-luna",
-                    "title": "Drawing Games",
+                    "title": "Let's Go Luna!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1696,7 +1696,7 @@
                 "property": [
                   {
                     "slug": "hero-elementary",
-                    "title": "Music Games",
+                    "title": "Hero Elementary",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1727,7 +1727,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/HERE-logo-v2.png",
                         "width": 871,
                         "height": 480,
-                        "altText": "Music Games"
+                        "altText": "Hero Elementary"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1757,7 +1757,7 @@
                 "property": [
                   {
                     "slug": "cyberchase",
-                    "title": "Animal Games",
+                    "title": "Cyberchase",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1788,7 +1788,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CYBR-logo-v2.png",
                         "width": 960,
                         "height": 261,
-                        "altText": "Animal Games"
+                        "altText": "Cyberchase"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1818,7 +1818,7 @@
                 "property": [
                   {
                     "slug": "ruff-ruffman-show",
-                    "title": "Dinosaur Games",
+                    "title": "Team Hamster! & Ruff Ruffman",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1879,7 +1879,7 @@
                 "property": [
                   {
                     "slug": "ruff-ruffman-humble-media-genius",
-                    "title": "Space Games",
+                    "title": "Ruff Ruffman: Humble Media Genius",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1940,7 +1940,7 @@
                 "property": [
                   {
                     "slug": "curious-george",
-                    "title": "Food Games",
+                    "title": "Curious George",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1949,7 +1949,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CUGE-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Food Games"
+                        "altText": "Curious George"
                       }
                     ],
                     "characterImageBackground": [
@@ -1983,7 +1983,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/CUGE-logo-shownav-v2.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Food Games"
+                        "altText": "Curious George"
                       }
                     ]
                   }
@@ -2001,7 +2001,7 @@
                 "property": [
                   {
                     "slug": "the-cat-in-the-hat",
-                    "title": "Math Games",
+                    "title": "The Cat in the Hat",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2032,7 +2032,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/CITH-logo-v2.png",
                         "width": 960,
                         "height": 365,
-                        "altText": "Math Games knows a lot about that"
+                        "altText": "The Cat in the Hat knows a lot about that"
                       }
                     ],
                     "navigationCardColor": null,
@@ -2062,7 +2062,7 @@
                 "property": [
                   {
                     "slug": "peg-cat",
-                    "title": "Reading Games",
+                    "title": "Peg + Cat",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2123,7 +2123,7 @@
                 "property": [
                   {
                     "slug": "ready-jet-go",
-                    "title": "Science Games",
+                    "title": "Ready Jet Go!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2184,7 +2184,7 @@
                 "property": [
                   {
                     "slug": "super-why",
-                    "title": "Geography Games",
+                    "title": "Super Why!",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2245,7 +2245,7 @@
                 "property": [
                   {
                     "slug": "sid-the-science-kid",
-                    "title": "Logic Games",
+                    "title": "Sid the Science Kid",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2276,7 +2276,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SISK-log-v2.png",
                         "width": 473,
                         "height": 480,
-                        "altText": "Logic Games"
+                        "altText": "Sid the Science Kid"
                       }
                     ],
                     "navigationCardColor": null,
@@ -2425,7 +2425,7 @@
                     ],
                     "properties": [
                       {
-                        "title": "Coloring Games"
+                        "title": "Weather Hunters"
                       }
                     ],
                     "contentLanguage": "en_us",
@@ -2512,7 +2512,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Seasonal Games"
+                    "title": "Molly of Denali"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -2534,7 +2534,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/DTIG-Daniel-Tigers-Neighborhood/Game-Cards/DTIG-BuildABoat-FeatureGraphic-Generic.jpg",
                     "width": 908,
                     "height": 510,
-                    "altText": "Dinosaur Match"
+                    "altText": "Build a Boat"
                   }
                 ],
                 "springrollExperience": [
@@ -2549,13 +2549,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Puzzle Games"
+                    "title": "Daniel Tiger's Neighborhood"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "build-a-boat",
-                "title": "Dinosaur Match",
+                "title": "Fruit Match",
                 "flair": []
               },
               {
@@ -2571,7 +2571,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/JBPO-Jelly-Ben-and-Pogo/Game-Cards/JBPO-SuperDuperHaloHalo-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Fruit Match"
+                    "altText": "Alphabet Match"
                   }
                 ],
                 "springrollExperience": [
@@ -2586,13 +2586,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Memory Games"
+                    "title": "Hidden Object Games"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "super-duper-halo-halo",
-                "title": "Fruit Match",
+                "title": "Alphabet Match",
                 "flair": []
               },
               {
@@ -2608,7 +2608,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/PIPE-Pinkalicious/Game-Cards/PIPE-SplashtasticBeachDay-FeatureGraphic-Generic.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Alphabet Match"
+                    "altText": "Color Animals"
                   }
                 ],
                 "springrollExperience": [
@@ -2623,13 +2623,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Adventure Games"
+                    "title": "Pinkalicious & Peterrific"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "pinkalicious-beach-game",
-                "title": "Alphabet Match",
+                "title": "Color Animals",
                 "flair": []
               },
               {
@@ -2688,7 +2688,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Typing Games"
+                    "title": "Elinor Wonders Why"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -2725,7 +2725,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Animal Games"
+                    "title": "Lyla in the Loop"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -2799,13 +2799,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Coloring Games"
+                    "title": "Scribbles and Ink"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "scribbles-and-ink-far-and-away",
-                "title": "Emoji Match",
+                "title": "Scribbles and Ink: Free Draw",
                 "flair": []
               },
               {
@@ -2882,13 +2882,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Food Games"
+                    "title": "Work It Out Wombats!"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "patternpalooza-fair",
-                "title": "Shadow Match",
+                "title": "Patternpalooza Fair",
                 "flair": []
               }
             ],
@@ -2917,7 +2917,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "2421399",
                 "slug": "wilk-wild-kratts-grasswater-theme-v1",
-                "title": "WILK-Music Games-Grass Water Theme-v1",
+                "title": "WILK-Wild Kratts-Grass Water Theme-v1",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#00a1e1",
@@ -2989,7 +2989,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Music Games"
+                    "title": "Wild Kratts"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -3126,7 +3126,7 @@
                     ],
                     "properties": [
                       {
-                        "title": "Dinosaur Games"
+                        "title": "Count on June Bug!"
                       }
                     ],
                     "contentLanguage": "en_us",
@@ -3213,7 +3213,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Food Games"
+                    "title": "Work It Out Wombats!"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -3296,7 +3296,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Seasonal Games"
+                    "title": "Molly of Denali"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -3364,7 +3364,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/COJB-Count-On-June-Bug/June-Bug-County-Fair-Promo-V1-908x510px-English.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "The Pirate Maze"
+                    "altText": "The Jungle Maze"
                   }
                 ],
                 "springrollExperience": [
@@ -3379,13 +3379,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Dinosaur Games"
+                    "title": "Count on June Bug!"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "county-fair",
-                "title": "Pirate Maze",
+                "title": "Jungle Maze",
                 "flair": []
               },
               {
@@ -3462,13 +3462,13 @@
                 ],
                 "properties": [
                   {
-                    "title": "Maze Games"
+                    "title": "Phoebe & Jay"
                   }
                 ],
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "slug": "signs-seek",
-                "title": "Jungle Maze",
+                "title": "Castle Maze",
                 "flair": []
               }
             ],
@@ -3641,7 +3641,7 @@
                 "id": "87276",
                 "guid": "f28cc250-8890-11e9-8984-97b5c47fd2af",
                 "slug": "hero-maker",
-                "title": "Castle Maze",
+                "title": "Underwater Maze",
                 "contentLanguage": "en_us",
                 "status": "LIVE",
                 "gameLogo": [
@@ -3695,7 +3695,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Puzzle Games"
+                    "title": "Xavier Riddle and the Secret Museum"
                   }
                 ],
                 "mezzanine": [
@@ -3706,7 +3706,7 @@
                     "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Game-Cards/XRID-HeroMaker-FeatureGraphic-AAPI.png",
                     "width": 908,
                     "height": 510,
-                    "altText": "Castle Maze"
+                    "altText": "Underwater Maze"
                   }
                 ]
               }
@@ -3755,7 +3755,7 @@
               "__typename": "PbsKidsTheme",
               "id": "2387469",
               "slug": "xrid-xavier-riddle-and-the-secret-museum-portal-theme-v2",
-              "title": "XRID-Puzzle Games-Portal Theme-v2",
+              "title": "XRID-Xavier Riddle and the Secret Museum-Portal Theme-v2",
               "status": "LIVE",
               "bodyTextColor": "#000000",
               "bodyBackgroundColor": "#16e4d8",
@@ -3873,7 +3873,7 @@
                 "__typename": "PbsKidsTheme",
                 "id": "2387469",
                 "slug": "xrid-xavier-riddle-and-the-secret-museum-portal-theme-v2",
-                "title": "XRID-Puzzle Games-Portal Theme-v2",
+                "title": "XRID-Xavier Riddle and the Secret Museum-Portal Theme-v2",
                 "status": "LIVE",
                 "bodyTextColor": "#000000",
                 "bodyBackgroundColor": "#16e4d8",
@@ -3936,7 +3936,7 @@
           "__typename": "PbsKidsTheme",
           "id": "2387469",
           "slug": "xrid-xavier-riddle-and-the-secret-museum-portal-theme-v2",
-          "title": "XRID-Puzzle Games-Portal Theme-v2",
+          "title": "XRID-Xavier Riddle and the Secret Museum-Portal Theme-v2",
           "status": "LIVE",
           "bodyTextColor": "#000000",
           "bodyBackgroundColor": "#16e4d8",
@@ -3966,7 +3966,7 @@
           "sponsorLogoStyle": "dark",
           "stationLogoStyle": "color"
         },
-        "css": ":root {\n  /* PBSK-All Games-Magenta Theme-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #ffffff;\n  --pbsk-theme-bodyTextColor-rgb: 255 255 255;\n  --pbsk-theme-bodyBackgroundColor: #e4276a;\n  --pbsk-theme-bodyBackgroundColor-rgb: 228 39 106;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #2538c4;\n  --pbsk-theme-featureHighlightColor-rgb: 37 56 196;\n  --pbsk-theme-calloutTextColor: #bc0159;\n  --pbsk-theme-calloutTextColor-rgb: 188 1 89;\n  --pbsk-theme-calloutBackgroundColor: #f7e03b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #08ab4e;\n  --pbsk-theme-badgeBackgroundColor-rgb: 8 171 78;\n  --pbsk-theme-navBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-uiControlColor: #131d8c;\n  --pbsk-theme-uiControlColor-rgb: 19 29 140;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #ffffff;\n  --pbsk-theme-uiHighlightColor-rgb: 255 255 255;\n}\n\n\n[data-theme-context='masthead'] {\n  /* XRID-Puzzle Games-Portal Theme-v2 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #16e4d8;\n  --pbsk-theme-bodyBackgroundColor-rgb: 22 228 216;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.124378109452737;\n  --pbsk-theme-backgroundImage-width: 3316px;\n  --pbsk-theme-backgroundImage-height: 804px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #772080;\n  --pbsk-theme-featureHighlightColor-rgb: 119 32 128;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #0d810c;\n  --pbsk-theme-calloutBackgroundColor-rgb: 13 129 12;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #8534a4;\n  --pbsk-theme-badgeBackgroundColor-rgb: 133 52 164;\n  --pbsk-theme-navBackgroundColor: #16e4d8;\n  --pbsk-theme-navBackgroundColor-rgb: 22 228 216;\n  --pbsk-theme-uiControlColor: #8534a4;\n  --pbsk-theme-uiControlColor-rgb: 133 52 164;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #772080;\n  --pbsk-theme-uiHighlightColor-rgb: 119 32 128;\n}\n\n[data-theme-context='masthead'] {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 675px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1024px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1440px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1920px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n",
+        "css": ":root {\n  /* PBSK-All Games-Magenta Theme-v1 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #ffffff;\n  --pbsk-theme-bodyTextColor-rgb: 255 255 255;\n  --pbsk-theme-bodyBackgroundColor: #e4276a;\n  --pbsk-theme-bodyBackgroundColor-rgb: 228 39 106;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #2538c4;\n  --pbsk-theme-featureHighlightColor-rgb: 37 56 196;\n  --pbsk-theme-calloutTextColor: #bc0159;\n  --pbsk-theme-calloutTextColor-rgb: 188 1 89;\n  --pbsk-theme-calloutBackgroundColor: #f7e03b;\n  --pbsk-theme-calloutBackgroundColor-rgb: 247 224 59;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #08ab4e;\n  --pbsk-theme-badgeBackgroundColor-rgb: 8 171 78;\n  --pbsk-theme-navBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-uiControlColor: #131d8c;\n  --pbsk-theme-uiControlColor-rgb: 19 29 140;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #ffffff;\n  --pbsk-theme-uiHighlightColor-rgb: 255 255 255;\n}\n\n\n[data-theme-context='masthead'] {\n  /* XRID-Xavier Riddle and the Secret Museum-Portal Theme-v2 */\n  --pbsk-theme-status: LIVE;\n  --pbsk-theme-bodyTextColor: #000000;\n  --pbsk-theme-bodyTextColor-rgb: 0 0 0;\n  --pbsk-theme-bodyBackgroundColor: #16e4d8;\n  --pbsk-theme-bodyBackgroundColor-rgb: 22 228 216;\n  --pbsk-theme-accentBackgroundColor: rgb(0 0 0 / 0);\n  --pbsk-theme-backgroundImage-aspectRatio: 4.124378109452737;\n  --pbsk-theme-backgroundImage-width: 3316px;\n  --pbsk-theme-backgroundImage-height: 804px;\n  --pbsk-theme-backgroundPattern: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=');\n  --pbsk-theme-featureBackgroundColor: #ffffff;\n  --pbsk-theme-featureBackgroundColor-rgb: 255 255 255;\n  --pbsk-theme-featureHighlightColor: #772080;\n  --pbsk-theme-featureHighlightColor-rgb: 119 32 128;\n  --pbsk-theme-calloutTextColor: #ffffff;\n  --pbsk-theme-calloutTextColor-rgb: 255 255 255;\n  --pbsk-theme-calloutBackgroundColor: #0d810c;\n  --pbsk-theme-calloutBackgroundColor-rgb: 13 129 12;\n  --pbsk-theme-badgeTextColor: #ffffff;\n  --pbsk-theme-badgeTextColor-rgb: 255 255 255;\n  --pbsk-theme-badgeBackgroundColor: #8534a4;\n  --pbsk-theme-badgeBackgroundColor-rgb: 133 52 164;\n  --pbsk-theme-navBackgroundColor: #16e4d8;\n  --pbsk-theme-navBackgroundColor-rgb: 22 228 216;\n  --pbsk-theme-uiControlColor: #8534a4;\n  --pbsk-theme-uiControlColor-rgb: 133 52 164;\n  --pbsk-theme-uiLabelColor: #ffffff;\n  --pbsk-theme-uiLabelColor-rgb: 255 255 255;\n  --pbsk-theme-uiHighlightColor: #772080;\n  --pbsk-theme-uiHighlightColor-rgb: 119 32 128;\n}\n\n[data-theme-context='masthead'] {\n  --pbsk-theme-backgroundImage: image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n  );\n  --pbsk-theme-backgroundImage: -webkit-image-set(\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n    url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n  );\n}\n\n@media only screen and (min-width: 568px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 675px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1024px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1440px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n\n@media only screen and (min-width: 1920px) {\n  [data-theme-context='masthead'] {\n    --pbsk-theme-backgroundImage: image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n    --pbsk-theme-backgroundImage: -webkit-image-set(\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 1x,\n      url('/pbs-assets/cms-assets.prod.pbskids.org/global/Property-Assets/XRID-Xavier-Riddle/Backgrounds/XRID-background-portal2-v1.jpg') 2x\n    );\n  }\n}\n",
         "hasMastheadTheme": true
       },
       "seriesNavButtons": [],
