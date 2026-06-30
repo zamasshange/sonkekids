@@ -8,6 +8,7 @@ import {
   localizeImageUrls,
 } from "./lib/pbs-assets.mjs";
 import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
+import { buildSonkeContentPatch } from "./lib/sonke-content-patch.mjs";
 import {
   applySonkeContent,
   loadSonkeContent,
@@ -126,6 +127,14 @@ function stripAnalytics(html) {
       /<noscript><iframe src="\/\/www\.googletagmanager\.com[^"]*"[\s\S]*?<\/iframe><\/noscript>/g,
       "",
     );
+}
+
+function injectSonkeContentPatch(html, sonkeContent) {
+  const patch = buildSonkeContentPatch(sonkeContent);
+  if (html.includes("</body>")) {
+    return html.replace("</body>", `${patch}</body>`);
+  }
+  return `${html}${patch}`;
 }
 
 function injectLocalAssetsPatch(html, manifest) {
@@ -263,7 +272,9 @@ async function main() {
   verifyDownloadedAssets(manifest, publicDir);
 
   for (const { dest, branded } of brandedPages) {
-    const localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);
+    let localized = injectLocalAssetsPatch(localizeImageUrls(branded, manifest), manifest);
+    localized = applySonkeContent(localized, sonkeContent);
+    localized = injectSonkeContentPatch(localized, sonkeContent);
     writeFileSync(join(pbsDir, dest), localized, "utf8");
     extractNextData(localized, dest, dataDir);
     console.log(`Wrote public/pbs/${dest} and public/pbs/data/${dest.replace(".html", ".json")}`);

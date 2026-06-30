@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "fs";
 import { join } from "path";
+import { buildReplacementRules, applyRulesToString } from "./sonke-content-rules.mjs";
 
 const URL_PATTERN = /(?:https?:\/\/|\/pbs-assets\/|\/_next\/)[^\s"'<>]+/g;
 
@@ -20,6 +21,12 @@ export function loadSonkeContent(contentDir) {
   const videos = readJson(join(contentDir, "videos.json")) ?? { overrides: [] };
 
   const worldById = new Map(worlds.map((world) => [world.id, world]));
+  const rules = buildReplacementRules({
+    terminology,
+    propertyMap,
+    games,
+    videos,
+  });
 
   return {
     terminology,
@@ -28,6 +35,7 @@ export function loadSonkeContent(contentDir) {
     worldById,
     games,
     videos,
+    rules,
   };
 }
 
@@ -47,61 +55,9 @@ function restoreUrls(text, urls) {
   return text.replace(/__SONKE_URL_(\d+)__/g, (_, index) => urls[Number(index)]);
 }
 
-function applyReplacements(text, replacements) {
-  let updated = text;
-  const sorted = [...replacements].sort((a, b) => b[0].length - a[0].length);
-
-  for (const [from, to] of sorted) {
-    updated = updated.replaceAll(from, to);
-  }
-
-  return updated;
-}
-
-function applyPropertyMap(text, propertyMap) {
-  let updated = text;
-
-  for (const mapping of Object.values(propertyMap)) {
-    if (!mapping.pbsTitle || !mapping.worldTitle) {
-      continue;
-    }
-
-    const variants = new Set([
-      mapping.pbsTitle,
-      mapping.pbsTitle.replace(/'/g, "\u2019"),
-      mapping.pbsTitle.replace(/&/g, "&amp;"),
-    ]);
-
-    for (const variant of variants) {
-      updated = updated.replaceAll(variant, mapping.worldTitle);
-    }
-  }
-
-  return updated;
-}
-
-function applyContentOverrides(text, overrides) {
-  let updated = text;
-
-  for (const item of overrides) {
-    if (item.pbsTitle && item.title) {
-      updated = updated.replaceAll(item.pbsTitle, item.title);
-    }
-    if (item.pbsAlt && item.alt) {
-      updated = updated.replaceAll(item.pbsAlt, item.alt);
-    }
-  }
-
-  return updated;
-}
-
 export function applySonkeContent(text, content) {
   const { protectedText, urls } = protectUrls(text);
-  let updated = protectedText;
-  updated = applyPropertyMap(updated, content.propertyMap);
-  updated = applyContentOverrides(updated, content.games.overrides);
-  updated = applyContentOverrides(updated, content.videos.overrides);
-  updated = applyReplacements(updated, content.terminology.replacements);
+  const updated = applyRulesToString(protectedText, content.rules);
   return restoreUrls(updated, urls);
 }
 
@@ -112,5 +68,8 @@ export function summarizeSonkeContent(content) {
     gameOverrides: content.games.overrides.length,
     videoOverrides: content.videos.overrides.length,
     terminologyRules: content.terminology.replacements.length,
+    replacementRules: content.rules.length,
   };
 }
+
+export { buildReplacementRules };

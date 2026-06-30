@@ -176,7 +176,7 @@
                 "property": [
                   {
                     "slug": "phoebe-jay",
-                    "title": "Phoebe & Jay",
+                    "title": "Pet Paradise",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -638,7 +638,7 @@
                 "property": [
                   {
                     "slug": "pbskidsread",
-                    "title": "All Worlds Read",
+                    "title": "Story Time",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1043,7 +1043,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "characterImageBackground": [
@@ -1065,7 +1065,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "navigationCardColor": "#38b5b9",
@@ -1077,7 +1077,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ]
                   }
@@ -1166,7 +1166,7 @@
                 "property": [
                   {
                     "slug": "peg-cat",
-                    "title": "Peg + Cat",
+                    "title": "Music City",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1694,7 +1694,7 @@
                 "property": [
                   {
                     "slug": "pinkalicious-and-peterrific",
-                    "title": "Pinkalicious & Peterrific",
+                    "title": "Art Studio",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1725,7 +1725,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "navigationCardColor": "#d3338c",
@@ -1737,7 +1737,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/PIPE-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ]
                   }
@@ -2156,7 +2156,7 @@
                 "property": [
                   {
                     "slug": "elinor-wonders-why",
-                    "title": "Elinor Wonders Why",
+                    "title": "Wonder Woods",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2165,7 +2165,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "characterImageBackground": [
@@ -2187,7 +2187,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "navigationCardColor": "#f5bbe6",
@@ -2199,7 +2199,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ]
                   }
@@ -2354,7 +2354,7 @@
                 "property": [
                   {
                     "slug": "ruff-ruffman-show",
-                    "title": "Team Hamster! & Ruff Ruffman",
+                    "title": "Wonder Woods",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2816,7 +2816,7 @@
                 "property": [
                   {
                     "slug": "scribbles-and-ink",
-                    "title": "Scribbles and Ink",
+                    "title": "Art Studio",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2847,7 +2847,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SCRI-logo-v2.png",
                         "width": 920,
                         "height": 480,
-                        "altText": "Scribbles and Ink"
+                        "altText": "Art Studio"
                       }
                     ],
                     "navigationCardColor": null,
@@ -4351,7 +4351,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   }
@@ -5237,7 +5237,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -5268,7 +5268,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -5299,7 +5299,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -5330,7 +5330,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -5361,7 +5361,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -5370,17 +5370,17 @@
                     "id": "2738166",
                     "guid": "b0efe81a-4509-42bd-804c-4bbc81a98d4b",
                     "slug": "jorge-cham-reads-elinor-wonders-why-the-seed-of-an-idea",
-                    "title": "Jorge Cham Reads \"Elinor Wonders Why: The Seed of an Idea\"",
+                    "title": "Jorge Cham Reads \"Wonder Woods: The Seed of an Idea\"",
                     "videoType": "clip",
                     "posterImage": [],
                     "squareImage": [],
                     "mezzanine": [],
                     "mediaManagerAsset": {
-                      "description_short": "Jorge Cham reads Elinor Wonders Why and worlds kids how to draw Elinor.",
+                      "description_short": "Jorge Cham reads Wonder Woods and worlds kids how to draw Elinor.",
                       "duration": 770,
                       "legacy_tp_media_id": "3111122628",
                       "premiered_on": "1780531200",
-                      "title": "Jorge Cham Reads \"Elinor Wonders Why: The Seed of an Idea\"",
+                      "title": "Jorge Cham Reads \"Wonder Woods: The Seed of an Idea\"",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/kmimEnH-asset-kids-mezzanine1-16x9-gxVj3fI.png",
@@ -5392,7 +5392,7 @@
                       {
                         "id": "2669440",
                         "slug": "pbskidsread",
-                        "title": "All Worlds Read"
+                        "title": "Story Time"
                       }
                     ]
                   },
@@ -7275,7 +7275,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2454104",
                         "slug": "wbat-work-it-out-wombats-footerlight-blue-color-theme-v1",
-                        "title": "WBAT-Work It Out Wombats- FOOTER Light Blue Solid Color Theme-v1",
+                        "title": "WBAT-Robot Factory- FOOTER Light Blue Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#000000",
                         "bodyBackgroundColor": "#50a0de",
@@ -7307,7 +7307,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "mezzanine": [
@@ -7318,7 +7318,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/mezzanines/908x510-Mezzanine_Wombats_v2.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "slug": "work-it-out-wombats",
@@ -7415,7 +7415,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401270",
                         "slug": "wbat-work-it-out-wombats-header-theme-v1",
-                        "title": "WBAT-Work It Out Wombats-Masthead Theme-v1",
+                        "title": "WBAT-Robot Factory-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#409aff",
@@ -8582,7 +8582,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401301",
                         "slug": "ewhy-elinor-wonders-why-body-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Body Theme-v1",
+                        "title": "EWHY-Wonder Woods-Body Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -8624,7 +8624,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "mezzanine": [
@@ -8635,7 +8635,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_EWHY-Mezzanine_V2.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "slug": "elinor-wonders-why",
@@ -8732,7 +8732,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401303",
                         "slug": "ewhy-elinor-wonders-why-header-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Masthead Theme-v1",
+                        "title": "EWHY-Wonder Woods-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -8763,7 +8763,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Elinor Wonders Why"
+                    "title": "Wonder Woods"
                   },
                   {
                     "footerTheme": [
@@ -9031,7 +9031,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SCRI-logo-v2.png",
                         "width": 920,
                         "height": 480,
-                        "altText": "Scribbles and Ink"
+                        "altText": "Art Studio"
                       }
                     ],
                     "mezzanine": [
@@ -9127,7 +9127,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Scribbles and Ink"
+                    "title": "Art Studio"
                   },
                   {
                     "footerTheme": [
@@ -9517,7 +9517,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "mezzanine": [
@@ -9528,7 +9528,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_pinkalicious_Shows3.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "slug": "pinkalicious-and-peterrific",
@@ -9623,7 +9623,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Pinkalicious & Peterrific"
+                    "title": "Art Studio"
                   },
                   {
                     "footerTheme": [
@@ -9749,7 +9749,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Team Hamster! & Ruff Ruffman"
+                    "title": "Wonder Woods"
                   },
                   {
                     "footerTheme": [
@@ -11849,7 +11849,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2574571",
                         "slug": "dtig-daniel-tiger-footeryellow-solidcolor-theme-v1-2",
-                        "title": "DTIG-Daniel Tiger-Footer Yellow-Solid Color Theme-v1",
+                        "title": "DTIG-Imagination Kingdom-Footer Yellow-Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#0065b4",
                         "bodyBackgroundColor": "#ffde3b",
@@ -12291,7 +12291,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Peg + Cat"
+                    "title": "Music City"
                   },
                   {
                     "footerTheme": [
@@ -13346,7 +13346,7 @@
                         "stationLogoStyle": "white"
                       }
                     ],
-                    "title": "Phoebe & Jay"
+                    "title": "Pet Paradise"
                   },
                   {
                     "footerTheme": [
@@ -16188,7 +16188,7 @@
                     "id": "504682",
                     "guid": "7a043335-a9b5-4b70-af47-68aaec68f025",
                     "slug": "elinor-wonders-why-a-wonderful-journey",
-                    "title": "Elinor Wonders Why: A Wonderful Journey",
+                    "title": "Wonder Woods: A Wonderful Journey",
                     "videoType": "movie",
                     "posterImage": [
                       {
@@ -16208,7 +16208,7 @@
                       "duration": 3385,
                       "legacy_tp_media_id": "3066009547",
                       "premiered_on": "1650240000",
-                      "title": "Elinor Wonders Why: A Wonderful Journey",
+                      "title": "Wonder Woods: A Wonderful Journey",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/cckyQtn-asset-kids-mezzanine1-16x9-XljkOCC.jpg",
@@ -16224,7 +16224,7 @@
                       {
                         "id": "1311040",
                         "slug": "elinor-wonders-why",
-                        "title": "Elinor Wonders Why"
+                        "title": "Wonder Woods"
                       }
                     ]
                   },
@@ -16399,7 +16399,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -16625,7 +16625,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -16765,7 +16765,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -16835,7 +16835,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -17660,7 +17660,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -17900,7 +17900,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   }
@@ -19243,7 +19243,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2454104",
                         "slug": "wbat-work-it-out-wombats-footerlight-blue-color-theme-v1",
-                        "title": "WBAT-Work It Out Wombats- FOOTER Light Blue Solid Color Theme-v1",
+                        "title": "WBAT-Robot Factory- FOOTER Light Blue Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#000000",
                         "bodyBackgroundColor": "#50a0de",
@@ -19275,7 +19275,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "mezzanine": [
@@ -19286,7 +19286,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/mezzanines/908x510-Mezzanine_Wombats_v2.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "slug": "work-it-out-wombats",
@@ -19383,7 +19383,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401270",
                         "slug": "wbat-work-it-out-wombats-header-theme-v1",
-                        "title": "WBAT-Work It Out Wombats-Masthead Theme-v1",
+                        "title": "WBAT-Robot Factory-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#409aff",
@@ -20550,7 +20550,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401301",
                         "slug": "ewhy-elinor-wonders-why-body-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Body Theme-v1",
+                        "title": "EWHY-Wonder Woods-Body Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -20592,7 +20592,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "mezzanine": [
@@ -20603,7 +20603,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_EWHY-Mezzanine_V2.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "slug": "elinor-wonders-why",
@@ -20700,7 +20700,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401303",
                         "slug": "ewhy-elinor-wonders-why-header-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Masthead Theme-v1",
+                        "title": "EWHY-Wonder Woods-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -20731,7 +20731,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Elinor Wonders Why"
+                    "title": "Wonder Woods"
                   },
                   {
                     "footerTheme": [
@@ -20999,7 +20999,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SCRI-logo-v2.png",
                         "width": 920,
                         "height": 480,
-                        "altText": "Scribbles and Ink"
+                        "altText": "Art Studio"
                       }
                     ],
                     "mezzanine": [
@@ -21095,7 +21095,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Scribbles and Ink"
+                    "title": "Art Studio"
                   },
                   {
                     "footerTheme": [
@@ -21485,7 +21485,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "mezzanine": [
@@ -21496,7 +21496,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_pinkalicious_Shows3.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "slug": "pinkalicious-and-peterrific",
@@ -21591,7 +21591,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Pinkalicious & Peterrific"
+                    "title": "Art Studio"
                   },
                   {
                     "footerTheme": [
@@ -21717,7 +21717,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Team Hamster! & Ruff Ruffman"
+                    "title": "Wonder Woods"
                   },
                   {
                     "footerTheme": [
@@ -24150,7 +24150,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2574571",
                         "slug": "dtig-daniel-tiger-footeryellow-solidcolor-theme-v1-2",
-                        "title": "DTIG-Daniel Tiger-Footer Yellow-Solid Color Theme-v1",
+                        "title": "DTIG-Imagination Kingdom-Footer Yellow-Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#0065b4",
                         "bodyBackgroundColor": "#ffde3b",
@@ -24592,7 +24592,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Peg + Cat"
+                    "title": "Music City"
                   },
                   {
                     "footerTheme": [
@@ -26623,7 +26623,7 @@
                       {
                         "id": "1311040",
                         "slug": "elinor-wonders-why",
-                        "title": "Elinor Wonders Why"
+                        "title": "Wonder Woods"
                       }
                     ]
                   },
@@ -26812,7 +26812,7 @@
                     "id": "2353893",
                     "guid": "1c0dc914-262e-4ace-82c5-0c0cdc943edd",
                     "slug": "daniel-tiger-visits-someplace-else",
-                    "title": "Daniel Tiger Visits Someplace Else",
+                    "title": "Imagination Kingdom Visits Someplace Else",
                     "videoType": "movie",
                     "posterImage": [
                       {
@@ -26828,11 +26828,11 @@
                     "squareImage": [],
                     "mezzanine": [],
                     "mediaManagerAsset": {
-                      "description_short": "Daniel Tiger and Imagination Kingdom meet for the first time in Someplace Else.",
+                      "description_short": "Imagination Kingdom and Imagination Kingdom meet for the first time in Someplace Else.",
                       "duration": 1405,
                       "legacy_tp_media_id": "3102009217",
                       "premiered_on": "1754870400",
-                      "title": "Daniel Tiger Visits Someplace Else",
+                      "title": "Imagination Kingdom Visits Someplace Else",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/BaqvwzX-asset-kids-mezzanine1-16x9-Xjv8b1r.jpg",
@@ -26992,7 +26992,7 @@
                     "id": "2259659",
                     "guid": "dbe8c441-7c33-4df3-86d9-cdb256166717",
                     "slug": "elinor-wonders-why-a-wonderful-journey-asl",
-                    "title": "Elinor Wonders Why: A Wonderful Journey (ASL)",
+                    "title": "Wonder Woods: A Wonderful Journey (ASL)",
                     "videoType": "movie",
                     "posterImage": [
                       {
@@ -27012,7 +27012,7 @@
                       "duration": 3400,
                       "legacy_tp_media_id": "3101674104",
                       "premiered_on": "1750204800",
-                      "title": "Elinor Wonders Why: A Wonderful Journey (ASL)",
+                      "title": "Wonder Woods: A Wonderful Journey (ASL)",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/IMKKgLH-asset-kids-mezzanine1-16x9-0fgwVg4.jpg",
@@ -27028,7 +27028,7 @@
                       {
                         "id": "1311040",
                         "slug": "elinor-wonders-why",
-                        "title": "Elinor Wonders Why"
+                        "title": "Wonder Woods"
                       }
                     ]
                   },
@@ -27588,7 +27588,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -27678,7 +27678,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -27858,7 +27858,7 @@
                       {
                         "id": "1311002",
                         "slug": "pinkalicious-and-peterrific",
-                        "title": "Pinkalicious & Peterrific"
+                        "title": "Art Studio"
                       }
                     ]
                   },
@@ -27867,7 +27867,7 @@
                     "id": "504682",
                     "guid": "7a043335-a9b5-4b70-af47-68aaec68f025",
                     "slug": "elinor-wonders-why-a-wonderful-journey",
-                    "title": "Elinor Wonders Why: A Wonderful Journey",
+                    "title": "Wonder Woods: A Wonderful Journey",
                     "videoType": "movie",
                     "posterImage": [
                       {
@@ -27887,7 +27887,7 @@
                       "duration": 3385,
                       "legacy_tp_media_id": "3066009547",
                       "premiered_on": "1650240000",
-                      "title": "Elinor Wonders Why: A Wonderful Journey",
+                      "title": "Wonder Woods: A Wonderful Journey",
                       "images": [
                         {
                           "image": "/pbs-assets/image.pbs.org/video-assets/cckyQtn-asset-kids-mezzanine1-16x9-XljkOCC.jpg",
@@ -27903,7 +27903,7 @@
                       {
                         "id": "1311040",
                         "slug": "elinor-wonders-why",
-                        "title": "Elinor Wonders Why"
+                        "title": "Wonder Woods"
                       }
                     ]
                   },
@@ -28494,7 +28494,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2454104",
                         "slug": "wbat-work-it-out-wombats-footerlight-blue-color-theme-v1",
-                        "title": "WBAT-Work It Out Wombats- FOOTER Light Blue Solid Color Theme-v1",
+                        "title": "WBAT-Robot Factory- FOOTER Light Blue Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#000000",
                         "bodyBackgroundColor": "#50a0de",
@@ -28526,7 +28526,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "mezzanine": [
@@ -28537,7 +28537,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/mezzanines/908x510-Mezzanine_Wombats_v2.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "slug": "work-it-out-wombats",
@@ -28634,7 +28634,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401270",
                         "slug": "wbat-work-it-out-wombats-header-theme-v1",
-                        "title": "WBAT-Work It Out Wombats-Masthead Theme-v1",
+                        "title": "WBAT-Robot Factory-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#409aff",
@@ -29074,7 +29074,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401301",
                         "slug": "ewhy-elinor-wonders-why-body-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Body Theme-v1",
+                        "title": "EWHY-Wonder Woods-Body Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -29116,7 +29116,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "mezzanine": [
@@ -29127,7 +29127,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_EWHY-Mezzanine_V2.png",
                         "width": 908,
                         "height": 510,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "slug": "elinor-wonders-why",
@@ -29224,7 +29224,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "1401303",
                         "slug": "ewhy-elinor-wonders-why-header-theme-v1",
-                        "title": "EWHY-Elinor Wonders Why-Masthead Theme-v1",
+                        "title": "EWHY-Wonder Woods-Masthead Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#ffffff",
                         "bodyBackgroundColor": "#81459a",
@@ -29255,7 +29255,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Elinor Wonders Why"
+                    "title": "Wonder Woods"
                   },
                   {
                     "footerTheme": [
@@ -29658,7 +29658,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "mezzanine": [
@@ -29669,7 +29669,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/908x510_pinkalicious_Shows3.jpg",
                         "width": 908,
                         "height": 510,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "slug": "pinkalicious-and-peterrific",
@@ -29764,7 +29764,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Pinkalicious & Peterrific"
+                    "title": "Art Studio"
                   },
                   {
                     "footerTheme": [
@@ -31269,7 +31269,7 @@
                         "__typename": "PbsKidsTheme",
                         "id": "2574571",
                         "slug": "dtig-daniel-tiger-footeryellow-solidcolor-theme-v1-2",
-                        "title": "DTIG-Daniel Tiger-Footer Yellow-Solid Color Theme-v1",
+                        "title": "DTIG-Imagination Kingdom-Footer Yellow-Solid Color Theme-v1",
                         "status": "LIVE",
                         "bodyTextColor": "#0065b4",
                         "bodyBackgroundColor": "#ffde3b",
@@ -31575,7 +31575,7 @@
                         "stationLogoStyle": "color"
                       }
                     ],
-                    "title": "Peg + Cat"
+                    "title": "Music City"
                   },
                   {
                     "footerTheme": [

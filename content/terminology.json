@@ -19,6 +19,17 @@
     ["Episode", "Video"],
     ["episode", "video"],
     ["America's Awesome Kids", "Explorer Island"],
-    ["Sonke Kids Read", "Story Time"]
+    ["Sonke Kids Read", "Story Time"],
+    ["Work It Out Wombats!", "Robot Factory"],
+    ["Work It Out Wombats", "Robot Factory"],
+    ["Elinor Wonders Why", "Wonder Woods"],
+    ["Scribbles and Ink", "Art Studio"],
+    ["Pinkalicious & Peterrific", "Art Studio"],
+    ["Pinkalicious and Peterrific", "Art Studio"],
+    ["Team Hamster! & Ruff Ruffman", "Wonder Woods"],
+    ["Daniel Tiger's Neighborhood", "Imagination Kingdom"],
+    ["Daniel Tiger", "Imagination Kingdom"],
+    ["Peg + Cat", "Music City"],
+    ["Peg +Cat", "Music City"]
   ]
 }

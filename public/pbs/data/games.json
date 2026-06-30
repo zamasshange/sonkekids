@@ -171,7 +171,7 @@
                 "property": [
                   {
                     "slug": "phoebe-jay",
-                    "title": "Phoebe & Jay",
+                    "title": "Pet Paradise",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -668,7 +668,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "characterImageBackground": [
@@ -690,7 +690,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/WBAT-logo-v2.png",
                         "width": 756,
                         "height": 480,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ],
                     "navigationCardColor": "#38b5b9",
@@ -702,7 +702,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/WBAT-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Work It Out Wombats"
+                        "altText": "Robot Factory"
                       }
                     ]
                   }
@@ -1025,7 +1025,7 @@
                 "property": [
                   {
                     "slug": "pinkalicious-and-peterrific",
-                    "title": "Pinkalicious & Peterrific",
+                    "title": "Art Studio",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1056,7 +1056,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Logos/PIPE-logo-v2.png",
                         "width": 688,
                         "height": 480,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ],
                     "navigationCardColor": "#d3338c",
@@ -1068,7 +1068,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/Properties/PIPE-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Pinkalicious and Peterrific"
+                        "altText": "Art Studio"
                       }
                     ]
                   }
@@ -1147,7 +1147,7 @@
                 "property": [
                   {
                     "slug": "elinor-wonders-why",
-                    "title": "Elinor Wonders Why",
+                    "title": "Wonder Woods",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1156,7 +1156,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-character-shownav-v1.png",
                         "width": 328,
                         "height": 368,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "characterImageBackground": [
@@ -1178,7 +1178,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/EWHY-logo-v2.png",
                         "width": 832,
                         "height": 480,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ],
                     "navigationCardColor": "#f5bbe6",
@@ -1190,7 +1190,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/character-buttons/EWHY-logo-shownav-v1.png",
                         "width": 672,
                         "height": 288,
-                        "altText": "Elinor Wonders Why"
+                        "altText": "Wonder Woods"
                       }
                     ]
                   }
@@ -1574,7 +1574,7 @@
                 "property": [
                   {
                     "slug": "scribbles-and-ink",
-                    "title": "Scribbles and Ink",
+                    "title": "Art Studio",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -1605,7 +1605,7 @@
                         "url": "/pbs-assets/cms-assets.prod.pbskids.org/global/show-logos/SCRI-logo-v2.png",
                         "width": 920,
                         "height": 480,
-                        "altText": "Scribbles and Ink"
+                        "altText": "Art Studio"
                       }
                     ],
                     "navigationCardColor": null,
@@ -1818,7 +1818,7 @@
                 "property": [
                   {
                     "slug": "ruff-ruffman-show",
-                    "title": "Team Hamster! & Ruff Ruffman",
+                    "title": "Wonder Woods",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2062,7 +2062,7 @@
                 "property": [
                   {
                     "slug": "peg-cat",
-                    "title": "Peg + Cat",
+                    "title": "Music City",
                     "characterImage": [
                       {
                         "__typename": "ImageAsset",
@@ -2623,7 +2623,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Pinkalicious & Peterrific"
+                    "title": "Art Studio"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -2688,7 +2688,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Elinor Wonders Why"
+                    "title": "Wonder Woods"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -2799,7 +2799,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Scribbles and Ink"
+                    "title": "Art Studio"
                   }
                 ],
                 "contentLanguage": "en_us",
@@ -3462,7 +3462,7 @@
                 ],
                 "properties": [
                   {
-                    "title": "Phoebe & Jay"
+                    "title": "Pet Paradise"
                   }
                 ],
                 "contentLanguage": "en_us",
