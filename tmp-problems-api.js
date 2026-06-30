@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="618de4f8-3441-5c8b-874f-3de5438e5415")}catch(e){}}();
+import{a as r}from"./apiClient-VZ9fKBVF.js";import{g as n}from"./useCommonProfile-Dka9Yodg.js";import"./health-Bo6Ec3Qn.js";const g=async(e={})=>(await r.get("/service/training/api/retry-problem",{params:e})).data,l=async(e,a="logic",t,s)=>{const i=a==="logic"?"":`/${a}`;return(await r.get(`/service/training${i}/api/problem/${e}`,{params:{...t,...n(s)},convertSnakeToCamel:!0})).data},u=async(e,a)=>(await r.get(`/service/training/${a}/api/problem/${e}`,{params:{inStatsPreview:!0},convertSnakeToCamel:!0})).data.data,b=async(e,a,t)=>(await r.post(`/service/training/api/problem/${e}/buy`,{},{params:{...a,...n(t)},convertSnakeToCamel:!0})).data,v=async e=>(await r.get(e,{isNotLocalizable:!0,disableTokenInjecting:!0})).data;export{l as a,b,v as c,u as d,g};
+
+//# debugId=618de4f8-3441-5c8b-874f-3de5438e5415

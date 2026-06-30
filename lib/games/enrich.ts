@@ -25,10 +25,14 @@ function migrateCachedPage(cached: GamePageData, gameTypeDef: GameTypeDefinition
   if (cached.layout && cached.meta && cached.seo && cached.ai.funFacts) {
     const embedUrl = game.embedUrl ?? cached.embedUrl ?? null;
     const sourceUrl = game.sourceUrl ?? cached.sourceUrl ?? null;
+    const embedSource = game.embedSource ?? cached.embedSource;
+    const topicLabel = game.topicLabel ?? cached.topicLabel ?? null;
     const heroImage = cached.heroImage ?? game.thumbnailUrl ?? null;
     const needsEmbedPatch =
       embedUrl !== cached.embedUrl ||
       sourceUrl !== cached.sourceUrl ||
+      embedSource !== cached.embedSource ||
+      topicLabel !== cached.topicLabel ||
       heroImage !== cached.heroImage ||
       cached.game.id !== game.id;
 
@@ -40,6 +44,8 @@ function migrateCachedPage(cached: GamePageData, gameTypeDef: GameTypeDefinition
       heroImage,
       embedUrl,
       sourceUrl,
+      embedSource,
+      topicLabel,
       images: game.thumbnailUrl
         ? {
             ...cached.images,

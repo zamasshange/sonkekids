@@ -35,5 +35,23 @@
     "worldId": "sports-games",
     "worldTitle": "Sports & Skill",
     "guide": null
+  },
+  "edutainment-games": {
+    "pbsTitle": "Edutainment",
+    "worldId": "edutainment-games",
+    "worldTitle": "Edutainment",
+    "guide": null
+  },
+  "logic-puzzles": {
+    "pbsTitle": "Logic Puzzles",
+    "worldId": "logic-puzzles",
+    "worldTitle": "Logic Puzzles",
+    "guide": null
+  },
+  "brain-games": {
+    "pbsTitle": "Brain Games",
+    "worldId": "brain-games",
+    "worldTitle": "Brain Games",
+    "guide": null
   }
 }

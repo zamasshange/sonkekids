@@ -1,8 +1,11 @@
 {
-  "version": 3,
-  "source": "primarygames",
-  "totalGames": 30,
-  "totalCategories": 5,
+  "version": 4,
+  "sources": [
+    "primarygames",
+    "logiclike"
+  ],
+  "totalGames": 44,
+  "totalCategories": 8,
   "categories": [
     {
       "id": "puzzle-games",
@@ -156,6 +159,83 @@
         {
           "id": "balance-ball",
           "title": "Balance Ball"
+        }
+      ]
+    },
+    {
+      "id": "edutainment-games",
+      "title": "Edutainment",
+      "count": 6,
+      "games": [
+        {
+          "id": "figures",
+          "title": "Figures"
+        },
+        {
+          "id": "count-in-order",
+          "title": "Count in Order"
+        },
+        {
+          "id": "digits",
+          "title": "Digits"
+        },
+        {
+          "id": "missing-number",
+          "title": "Missing Number"
+        },
+        {
+          "id": "uppercase-letters",
+          "title": "Uppercase Letters"
+        },
+        {
+          "id": "lowercase-letters",
+          "title": "Lowercase Letters"
+        }
+      ]
+    },
+    {
+      "id": "logic-puzzles",
+      "title": "Logic Puzzles",
+      "count": 3,
+      "games": [
+        {
+          "id": "favorite-food",
+          "title": "Favorite Food"
+        },
+        {
+          "id": "baby-animal",
+          "title": "Baby Animal"
+        },
+        {
+          "id": "fox-costume",
+          "title": "Fox Costume"
+        }
+      ]
+    },
+    {
+      "id": "brain-games",
+      "title": "Brain Games",
+      "count": 5,
+      "games": [
+        {
+          "id": "battleship",
+          "title": "Battleship"
+        },
+        {
+          "id": "virus",
+          "title": "Virus"
+        },
+        {
+          "id": "robotron",
+          "title": "Robotron"
+        },
+        {
+          "id": "schulte-table",
+          "title": "Schulte Table"
+        },
+        {
+          "id": "y-game",
+          "title": "Y Game"
         }
       ]
     }
@@ -460,6 +540,160 @@
       "thumbnailUrl": "https://www.primarygames.com/arcade/sports/balanceball/logo200.png",
       "sourceUrl": "https://www.primarygames.com/arcade/sports/balanceball/",
       "embedSource": "primarygames"
+    },
+    {
+      "id": "figures",
+      "title": "Figures",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/trace:shapes/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/traceShapes@opt-CIDdc7NZ.svg",
+      "sourceUrl": "https://logiclike.com/en/game/trace:shapes",
+      "embedSource": "logiclike",
+      "topicLabel": "Learn shapes and figures"
+    },
+    {
+      "id": "count-in-order",
+      "title": "Count in Order",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/countInOrder/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/countInOrer@opt-7gVTfuWp.svg",
+      "sourceUrl": "https://logiclike.com/en/game/countInOrder",
+      "embedSource": "logiclike",
+      "topicLabel": "Count in order from 1 to 3"
+    },
+    {
+      "id": "digits",
+      "title": "Digits",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/trace:digits/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/traceDigits@opt-ChfV-TEi.svg",
+      "sourceUrl": "https://logiclike.com/en/game/trace:digits",
+      "embedSource": "logiclike",
+      "topicLabel": "Trace the digits"
+    },
+    {
+      "id": "missing-number",
+      "title": "Missing Number",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/countAndSelect/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/countAndSelect@opt-p1JDGD1F.svg",
+      "sourceUrl": "https://logiclike.com/en/game/countAndSelect",
+      "embedSource": "logiclike",
+      "topicLabel": "Find the missing number"
+    },
+    {
+      "id": "uppercase-letters",
+      "title": "Uppercase Letters",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/trace:capitalLetters/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/capitalLetters@opt-DLDnDFFO.svg",
+      "sourceUrl": "https://logiclike.com/en/game/trace:capitalLetters",
+      "embedSource": "logiclike",
+      "topicLabel": "Trace uppercase letters"
+    },
+    {
+      "id": "lowercase-letters",
+      "title": "Lowercase Letters",
+      "categoryId": "edutainment-games",
+      "category": "Edutainment",
+      "embedUrl": "https://logiclike.com/static/games/trace:smallLetters/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/smallLetters@opt-DiO8sx0w.svg",
+      "sourceUrl": "https://logiclike.com/en/game/trace:smallLetters",
+      "embedSource": "logiclike",
+      "topicLabel": "Trace lowercase letters"
+    },
+    {
+      "id": "favorite-food",
+      "title": "Favorite Food",
+      "categoryId": "logic-puzzles",
+      "category": "Logic Puzzles",
+      "embedUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/1",
+      "thumbnailUrl": "/logiclike/match-food.png",
+      "sourceUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/1",
+      "embedSource": "logiclike",
+      "topicLabel": "Give each friend their favorite food"
+    },
+    {
+      "id": "baby-animal",
+      "title": "Baby Animal",
+      "categoryId": "logic-puzzles",
+      "category": "Logic Puzzles",
+      "embedUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/2",
+      "thumbnailUrl": "/logiclike/match-baby-animal.png",
+      "sourceUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/2",
+      "embedSource": "logiclike",
+      "topicLabel": "Find the baby animal"
+    },
+    {
+      "id": "fox-costume",
+      "title": "Fox Costume",
+      "categoryId": "logic-puzzles",
+      "category": "Logic Puzzles",
+      "embedUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/3",
+      "thumbnailUrl": "/logiclike/match-costume.png",
+      "sourceUrl": "https://logiclike.com/en/v3/cabinet/exercise/logic/1/1/problem/3",
+      "embedSource": "logiclike",
+      "topicLabel": "Who is wearing the fox costume?"
+    },
+    {
+      "id": "battleship",
+      "title": "Battleship",
+      "categoryId": "brain-games",
+      "category": "Brain Games",
+      "embedUrl": "https://logiclike.com/static/games/battleship/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/defenders@opt-DElDpBkS.png",
+      "sourceUrl": "https://logiclike.com/en/game/battleship",
+      "embedSource": "logiclike",
+      "topicLabel": "Sink the ships!"
+    },
+    {
+      "id": "virus",
+      "title": "Virus",
+      "categoryId": "brain-games",
+      "category": "Brain Games",
+      "embedUrl": "https://logiclike.com/static/games/virus/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/virus@opt-CLDs7-y5.svg",
+      "sourceUrl": "https://logiclike.com/en/game/virus",
+      "embedSource": "logiclike",
+      "topicLabel": "Stop the virus from spreading"
+    },
+    {
+      "id": "robotron",
+      "title": "Robotron",
+      "categoryId": "brain-games",
+      "category": "Brain Games",
+      "embedUrl": "https://logiclike.com/static/games/robotron/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/robotron@opt-SLAfFVPw.svg",
+      "sourceUrl": "https://logiclike.com/en/game/robotron",
+      "embedSource": "logiclike",
+      "topicLabel": "Help the robot reach the goal"
+    },
+    {
+      "id": "schulte-table",
+      "title": "Schulte Table",
+      "categoryId": "brain-games",
+      "category": "Brain Games",
+      "embedUrl": "https://logiclike.com/static/games/schulte/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/schulte@opt-BzFG-sIq.svg",
+      "sourceUrl": "https://logiclike.com/en/game/schulte",
+      "embedSource": "logiclike",
+      "topicLabel": "Tap the numbers in order"
+    },
+    {
+      "id": "y-game",
+      "title": "Y Game",
+      "categoryId": "brain-games",
+      "category": "Brain Games",
+      "embedUrl": "https://logiclike.com/static/games/ygame/index.html",
+      "thumbnailUrl": "https://s3-prod-web-app.logiclike.com/v3assets/igrek@opt-CgRlafTj.svg",
+      "sourceUrl": "https://logiclike.com/en/game/ygame",
+      "embedSource": "logiclike",
+      "topicLabel": "Solve the Y puzzle"
     }
   ]
 }

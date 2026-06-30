@@ -103,5 +103,7 @@ export function assembleGamePageData(
     playUrl: null,
     embedUrl: game.embedUrl ?? null,
     sourceUrl: game.sourceUrl ?? null,
+    embedSource: game.embedSource,
+    topicLabel: game.topicLabel ?? null,
   };
 }

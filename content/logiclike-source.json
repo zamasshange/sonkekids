@@ -1,0 +1,118 @@
+{
+  "origin": "https://logiclike.com",
+  "categories": [
+    {
+      "id": "edutainment-games",
+      "title": "Edutainment",
+      "games": [
+        {
+          "title": "Figures",
+          "gameName": "trace:shapes",
+          "staticPath": "trace:shapes",
+          "topicLabel": "Learn shapes and figures",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/traceShapes@opt-CIDdc7NZ.svg"
+        },
+        {
+          "title": "Count in Order",
+          "gameName": "countInOrder",
+          "staticPath": "countInOrder",
+          "topicLabel": "Count in order from 1 to 3",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/countInOrer@opt-7gVTfuWp.svg"
+        },
+        {
+          "title": "Digits",
+          "gameName": "trace:digits",
+          "staticPath": "trace:digits",
+          "topicLabel": "Trace the digits",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/traceDigits@opt-ChfV-TEi.svg"
+        },
+        {
+          "title": "Missing Number",
+          "gameName": "countAndSelect",
+          "staticPath": "countAndSelect",
+          "topicLabel": "Find the missing number",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/countAndSelect@opt-p1JDGD1F.svg"
+        },
+        {
+          "title": "Uppercase Letters",
+          "gameName": "trace:capitalLetters",
+          "staticPath": "trace:capitalLetters",
+          "topicLabel": "Trace uppercase letters",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/capitalLetters@opt-DLDnDFFO.svg"
+        },
+        {
+          "title": "Lowercase Letters",
+          "gameName": "trace:smallLetters",
+          "staticPath": "trace:smallLetters",
+          "topicLabel": "Trace lowercase letters",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/smallLetters@opt-DiO8sx0w.svg"
+        }
+      ]
+    },
+    {
+      "id": "logic-puzzles",
+      "title": "Logic Puzzles",
+      "games": [
+        {
+          "title": "Favorite Food",
+          "topicLabel": "Give each friend their favorite food",
+          "exercisePath": "logic/1/1/problem/1",
+          "thumbnail": "/logiclike/match-food.png"
+        },
+        {
+          "title": "Baby Animal",
+          "topicLabel": "Find the baby animal",
+          "exercisePath": "logic/1/1/problem/2",
+          "thumbnail": "/logiclike/match-baby-animal.png"
+        },
+        {
+          "title": "Fox Costume",
+          "topicLabel": "Who is wearing the fox costume?",
+          "exercisePath": "logic/1/1/problem/3",
+          "thumbnail": "/logiclike/match-costume.png"
+        }
+      ]
+    },
+    {
+      "id": "brain-games",
+      "title": "Brain Games",
+      "games": [
+        {
+          "title": "Battleship",
+          "gameName": "battleship",
+          "staticPath": "battleship",
+          "topicLabel": "Sink the ships!",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/defenders@opt-DElDpBkS.png"
+        },
+        {
+          "title": "Virus",
+          "gameName": "virus",
+          "staticPath": "virus",
+          "topicLabel": "Stop the virus from spreading",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/virus@opt-CLDs7-y5.svg"
+        },
+        {
+          "title": "Robotron",
+          "gameName": "robotron",
+          "staticPath": "robotron",
+          "topicLabel": "Help the robot reach the goal",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/robotron@opt-SLAfFVPw.svg"
+        },
+        {
+          "title": "Schulte Table",
+          "gameName": "schulte",
+          "staticPath": "schulte",
+          "topicLabel": "Tap the numbers in order",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/schulte@opt-BzFG-sIq.svg"
+        },
+        {
+          "title": "Y Game",
+          "gameName": "ygame",
+          "staticPath": "ygame",
+          "topicLabel": "Solve the Y puzzle",
+          "thumbnail": "https://s3-prod-web-app.logiclike.com/v3assets/igrek@opt-CgRlafTj.svg"
+        }
+      ]
+    }
+  ]
+}

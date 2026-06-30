@@ -1,0 +1,5 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="8770dcc3-bdcc-5c57-a162-8fd2bc0c4353")}catch(e){}}();
+import{a as s}from"./apiClient-VZ9fKBVF.js";import{g as c}from"./useCommonProfile-Dka9Yodg.js";import"./health-Bo6Ec3Qn.js";const l=async({targetLesson:t,regenerate:e,complexity:a})=>(await s.get(`/service/training/api/cabinet/exercise/${t}/${a}`,{params:{regenerate:e}})).data,g=async(t,e,a)=>(await s.get(`/service/training/api/cabinet/exercise/${t}/${e}/predict`,{params:a})).data,m=async(t,e,a,r,i)=>(await s.post(`/service/training/api/cabinet/exercise/${t}/${e}/${a}/buy`,{},{params:{complexity:e,...r,...c(i)},convertSnakeToCamel:!0})).data,$=async(t,e,a)=>(await s.put(`/service/training/api/cabinet/exercise/${t}/${e}/${a}/force-complete`)).data;export{l as a,m as b,$ as f,g};
+
+//# debugId=8770dcc3-bdcc-5c57-a162-8fd2bc0c4353

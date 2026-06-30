@@ -6,7 +6,7 @@ import type { GamePageData } from "@/lib/games/types";
 import { getHeroVisual } from "@/lib/games/images";
 import { SONKE_LOGO_SVG } from "@/lib/sonke-branding";
 import { GamePlayer } from "./players/GamePlayer";
-import { PrimaryGamesEmbed } from "./PrimaryGamesEmbed";
+import { ExternalGameEmbed } from "./ExternalGameEmbed";
 import "./sonke-play-shell.css";
 
 type PlayPhase = "splash" | "playing";
@@ -23,7 +23,7 @@ type SonkePlayShellProps = {
 };
 
 export function SonkePlayShell({ data }: SonkePlayShellProps) {
-  const { game, gameType, ai, heroImage, embedUrl, sourceUrl } = data;
+  const { game, gameType, ai, heroImage, embedUrl, sourceUrl, embedSource, topicLabel } = data;
   const visual = getHeroVisual(game, heroImage);
   const stageRef = useRef<HTMLDivElement>(null);
 
@@ -131,13 +131,17 @@ export function SonkePlayShell({ data }: SonkePlayShellProps) {
             </div>
           ) : (
             <div className="sonke-play-active">
-              <h2 className="sonke-play-active-title">{game.title}</h2>
+              <h2 className="sonke-play-active-title">
+                {topicLabel ?? game.title}
+              </h2>
               <div className={`sonke-play-frame${embedUrl ? " sonke-play-frame-embed" : ""}`}>
                 {embedUrl ? (
-                  <PrimaryGamesEmbed
+                  <ExternalGameEmbed
                     title={game.title}
                     embedUrl={embedUrl}
                     sourceUrl={sourceUrl}
+                    embedSource={embedSource ?? game.embedSource}
+                    topicLabel={embedSource === "logiclike" || game.embedSource === "logiclike" ? topicLabel : null}
                   />
                 ) : (
                   <GamePlayer title={game.title} gameType={gameType} />
@@ -189,7 +193,7 @@ export function SonkePlayShell({ data }: SonkePlayShellProps) {
                 rel="noopener noreferrer"
                 className="sonke-play-attribution"
               >
-                Game by PrimaryGames
+                Game by {embedSource === "logiclike" || game.embedSource === "logiclike" ? "LogicLike" : "PrimaryGames"}
               </a>
             </>
           ) : null}

@@ -6,9 +6,11 @@ export type SonkeGame = {
   /** CDN or partner URL loaded in the play iframe */
   embedUrl?: string;
   thumbnailUrl?: string;
-  /** PrimaryGames game page for attribution */
+  /** PrimaryGames or LogicLike page for attribution */
   sourceUrl?: string;
-  embedSource?: "primarygames";
+  embedSource?: "primarygames" | "logiclike";
+  /** Written above the embed instead of voiced instructions (LogicLike) */
+  topicLabel?: string;
 };
 
 export type SonkeCategory = {
@@ -130,6 +132,8 @@ export type GamePageData = {
   playUrl: string | null;
   embedUrl: string | null;
   sourceUrl: string | null;
+  embedSource?: "primarygames" | "logiclike";
+  topicLabel?: string | null;
 };
 
 export type PbsSlugMapping = {

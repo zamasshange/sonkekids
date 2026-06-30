@@ -263,5 +263,75 @@
     "pbsSlug": "balance-ball",
     "sonkeId": "balance-ball",
     "title": "Balance Ball"
+  },
+  {
+    "pbsSlug": "figures",
+    "sonkeId": "figures",
+    "title": "Figures"
+  },
+  {
+    "pbsSlug": "count-in-order",
+    "sonkeId": "count-in-order",
+    "title": "Count in Order"
+  },
+  {
+    "pbsSlug": "digits",
+    "sonkeId": "digits",
+    "title": "Digits"
+  },
+  {
+    "pbsSlug": "missing-number",
+    "sonkeId": "missing-number",
+    "title": "Missing Number"
+  },
+  {
+    "pbsSlug": "uppercase-letters",
+    "sonkeId": "uppercase-letters",
+    "title": "Uppercase Letters"
+  },
+  {
+    "pbsSlug": "lowercase-letters",
+    "sonkeId": "lowercase-letters",
+    "title": "Lowercase Letters"
+  },
+  {
+    "pbsSlug": "favorite-food",
+    "sonkeId": "favorite-food",
+    "title": "Favorite Food"
+  },
+  {
+    "pbsSlug": "baby-animal",
+    "sonkeId": "baby-animal",
+    "title": "Baby Animal"
+  },
+  {
+    "pbsSlug": "fox-costume",
+    "sonkeId": "fox-costume",
+    "title": "Fox Costume"
+  },
+  {
+    "pbsSlug": "battleship",
+    "sonkeId": "battleship",
+    "title": "Battleship"
+  },
+  {
+    "pbsSlug": "virus",
+    "sonkeId": "virus",
+    "title": "Virus"
+  },
+  {
+    "pbsSlug": "robotron",
+    "sonkeId": "robotron",
+    "title": "Robotron"
+  },
+  {
+    "pbsSlug": "schulte-table",
+    "sonkeId": "schulte-table",
+    "title": "Schulte Table"
+  },
+  {
+    "pbsSlug": "y-game",
+    "sonkeId": "y-game",
+    "title": "Y Game"
   }
 ]

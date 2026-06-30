@@ -1,6 +1,5 @@
 /**
- * Build Sonke catalog from curated PrimaryGames HTML5 titles.
- * Fetches each game's CDN embed URL from its PrimaryGames page.
+ * Build Sonke catalog from PrimaryGames + LogicLike curated sources.
  */
 import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
@@ -10,8 +9,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const PG_ORIGIN = "https://www.primarygames.com";
 
-const source = JSON.parse(
+const primarySource = JSON.parse(
   readFileSync(join(root, "content", "primarygames-source.json"), "utf8"),
+);
+const logiclikeSource = JSON.parse(
+  readFileSync(join(root, "content", "logiclike-source.json"), "utf8"),
 );
 
 function slugify(title) {
@@ -21,7 +23,7 @@ function slugify(title) {
     .replace(/^-|-$/g, "");
 }
 
-async function fetchEmbedUrl(pageUrl) {
+async function fetchPrimaryEmbedUrl(pageUrl) {
   const res = await fetch(pageUrl, {
     headers: { "User-Agent": "SonkeKidsCatalog/1.0" },
   });
@@ -32,7 +34,7 @@ async function fetchEmbedUrl(pageUrl) {
   return match[1];
 }
 
-function logoUrl(path) {
+function primaryLogoUrl(path) {
   return `${PG_ORIGIN}/${path}/logo200.png`;
 }
 
@@ -53,7 +55,8 @@ async function mapWithConcurrency(items, limit, fn) {
 
 const flat = [];
 
-for (const category of source.categories) {
+console.log("PrimaryGames…");
+for (const category of primarySource.categories) {
   const entries = category.games.map((game) => ({
     ...game,
     categoryId: category.id,
@@ -64,7 +67,7 @@ for (const category of source.categories) {
 
   const resolved = await mapWithConcurrency(entries, 4, async (entry) => {
     try {
-      const embedUrl = await fetchEmbedUrl(entry.pageUrl);
+      const embedUrl = await fetchPrimaryEmbedUrl(entry.pageUrl);
       process.stdout.write(`  ✓ ${entry.title}\n`);
       return {
         id: entry.id,
@@ -72,7 +75,7 @@ for (const category of source.categories) {
         categoryId: entry.categoryId,
         category: entry.category,
         embedUrl,
-        thumbnailUrl: logoUrl(entry.path),
+        thumbnailUrl: primaryLogoUrl(entry.path),
         sourceUrl: entry.pageUrl,
         embedSource: "primarygames",
       };
@@ -87,22 +90,66 @@ for (const category of source.categories) {
   }
 }
 
-if (flat.length === 0) {
-  throw new Error("No games resolved — check network or PrimaryGames HTML format.");
+console.log("LogicLike…");
+const llOrigin = logiclikeSource.origin;
+
+for (const category of logiclikeSource.categories) {
+  for (const game of category.games) {
+    const id = slugify(game.title);
+    let embedUrl;
+    let sourceUrl;
+
+    if (game.exercisePath) {
+      embedUrl = `${llOrigin}/en/v3/cabinet/exercise/${game.exercisePath}`;
+      sourceUrl = embedUrl;
+    } else {
+      embedUrl = `${llOrigin}/static/games/${game.staticPath}/index.html`;
+      sourceUrl = `${llOrigin}/en/game/${game.gameName}`;
+    }
+
+    flat.push({
+      id,
+      title: game.title,
+      categoryId: category.id,
+      category: category.title,
+      embedUrl,
+      thumbnailUrl: game.thumbnail,
+      sourceUrl,
+      embedSource: "logiclike",
+      topicLabel: game.topicLabel ?? game.title,
+    });
+    process.stdout.write(`  ✓ ${game.title}\n`);
+  }
 }
 
-const categories = source.categories.map((category) => ({
-  id: category.id,
-  title: category.title,
-  count: flat.filter((game) => game.categoryId === category.id).length,
-  games: flat
-    .filter((game) => game.categoryId === category.id)
-    .map((game) => ({ id: game.id, title: game.title })),
-}));
+if (flat.length === 0) {
+  throw new Error("No games resolved — check network or source files.");
+}
+
+const categoryOrder = [
+  ...primarySource.categories.map((c) => c.id),
+  ...logiclikeSource.categories.map((c) => c.id),
+];
+const categoryMeta = new Map([
+  ...primarySource.categories.map((c) => [c.id, c.title]),
+  ...logiclikeSource.categories.map((c) => [c.id, c.title]),
+]);
+
+const categories = categoryOrder
+  .filter((id, index, all) => all.indexOf(id) === index)
+  .map((id) => ({
+    id,
+    title: categoryMeta.get(id) ?? id,
+    count: flat.filter((game) => game.categoryId === id).length,
+    games: flat
+      .filter((game) => game.categoryId === id)
+      .map((game) => ({ id: game.id, title: game.title })),
+  }))
+  .filter((category) => category.count > 0);
 
 const output = {
-  version: 3,
-  source: "primarygames",
+  version: 4,
+  sources: ["primarygames", "logiclike"],
   totalGames: flat.length,
   totalCategories: categories.length,
   categories,
@@ -115,4 +162,6 @@ writeFileSync(
   "utf8",
 );
 
-console.log(`Wrote ${output.totalGames} PrimaryGames embeds in ${output.totalCategories} categories.`);
+console.log(
+  `Wrote ${output.totalGames} games in ${output.totalCategories} categories (PrimaryGames + LogicLike).`,
+);
