@@ -1,0 +1,137 @@
+[
+  {
+    "id": "wonder-woods",
+    "slug": "wonder-woods",
+    "title": "Wonder Woods",
+    "emoji": "🌳",
+    "guide": "Willow",
+    "guideRole": "Willow the Owl",
+    "themes": ["nature", "animals", "reading", "friendship", "exploration"]
+  },
+  {
+    "id": "galaxy-station",
+    "slug": "galaxy-station",
+    "title": "Galaxy Station",
+    "emoji": "🚀",
+    "guide": "Nova",
+    "guideRole": "Nova the Astronaut",
+    "themes": ["space", "astronomy", "planets", "technology"]
+  },
+  {
+    "id": "inventor-lab",
+    "slug": "inventor-lab",
+    "title": "Inventor Lab",
+    "emoji": "🧪",
+    "guide": "Professor Spark",
+    "guideRole": "Professor Spark",
+    "themes": ["science", "engineering", "experiments", "innovation"]
+  },
+  {
+    "id": "music-city",
+    "slug": "music-city",
+    "title": "Music City",
+    "emoji": "🎵",
+    "guide": "Melody",
+    "guideRole": "Melody the Musician",
+    "themes": ["music", "dance", "rhythm", "creativity"]
+  },
+  {
+    "id": "art-studio",
+    "slug": "art-studio",
+    "title": "Art Studio",
+    "emoji": "🎨",
+    "guide": "Sketch",
+    "guideRole": "Sketch the Artist",
+    "themes": ["creativity", "drawing", "painting", "crafts"]
+  },
+  {
+    "id": "explorer-island",
+    "slug": "explorer-island",
+    "title": "Explorer Island",
+    "emoji": "🌍",
+    "guide": "Atlas",
+    "guideRole": "Atlas the Explorer",
+    "themes": ["countries", "cultures", "history", "travel"]
+  },
+  {
+    "id": "food-town",
+    "slug": "food-town",
+    "title": "Food Town",
+    "emoji": "🍎",
+    "guide": "Chef Apple",
+    "guideRole": "Chef Apple",
+    "themes": ["healthy eating", "cooking", "nutrition"]
+  },
+  {
+    "id": "money-village",
+    "slug": "money-village",
+    "title": "Money Village",
+    "emoji": "💰",
+    "guide": "Penny",
+    "guideRole": "Penny the Banker",
+    "themes": ["financial literacy", "saving", "budgeting"]
+  },
+  {
+    "id": "robot-factory",
+    "slug": "robot-factory",
+    "title": "Robot Factory",
+    "emoji": "🤖",
+    "guide": "Bolt",
+    "guideRole": "Bolt the Robot",
+    "themes": ["coding", "logic", "technology"]
+  },
+  {
+    "id": "ocean-world",
+    "slug": "ocean-world",
+    "title": "Ocean World",
+    "emoji": "🌊",
+    "guide": "Coral",
+    "guideRole": "Coral the Dolphin",
+    "themes": ["sea", "marine life", "environment"]
+  },
+  {
+    "id": "sports-arena",
+    "slug": "sports-arena",
+    "title": "Sports Arena",
+    "emoji": "⚽",
+    "guide": "Dash",
+    "guideRole": "Dash the Athlete",
+    "themes": ["movement", "fitness", "health"]
+  },
+  {
+    "id": "dino-valley",
+    "slug": "dino-valley",
+    "title": "Dino Valley",
+    "emoji": "🦖",
+    "guide": "Rex",
+    "guideRole": "Rex the Paleontologist",
+    "themes": ["dinosaurs", "history", "adventure"]
+  },
+  {
+    "id": "speed-city",
+    "slug": "speed-city",
+    "title": "Speed City",
+    "emoji": "🏎",
+    "guide": "Zoom",
+    "guideRole": "Zoom the Racer",
+    "themes": ["vehicles", "racing", "engineering"]
+  },
+  {
+    "id": "imagination-kingdom",
+    "slug": "imagination-kingdom",
+    "title": "Imagination Kingdom",
+    "emoji": "🏰",
+    "guide": "Luna",
+    "guideRole": "Luna the Storyteller",
+    "themes": ["stories", "fantasy", "creativity", "bedtime"]
+  },
+  {
+    "id": "pet-paradise",
+    "slug": "pet-paradise",
+    "title": "Pet Paradise",
+    "emoji": "🐾",
+    "guide": "Pip",
+    "guideRole": "Pip the Pet Keeper",
+    "themes": ["pets", "animals", "care", "friendship"]
+  }
+]

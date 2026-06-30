@@ -8,6 +8,11 @@ import {
   localizeImageUrls,
 } from "./lib/pbs-assets.mjs";
 import { buildLocalAssetsPatch } from "./lib/local-assets-patch.mjs";
+import {
+  applySonkeContent,
+  loadSonkeContent,
+  summarizeSonkeContent,
+} from "./lib/sonke-content.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -16,6 +21,7 @@ const pbsDir = join(publicDir, "pbs");
 const dataDir = join(publicDir, "pbs", "data");
 const assetsDir = join(publicDir, "pbs-assets");
 const manifestPath = join(assetsDir, "manifest.json");
+const contentDir = join(root, "content");
 
 const pages = [
   { source: "pbs-home.html", dest: "index.html" },
@@ -42,21 +48,13 @@ function applyTextReplacements(html, dest) {
 
   if (dest === "games.html") {
     branded = branded.replaceAll("Games | PBS KIDS", BRAND_GAMES);
-    branded = branded.replaceAll(
-      "Play games with your PBS KIDS favorites",
-      "Play games with your Sonke Kids favorites",
-    );
   } else if (dest === "videos.html") {
     branded = branded.replaceAll("Videos | PBS KIDS", `Videos | ${BRAND_KIDS}`);
-    branded = branded.replaceAll(
-      "Watch for free your favorite PBS KIDS shows",
-      "Watch for free your favorite Sonke Kids shows",
-    );
   }
 
   const replacements = [
-    ["PBS Kids Shows", "Sonke Kids Shows"],
-    ["PBS KIDS Shows", "Sonke Kids Shows"],
+    ["PBS Kids Shows", "Sonke Kids Worlds"],
+    ["PBS KIDS Shows", "Sonke Kids Worlds"],
     ["PBS KIDS Read", "Sonke Kids Read"],
     ["PBS KIDS shows", "Sonke Kids shows"],
     ["PBS KIDS favorites", "Sonke Kids favorites"],
@@ -76,10 +74,16 @@ function applyTextReplacements(html, dest) {
   return branded;
 }
 
-function scrubNextData(html, dest) {
+function scrubNextData(html, dest, sonkeContent) {
   return html.replace(
     /(<script id="__NEXT_DATA__" type="application\/json">)([\s\S]*?)(<\/script>)/,
-    (_, open, json, close) => `${open}${applyTextReplacements(json, dest)}${close}`,
+    (_, open, json, close) => {
+      let updated = applyTextReplacements(json, dest);
+      if (sonkeContent) {
+        updated = applySonkeContent(updated, sonkeContent);
+      }
+      return `${open}${updated}${close}`;
+    },
   );
 }
 
@@ -183,9 +187,12 @@ function ensureImgSrcFromSrcSet(html) {
   );
 }
 
-function applyBranding(html, dest) {
+function applyBranding(html, dest, sonkeContent) {
   let branded = applyTextReplacements(html, dest);
-  branded = scrubNextData(branded, dest);
+  if (sonkeContent) {
+    branded = applySonkeContent(branded, sonkeContent);
+  }
+  branded = scrubNextData(branded, dest, sonkeContent);
   branded = replaceHeaderLogo(branded);
   branded = injectFavicon(branded);
   branded = stripAnalytics(branded);
@@ -197,7 +204,7 @@ function stripLegacyPatches(html) {
   return html.replace(/<script data-sonke-image-patch>[\s\S]*?<\/script>/g, "");
 }
 
-function processHtml(html, dest) {
+function processHtml(html, dest, sonkeContent) {
   return applyBranding(
     fixOrphanedScriptBeforeStyles(
       stripServiceWorkerLoader(
@@ -212,6 +219,7 @@ function processHtml(html, dest) {
       ),
     ),
     dest,
+    sonkeContent,
   );
 }
 
@@ -219,13 +227,19 @@ async function main() {
   mkdirSync(pbsDir, { recursive: true });
   mkdirSync(assetsDir, { recursive: true });
 
+  const sonkeContent = loadSonkeContent(contentDir);
+  const summary = summarizeSonkeContent(sonkeContent);
+  console.log(
+    `Applying Sonke content: ${summary.worlds} worlds, ${summary.propertyMappings} property mappings, ${summary.gameOverrides} game overrides, ${summary.videoOverrides} video overrides.`,
+  );
+
   const brandedPages = [];
   const allImageUrls = new Set();
 
   for (const { source, dest } of pages) {
     const sourcePath = join(publicDir, source);
     const raw = readFileSync(sourcePath, "utf8");
-    const branded = processHtml(raw, dest);
+    const branded = processHtml(raw, dest, sonkeContent);
     for (const url of collectRemoteImageUrls(branded)) {
       allImageUrls.add(url);
     }

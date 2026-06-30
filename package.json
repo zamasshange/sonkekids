@@ -9,6 +9,7 @@
     "lint": "eslint",
     "setup-pbs": "node scripts/setup-pbs-clone.mjs",
     "extract-pbs": "node scripts/setup-pbs-clone.mjs",
+    "apply-content": "node scripts/setup-pbs-clone.mjs",
     "fetch-pbs": "curl.exe -sL https://pbskids.org/ -o public/pbs-home.html && curl.exe -sL https://pbskids.org/games -o public/pbs-games.html && curl.exe -sL https://pbskids.org/videos -o public/pbs-videos.html && npm run setup-pbs"
   },
   "dependencies": {

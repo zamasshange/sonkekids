@@ -1,0 +1,74 @@
+{
+  "overrides": [
+    {
+      "pbsSlug": "pinkalicious-beach-game",
+      "pbsTitle": "Splashtastic Beach Day",
+      "title": "Beach Treasure Hunt",
+      "worldId": "ocean-world",
+      "type": "adventure"
+    },
+    {
+      "pbsSlug": "hamster-water",
+      "pbsTitle": "Team Hamster! Splash Dash",
+      "title": "River Splash Dash",
+      "worldId": "wonder-woods",
+      "type": "arcade"
+    },
+    {
+      "pbsSlug": "build-a-boat",
+      "pbsTitle": "Build a Boat",
+      "title": "Build a Sailboat",
+      "worldId": "ocean-world",
+      "type": "building"
+    },
+    {
+      "pbsSlug": "froyo-stand",
+      "pbsTitle": "Donkey's Froyo Stand game; Donkey holds a cup of frozen yogurt.",
+      "title": "Frozen Treat Stand",
+      "worldId": "food-town",
+      "type": "cooking"
+    },
+    {
+      "pbsSlug": "weather-explorer",
+      "pbsTitle": "Weather Explorer",
+      "title": "Weather Explorer",
+      "worldId": "wonder-woods",
+      "type": "science"
+    },
+    {
+      "pbsSlug": "elinor-curious-campout",
+      "pbsTitle": "Elinor Curious Campout",
+      "title": "Camping Adventure",
+      "worldId": "wonder-woods",
+      "type": "adventure"
+    },
+    {
+      "pbsSlug": "seek-the-peak",
+      "pbsTitle": "Seek the Peak",
+      "title": "Mountain Quest",
+      "worldId": "explorer-island",
+      "type": "adventure"
+    },
+    {
+      "pbsSlug": "scribbles-and-ink-far-and-away",
+      "pbsTitle": "Scribbles and Ink: Far and Away",
+      "title": "Far and Away",
+      "worldId": "art-studio",
+      "type": "drawing"
+    },
+    {
+      "pbsSlug": "patternpalooza-fair",
+      "pbsTitle": "Patternpalooza Fair",
+      "title": "Pattern Fair",
+      "worldId": "music-city",
+      "type": "pattern"
+    },
+    {
+      "pbsSlug": "baby-animals",
+      "pbsTitle": "Baby Animal Rescue",
+      "title": "Baby Animal Rescue",
+      "worldId": "pet-paradise",
+      "type": "animals"
+    }
+  ]
+}

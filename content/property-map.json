@@ -1,0 +1,134 @@
+{
+  "pbs-kids-2": {
+    "pbsTitle": "Sonke Kids",
+    "worldId": "all-worlds",
+    "worldTitle": "All Worlds",
+    "guide": null
+  },
+  "phoebe-jay": {
+    "pbsTitle": "Phoebe & Jay",
+    "worldId": "pet-paradise",
+    "worldTitle": "Pet Paradise",
+    "guide": "Pip"
+  },
+  "carl-the-collector": {
+    "pbsTitle": "Carl the Collector",
+    "worldId": "wonder-woods",
+    "worldTitle": "Wonder Woods",
+    "guide": "Willow"
+  },
+  "lyla-in-the-loop": {
+    "pbsTitle": "Lyla in the Loop",
+    "worldId": "music-city",
+    "worldTitle": "Music City",
+    "guide": "Melody"
+  },
+  "weather-hunters": {
+    "pbsTitle": "Weather Hunters",
+    "worldId": "wonder-woods",
+    "worldTitle": "Wonder Woods",
+    "guide": "Willow"
+  },
+  "daniel": {
+    "pbsTitle": "Daniel Tiger's Neighborhood",
+    "worldId": "imagination-kingdom",
+    "worldTitle": "Imagination Kingdom",
+    "guide": "Luna"
+  },
+  "wild-kratts": {
+    "pbsTitle": "Wild Kratts",
+    "worldId": "wonder-woods",
+    "worldTitle": "Wonder Woods",
+    "guide": "Willow"
+  },
+  "countonjunebug": {
+    "pbsTitle": "Count on June Bug!",
+    "worldId": "wonder-woods",
+    "worldTitle": "Wonder Woods",
+    "guide": "Willow"
+  },
+  "sesame-street": {
+    "pbsTitle": "Sesame Street",
+    "worldId": "food-town",
+    "worldTitle": "Food Town",
+    "guide": "Chef Apple"
+  },
+  "molly-of-denali": {
+    "pbsTitle": "Molly of Denali",
+    "worldId": "explorer-island",
+    "worldTitle": "Explorer Island",
+    "guide": "Atlas"
+  },
+  "pinkalicious-and-peterrific": {
+    "pbsTitle": "Pinkalicious & Peterrific",
+    "worldId": "art-studio",
+    "worldTitle": "Art Studio",
+    "guide": "Sketch"
+  },
+  "odd-squad": {
+    "pbsTitle": "Odd Squad",
+    "worldId": "inventor-lab",
+    "worldTitle": "Inventor Lab",
+    "guide": "Professor Spark"
+  },
+  "arthur": {
+    "pbsTitle": "Arthur",
+    "worldId": "explorer-island",
+    "worldTitle": "Explorer Island",
+    "guide": "Atlas"
+  },
+  "rosies-rules": {
+    "pbsTitle": "Rosie's Rules",
+    "worldId": "food-town",
+    "worldTitle": "Food Town",
+    "guide": "Chef Apple"
+  },
+  "donkey-hodie": {
+    "pbsTitle": "Donkey Hodie",
+    "worldId": "imagination-kingdom",
+    "worldTitle": "Imagination Kingdom",
+    "guide": "Luna"
+  },
+  "work-it-out-wombats": {
+    "pbsTitle": "Work It Out Wombats!",
+    "worldId": "robot-factory",
+    "worldTitle": "Robot Factory",
+    "guide": "Bolt"
+  },
+  "almas-way": {
+    "pbsTitle": "Alma's Way",
+    "worldId": "explorer-island",
+    "worldTitle": "Explorer Island",
+    "guide": "Atlas"
+  },
+  "city-island": {
+    "pbsTitle": "City Island",
+    "worldId": "speed-city",
+    "worldTitle": "Speed City",
+    "guide": "Zoom"
+  },
+  "curious-george": {
+    "pbsTitle": "Curious George",
+    "worldId": "inventor-lab",
+    "worldTitle": "Inventor Lab",
+    "guide": "Professor Spark"
+  },
+  "xavier-riddle": {
+    "pbsTitle": "Xavier Riddle and the Secret Museum",
+    "worldId": "explorer-island",
+    "worldTitle": "Explorer Island",
+    "guide": "Atlas"
+  },
+  "clifford-big-red-dog": {
+    "pbsTitle": "Clifford the Big Red Dog",
+    "worldId": "pet-paradise",
+    "worldTitle": "Pet Paradise",
+    "guide": "Pip"
+  },
+  "super-whys-comic-book-adventures": {
+    "pbsTitle": "Super Why's Comic Book Adventures",
+    "worldId": "wonder-woods",
+    "worldTitle": "Wonder Woods",
+    "guide": "Willow"
+  }
+}
