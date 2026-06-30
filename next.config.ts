@@ -19,12 +19,17 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/_next/static/:path*",
-          destination: `${PBS_ORIGIN}/_next/static/:path*`,
+          source: "/pbs-proxy/:path*",
+          destination: `${PBS_ORIGIN}/:path*`,
+        },
+        // PBS clone HTML references these paths — never proxy /_next/static/chunks (our app bundles).
+        {
+          source: "/_next/static/css/:path*",
+          destination: `${PBS_ORIGIN}/_next/static/css/:path*`,
         },
         {
-          source: "/_next/static/chunks/:path*",
-          destination: `${PBS_ORIGIN}/_next/static/chunks/:path*`,
+          source: "/_next/static/media/:path*",
+          destination: `${PBS_ORIGIN}/_next/static/media/:path*`,
         },
         {
           source: "/puma/:path*",

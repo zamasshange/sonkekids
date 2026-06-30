@@ -1,11 +1,13 @@
 /* Supplemental layout on top of proxied PBS CSS */
 
-.sonke-pbs-page {
+.sonke-pbs-shell {
   min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-.sonke-pbs-page a {
+.sonke-pbs-shell a {
   text-decoration: none;
+  color: inherit;
 }
 
 .sonke-game-hero-module {

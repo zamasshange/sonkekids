@@ -4,19 +4,21 @@ import { resolveSonkeGameId } from "./lib/games/resolve-slug";
 
 const PBS_ORIGIN = "https://pbskids.org";
 
-const PBS_ASSET_PREFIXES = ["/_next/static/", "/puma/", "/sw.js"];
-
 function shouldProxyToPbs(pathname: string) {
-  return PBS_ASSET_PREFIXES.some((prefix) =>
-    prefix.endsWith("/") ? pathname.startsWith(prefix) : pathname === prefix,
-  );
+  if (pathname.startsWith("/pbs-proxy/")) return true;
+  if (pathname.startsWith("/_next/static/css/")) return true;
+  if (pathname.startsWith("/_next/static/media/")) return true;
+  if (pathname.startsWith("/puma/")) return true;
+  if (pathname === "/sw.js") return true;
+  return false;
 }
 
 async function proxyToPbs(request: NextRequest) {
-  const target = new URL(
-    `${request.nextUrl.pathname}${request.nextUrl.search}`,
-    PBS_ORIGIN,
-  );
+  const proxiedPath = request.nextUrl.pathname.startsWith("/pbs-proxy/")
+    ? request.nextUrl.pathname.replace(/^\/pbs-proxy/, "")
+    : request.nextUrl.pathname;
+
+  const target = new URL(`${proxiedPath}${request.nextUrl.search}`, PBS_ORIGIN);
 
   const upstream = await fetch(target, {
     headers: {
@@ -77,7 +79,9 @@ export const config = {
   matcher: [
     "/games/play/:slug*",
     "/_next/image",
-    "/_next/static/:path*",
+    "/_next/static/css/:path*",
+    "/_next/static/media/:path*",
+    "/pbs-proxy/:path*",
     "/puma/:path*",
     "/sw.js",
   ],
