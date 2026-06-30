@@ -18,7 +18,7 @@ export default async function GamesSearchPage({ searchParams }: SearchPageProps)
 
   return (
     <SonkePbsPage pageTitle="Search">
-      <ContentModule className="sonke-game-hero-module" pattern>
+      <ContentModule className="sonke-game-hero-module">
         <div className="sonke-game-hero-copy">
           <p className="sonke-game-badge">Search</p>
           <h2 className="sonke-game-title">Find Games &amp; Facts</h2>

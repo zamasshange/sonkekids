@@ -8,29 +8,29 @@ import { PlayActions } from "./PlayActions";
 export function ContentModule({
   children,
   className = "",
-  pattern = false,
+  panel = false,
   id,
 }: {
   children: ReactNode;
   className?: string;
-  pattern?: boolean;
+  /** White/magenta PBS feature card on the yellow page background */
+  panel?: boolean;
   id?: string;
 }) {
   return (
-    <div
+    <section
       id={id}
-      data-theme-context="module"
-      data-theme-module-contextid="sonke-game"
-      data-theme-background-mode={pattern ? "pattern" : undefined}
-      className={`ThemedModule_moduleWrapper__8K1_V ${className}`.trim()}
+      className={`sonke-inner-section ${panel ? "sonke-feature-panel" : ""} ${className}`.trim()}
     >
-      {pattern && (
-        <div className="ThemedModule_bgLayers__8BKwC">
-          <div className="ThemedModule_solidColor__mtJEd" />
-          <div className="ThemedModule_pattern__rqwkC" />
-        </div>
-      )}
-      <div className="ThemedModule_innerContent__58wFN">{children}</div>
+      {children}
+    </section>
+  );
+}
+
+export function SectionHeading({ children }: { children: ReactNode }) {
+  return (
+    <div className="GamesCollage_iconHeaderWrapper__b6FGa sonke-section-heading">
+      <h2 className="sonke-section-title">{children}</h2>
     </div>
   );
 }
@@ -73,7 +73,7 @@ export function GameHero({ data, large = false }: { data: GamePageData; large?: 
         ) : (
           <div
             className="sonke-game-hero-fallback"
-            style={{ background: `linear-gradient(135deg, ${visual.gradient[0]}, ${visual.gradient[1]})` }}
+            style={{ background: `var(--pbsk-theme-featureBackgroundColor, ${visual.gradient[0]})` }}
             aria-hidden="true"
           >
             <span>{visual.emoji}</span>
@@ -87,10 +87,8 @@ export function GameHero({ data, large = false }: { data: GamePageData; large?: 
 export function GamePlaySection({ data }: { data: GamePageData }) {
   const { game, gameType, ai } = data;
   return (
-    <ContentModule className="sonke-game-play" id={`play-${game.id}`}>
-      <div className="GamesCollage_iconHeaderWrapper__b6FGa">
-        <h2 className="sonke-section-title">Play {game.title}</h2>
-      </div>
+    <ContentModule className="sonke-game-play" panel id={`play-${game.id}`}>
+      <SectionHeading>Play {game.title}</SectionHeading>
       <p className="sonke-section-lead">{gameType.howItWorks}</p>
       <GamePlayer title={game.title} gameType={gameType} />
       <p className="sonke-player-hint">{ai.tips[0]}</p>
@@ -101,8 +99,8 @@ export function GamePlaySection({ data }: { data: GamePageData }) {
 export function LearningSection({ data }: { data: GamePageData }) {
   const { ai } = data;
   return (
-    <ContentModule className="sonke-game-panel">
-      <h2 className="sonke-section-title">What You&apos;ll Learn</h2>
+    <ContentModule className="sonke-game-panel" panel>
+      <SectionHeading>What You&apos;ll Learn</SectionHeading>
       <ul className="sonke-learning-grid">
         {ai.learningBenefits.map((benefit) => (
           <li key={benefit} className="sonke-learning-card">
@@ -124,8 +122,8 @@ export function LearningSection({ data }: { data: GamePageData }) {
 export function HowToPlaySection({ data }: { data: GamePageData }) {
   const { ai } = data;
   return (
-    <ContentModule className="sonke-game-panel">
-      <h2 className="sonke-section-title">How to Play</h2>
+    <ContentModule className="sonke-game-panel" panel>
+      <SectionHeading>How to Play</SectionHeading>
       <ol className="sonke-steps">
         {ai.howToPlay.map((step) => (
           <li key={step}>{step}</li>
@@ -144,8 +142,8 @@ export function HowToPlaySection({ data }: { data: GamePageData }) {
 export function FunFactsSection({ data }: { data: GamePageData }) {
   const { game, ai } = data;
   return (
-    <ContentModule className="sonke-game-panel" id={`facts-${game.id}`}>
-      <h2 className="sonke-section-title">Did You Know?</h2>
+    <ContentModule className="sonke-game-panel" panel id={`facts-${game.id}`}>
+      <SectionHeading>Did You Know?</SectionHeading>
       <ul className="sonke-facts-grid" id="facts">
         {ai.funFacts.map((fact) => (
           <li key={fact} className="sonke-fact-card">
@@ -160,8 +158,8 @@ export function FunFactsSection({ data }: { data: GamePageData }) {
 export function DiscoverSection({ data }: { data: GamePageData }) {
   const { game, ai, wikipedia } = data;
   return (
-    <ContentModule className="sonke-game-panel" id={`discover-${game.id}`}>
-      <h2 className="sonke-section-title">Discover More</h2>
+    <ContentModule className="sonke-game-panel" panel id={`discover-${game.id}`}>
+      <SectionHeading>Discover More</SectionHeading>
       <p className="sonke-game-description">{ai.description}</p>
       {wikipedia ? (
         <article className="sonke-wiki-card">
@@ -188,8 +186,8 @@ export function DiscoverSection({ data }: { data: GamePageData }) {
 export function QuizSection({ data }: { data: GamePageData }) {
   const { game, ai } = data;
   return (
-    <ContentModule className="sonke-game-panel" id={`quiz-${game.id}`}>
-      <h2 className="sonke-section-title">{game.title} Quiz</h2>
+    <ContentModule className="sonke-game-panel" panel id={`quiz-${game.id}`}>
+      <SectionHeading>{game.title} Quiz</SectionHeading>
       <div className="sonke-quiz-list">
         {ai.quizQuestions.map((q, index) => (
           <QuizCard key={`${q.question}-${index}`} question={q} index={index} />
@@ -230,13 +228,12 @@ export function RelatedGamesSection({
 
   return (
     <ContentModule className="sonke-related-module">
-      <h2 className="sonke-section-title">{title}</h2>
-      <ul className="sonke-related-grid">
+      <SectionHeading>{title}</SectionHeading>
+      <ul className="GamesCollage_gamesGrid__jv6Iv sonke-related-grid">
         {games.map((related) => (
           <li key={related.id}>
-            <Link href={`/games/${related.id}`} className="sonke-related-card MediaItem_mediaLink__JSobH">
-              <span className="sonke-related-title MediaItem_heading__AybaX">{related.title}</span>
-              <span className="sonke-related-cta">Play</span>
+            <Link href={`/games/${related.id}`} className="MediaItem_mediaLink__JSobH sonke-related-card">
+              <p className="MediaItem_heading__AybaX sonke-related-title">{related.title}</p>
             </Link>
           </li>
         ))}
@@ -258,7 +255,7 @@ export function RelatedContentSection({ items }: { items: RelatedContentItem[] }
 
   return (
     <ContentModule className="sonke-related-module">
-      <h2 className="sonke-section-title">Related Content</h2>
+      <SectionHeading>Related Content</SectionHeading>
       <ul className="sonke-content-grid">
         {items.map((item) => (
           <li key={item.title}>
@@ -278,8 +275,8 @@ export function RelatedContentSection({ items }: { items: RelatedContentItem[] }
 
 export function AdventureBanner({ data }: { data: GamePageData }) {
   return (
-    <ContentModule className="sonke-adventure-banner" pattern>
-      <h2 className="sonke-section-title">Your Mission</h2>
+    <ContentModule className="sonke-adventure-banner" panel>
+      <SectionHeading>Your Mission</SectionHeading>
       <p className="sonke-adventure-text">{data.ai.adventureText}</p>
       <ul className="sonke-objectives">
         <li>Complete the game challenge</li>

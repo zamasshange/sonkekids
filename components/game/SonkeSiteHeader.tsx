@@ -11,6 +11,7 @@ export function SonkeSiteHeader({ pageTitle }: SonkeSiteHeaderProps) {
       className="MastheadContentWrapper_outerWrapper__oDKFU"
       data-theme-context="masthead"
       data-masthead-content-layout=""
+      data-masthead-content-module-name="MastheadContentModulesLookInsideGamePreview"
     >
       <header className="StandardHeader_outerWrapper__zM0jM StandardHeader_isTopLevelPage__qiptW">
         <h1 className="sr-only">{pageTitle}</h1>

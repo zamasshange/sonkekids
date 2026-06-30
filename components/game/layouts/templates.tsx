@@ -18,7 +18,7 @@ import {
 export function TemplateA({ data }: { data: GamePageData }) {
   return (
     <SonkePbsPage pageTitle={data.game.title}>
-      <ContentModule className="sonke-game-hero-module" pattern>
+      <ContentModule className="sonke-game-hero-module">
         <GameHero data={data} />
       </ContentModule>
       <GamePlaySection data={data} />
@@ -37,7 +37,7 @@ export function TemplateA({ data }: { data: GamePageData }) {
 export function TemplateB({ data }: { data: GamePageData }) {
   return (
     <SonkePbsPage pageTitle={data.game.title}>
-      <ContentModule className="sonke-game-hero-module" pattern>
+      <ContentModule className="sonke-game-hero-module">
         <GameHero data={data} large />
       </ContentModule>
       <GamePlaySection data={data} />
@@ -57,7 +57,7 @@ export function TemplateC({ data }: { data: GamePageData }) {
     <SonkePbsPage pageTitle={data.game.title}>
       <div className="sonke-split-layout">
         <div className="sonke-split-main">
-          <ContentModule className="sonke-game-hero-module" pattern>
+          <ContentModule className="sonke-game-hero-module">
             <GameHero data={data} />
           </ContentModule>
           <GamePlaySection data={data} />
@@ -79,7 +79,7 @@ export function TemplateD({ data }: { data: GamePageData }) {
   return (
     <SonkePbsPage pageTitle={data.game.title}>
       <AdventureBanner data={data} />
-      <ContentModule className="sonke-game-hero-module" pattern>
+      <ContentModule className="sonke-game-hero-module">
         <GameHero data={data} />
       </ContentModule>
       <GamePlaySection data={data} />

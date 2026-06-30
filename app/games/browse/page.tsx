@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { loadCatalog } from "@/lib/games/catalog";
 import { SonkePbsPage } from "@/components/game/SonkePbsPage";
+import { ContentModule, SectionHeading } from "@/components/game/content/shared";
 
 export const metadata = {
   title: "All Games | Sonke Kids",
@@ -12,49 +13,30 @@ export default function GamesBrowsePage() {
 
   return (
     <SonkePbsPage pageTitle="All Games">
-      <div
-        data-theme-context="module"
-        data-theme-background-mode="pattern"
-        data-theme-module-contextid="sonke-game"
-        className="ThemedModule_moduleWrapper__8K1_V sonke-game-hero-module"
-      >
-        <div className="ThemedModule_bgLayers__8BKwC">
-          <div className="ThemedModule_solidColor__mtJEd" />
-          <div className="ThemedModule_pattern__rqwkC" />
+      <ContentModule className="sonke-game-hero-module">
+        <div className="sonke-game-hero-copy">
+          <p className="sonke-game-badge">All Games</p>
+          <h2 className="sonke-game-title">{catalog.totalGames} Games to Play</h2>
+          <p className="sonke-game-tagline">Browse every Sonke Kids game by category and jump into play.</p>
+          <Link href="/games/search" className="sonke-btn sonke-btn-play">
+            Search Games
+          </Link>
         </div>
-        <div className="ThemedModule_innerContent__58wFN sonke-game-hero">
-          <div className="sonke-game-hero-copy">
-            <p className="sonke-game-badge">All Games</p>
-            <h2 className="sonke-game-title">{catalog.totalGames} Games to Play</h2>
-            <p className="sonke-game-tagline">Browse every Sonke Kids game by category and jump into play.</p>
-            <Link href="/games/search" className="sonke-btn sonke-btn-play">
-              Search Games
-            </Link>
-          </div>
-        </div>
-      </div>
+      </ContentModule>
 
       {catalog.categories.map((category) => (
-        <div
-          key={category.id}
-          data-theme-context="module"
-          data-theme-module-contextid="sonke-game"
-          className="ThemedModule_moduleWrapper__8K1_V sonke-related-module"
-        >
-          <div className="ThemedModule_innerContent__58wFN">
-            <h2 className="sonke-section-title">{category.title}</h2>
-            <ul className="sonke-related-grid">
-              {category.games.map((game) => (
-                <li key={game.id}>
-                  <Link href={`/games/${game.id}`} className="sonke-related-card MediaItem_mediaLink__JSobH">
-                    <span className="sonke-related-title MediaItem_heading__AybaX">{game.title}</span>
-                    <span className="sonke-related-cta">Play</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <ContentModule key={category.id} className="sonke-related-module">
+          <SectionHeading>{category.title}</SectionHeading>
+          <ul className="GamesCollage_gamesGrid__jv6Iv sonke-related-grid">
+            {category.games.map((game) => (
+              <li key={game.id}>
+                <Link href={`/games/${game.id}`} className="MediaItem_mediaLink__JSobH sonke-related-card">
+                  <p className="MediaItem_heading__AybaX sonke-related-title">{game.title}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </ContentModule>
       ))}
     </SonkePbsPage>
   );
